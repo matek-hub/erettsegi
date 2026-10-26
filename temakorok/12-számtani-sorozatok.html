@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="hu" xml:lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="pandoc" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Matematika érettségi – Túlélőkalauz</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] },
+  startup: { typeset: true }
+};
+</script><script async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="../style.css" rel="stylesheet"/></head>
+<body><section class="page topic-page active" data-index="12" id="számtani-sorozatok"><img alt="LT képletek védjegy" class="brand-logo" src="../lt-kepletek-vedjegy.svg"/><h1 id="számtani-sorozatok">Számtani haladvány</h1><p>Egy sorozat számok meghatározott sorrendű listája: <span class="math inline">\(a_1,a_2,a_3,\ldots\)</span>. A sorozat megadható a
+tagok felsorolásával, képlettel vagy rekurzív összefüggéssel.</p><p><strong class="example-label">Példa.</strong> Legyen <span class="math inline">\(a_n=3n+2\)</span>. Határozzuk meg <span class="math inline">\(a_5\)</span>-öt és <span class="math inline">\(a_{10}\)</span>-et!</p><p><span class="math display">\[a_5=3\cdot5+2=17,\qquad
+a_{10}=3\cdot10+2=32.\]</span></p><p><strong class="example-label">Példa.</strong> Legyen <span class="math inline">\(a_{n+1}=2a_n+3\)</span> és <span class="math inline">\(a_1=2\)</span>. Határozzuk meg <span class="math inline">\(a_4\)</span>-et!</p><p><span class="math display">\[a_2=2\cdot2+3=7,\quad
+a_3=2\cdot7+3=17,\quad
+a_4=2\cdot17+3=37.\]</span></p><h2 class="unnumbered" id="a-számtani-sorozat-képletei">A számtani haladvány képletei</h2><p>Egy sorozat számtani haladvány, ha bármely két egymást követő tag
+különbsége állandó. Ezt a különbséget differenciának nevezzük, és <span class="math inline">\(r\)</span>-rel jelöljük. <span class="math display">\[a_{n+1}-a_n=r,\qquad
+a_n=a_1+(n-1)r.\]</span> Az első <span class="math inline">\(n\)</span>
+tag összege: <span class="math display">\[S_n=a_1+a_2+\cdots+a_n
+=\frac{(a_1+a_n)n}{2}.\]</span> Három szám akkor van számtani haladványban, ha a középső a két szélső számtani közepe: <span class="math display">\[b=\frac{a+c}{2}.\]</span></p><p><strong class="example-label">Példa.</strong> Számítsuk ki <span class="math inline">\(2+4+6+\cdots+20\)</span> összegét!</p><p>A sorozat első tagja 2, utolsó tagja 20, a tagok száma 10: <span class="math display">\[S_{10}=\frac{(2+20)\cdot10}{2}=110.\]</span></p><p><strong class="example-label">Példa.</strong> Egy számtani haladványban <span class="math inline">\(a_4=15\)</span> és <span class="math inline">\(a_8=27\)</span>. Határozzuk meg <span class="math inline">\(S_{21}\)</span>-et!</p><p><span class="math display">\[a_8=a_4+4r\Longrightarrow27=15+4r\Longrightarrow
+r=3.\]</span> Innen <span class="math inline">\(a_1=a_4-3r=6\)</span>,
+továbbá <span class="math inline">\(a_{21}=a_1+20r=66\)</span>. Tehát
+<span class="math display">\[S_{21}=\frac{(6+66)\cdot21}{2}=756.\]</span></p><p><strong class="example-label">Példa.</strong> Számítsuk ki az <span class="math inline">\(1+6+11+\cdots+81\)</span> összeget!</p><p>A differencia 5. Az utolsó tag helye: <span class="math display">\[81=1+(n-1)\cdot5\Longrightarrow n=17.\]</span>
+Ezért <span class="math display">\[S_{17}=\frac{(1+81)\cdot17}{2}=697.\]</span></p><p><strong class="example-label">Példa.</strong> Az <span class="math inline">\(1,x,x+3,10\)</span> számok ebben a sorrendben
+számtani haladványt alkotnak. Határozzuk meg <span class="math inline">\(x\)</span>-et!</p><p>A negyedik tagra <span class="math inline">\(10=1+3r\)</span>, tehát
+<span class="math inline">\(r=3\)</span>, ezért <span class="math inline">\(x=1+3=4\)</span>.</p><details class="practice-toggle" id="gyakorlófeladatok-9"><summary class="practice-title">Gyakorlófeladatok</summary><ol>
+<li><p>Egy számtani haladványban <span class="math inline">\(a_7=19\)</span> és <span class="math inline">\(a_{10}=25\)</span>. Határozzuk meg <span class="math inline">\(r\)</span>, <span class="math inline">\(a_1\)</span>, <span class="math inline">\(a_{31}\)</span> és <span class="math inline">\(S_{31}\)</span> értékét.</p></li>
+<li><p>Számítsuk ki: <span class="math inline">\(1+5+9+13+\cdots+81\)</span>.</p></li>
+<li><p>Számítsuk ki: <span class="math inline">\(1+11+21+\cdots+121\)</span>.</p></li>
+<li><p>Az <span class="math inline">\(x-5\)</span>, <span class="math inline">\(3x+1\)</span>, <span class="math inline">\(x+7\)</span> számok számtani haladványt alkotnak.
+Határozzuk meg <span class="math inline">\(x\)</span>-et.</p></li>
+<li><p>A <span class="math inline">\(3\cdot2^x\)</span>, <span class="math inline">\(4^x\)</span>, <span class="math inline">\(2^{x+1}-2\)</span> számok számtani haladványt
+alkotnak. Határozzuk meg <span class="math inline">\(x\)</span>-et.</p></li>
+<li><p>Ha <span class="math inline">\(a_1=1\)</span> és <span class="math inline">\(a_2=3\)</span> egy számtani haladvány tagjai, számítsuk ki <span class="math inline">\(S_5\)</span>-öt.</p></li>
+<li><p>Határozzuk meg az <span class="math inline">\(1,4,7,10,\ldots\)</span> sorozat <span class="math inline">\(a_{31}\)</span> tagját.</p></li>
+</ol></details></section><div aria-label="Lapozás" class="floating-nav"><button aria-label="Előző lap" class="nav-orb" id="prev-page" title="Előző lap" type="button">←</button><button aria-label="Vissza a főoldalra" class="nav-orb home-orb" id="home-page" title="Vissza a főoldalra" type="button">⌂</button><button aria-label="Következő lap" class="nav-orb" id="next-page" title="Következő lap" type="button">→</button></div><div aria-live="polite" class="page-status" id="page-status"></div><script>
+document.addEventListener('DOMContentLoaded',()=>{
+const current=12, total=44, paths=["01-másodfokú-egyenlet.html", "02-viète-összefüggések.html", "03-másodfokú-egyenlőtlenség.html", "04-a-másodfokú-függvény-grafikonja.html", "05-gyökös-egyenletek.html", "06-logaritmusok.html", "07-exponenciális-egyenletek.html", "08-kombinációk.html", "09-variációk.html", "10-permutációk.html", "11-valószínűségszámítás.html", "12-számtani-sorozatok.html", "13-mértani-sorozatok.html", "14-függvények.html", "15-százalékszámítás.html", "16-a-komplex-számok-halmaza.html", "17-analitikus-geometria.html", "18-vektorok.html", "19-trigonometria.html", "20-geometria.html", "21-mátrixok.html", "22-determinánsok.html", "23-inverz-mátrix.html", "24-lineáris-egyenletrendszerek.html", "25-kompozíciós-műveletek.html", "26-polinomok.html", "27-viète-összefüggések-polinomokra.html", "28-a-maradékosztályok-mathbb-z_n-halmaza.html", "29-határértékek.html", "30-folytonos-függvények.html", "31-aszimptoták.html", "32-deriválás.html", "33-monotonitás-és-görbület.html", "34-primitív-függvények.html", "35-integrálás-parciális-integrálással.html", "36-integrálás-helyettesítéssel.html", "37-határozott-integrálok.html", "38-kezdeti-ismétlés-egész-számok-műveletei.html", "39-racionális-számok-műveletei.html", "40-elsőfokú-egyenletek.html", "41-elsőfokú-egyenlőtlenségek.html", "42-valós-számok-intervallumai.html", "43-abszolútérték.html", "44-kétismeretlenes-két-egyenletből-álló-lineáris-rendszerek.html"];
+const target=n=>n===0?(current===0?'index.html':'../index.html'):(current===0?'temakorok/':'')+paths[n-1];
+const prev=document.getElementById('prev-page'),next=document.getElementById('next-page'),home=document.getElementById('home-page'),status=document.getElementById('page-status');
+if(prev){prev.disabled=current===0;prev.addEventListener('click',()=>{if(current>0)location.href=target(current-1)});}
+if(next){next.disabled=current===total;next.addEventListener('click',()=>{if(current<total)location.href=target(current+1)});}
+if(home)home.addEventListener('click',()=>location.href=target(0));
+if(status)status.textContent=current===0?'Tartalomjegyzék':`${current} / ${total}`;
+document.addEventListener('keydown',e=>{
+ if(e.altKey||e.ctrlKey||e.metaKey||['INPUT','TEXTAREA'].includes(document.activeElement.tagName))return;
+ if(e.key==='ArrowLeft'&&current>0)location.href=target(current-1);
+ if(e.key==='ArrowRight'&&current<total)location.href=target(current+1);
+ if(e.key==='Home')location.href=target(0);
+});
+const browse=document.querySelector('.hero-cta');
+if(browse)browse.addEventListener('click',e=>{e.preventDefault();document.getElementById('temakorok')?.scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('details.practice-toggle').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.MathJax?.typesetPromise)window.MathJax.typesetPromise([d]).catch(()=>{});}));
+});
+</script></body>
+</html>

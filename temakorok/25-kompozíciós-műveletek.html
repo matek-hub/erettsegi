@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="hu" xml:lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="pandoc" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Matematika érettségi – Túlélőkalauz</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] },
+  startup: { typeset: true }
+};
+</script><script async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="../style.css" rel="stylesheet"/></head>
+<body><section class="page topic-page active" data-index="25" id="kompozíciós-műveletek"><img alt="LT képletek védjegy" class="brand-logo" src="../lt-kepletek-vedjegy.svg"/><h1 id="kompozíciós-műveletek">Műveletek</h1><p>Legyen <span class="math inline">\(M\)</span> egy halmaz. Az <span class="math inline">\(M\)</span> halmaz zárt a <span class="math display">\[*:M\times M\to M\]</span> műveletre nézve, ha
+ bármely <span class="math inline">\(x,y\in M\)</span> esetén <span class="math inline">\(x*y\in M\)</span>.</p><p><strong>A művelet jól értelmezett az <span class="math inline">\(M\)</span> halmazon, ha</strong> minden <span class="math inline">\(x,y\in M\)</span> esetén a művelet eredménye is
+<span class="math inline">\(M\)</span>-beli.</p><p><strong>Asszociativitás:</strong> <span class="math display">\[(x*y)*z=x*(y*z)\qquad\text{minden }x,y,z\in
+M\text{ esetén}.\]</span></p><p><strong>Kommutativitás:</strong> <span class="math display">\[x*y=y*x\qquad\text{minden }x,y\in M\text{
+esetén}.\]</span></p><p><strong>Semleges elem:</strong> olyan (és ha létezik, egyértelmű)
+<span class="math inline">\(e\in M\)</span>, amelyre <span class="math display">\[x*e=e*x=x\qquad\text{minden }x\in M\text{
+esetén}.\]</span></p><p><strong>Szimmetrikus elem:</strong> az <span class="math inline">\(x'\in M\)</span> elemet az <span class="math inline">\(x\)</span> elem szimmetrikusának nevezzük, ha
+<span class="math display">\[x*x'=x'*x=e.\]</span> Például a
+szokásos szorzásban az 5 szimmetrikusa <span class="math inline">\(\frac15\)</span>, mert <span class="math inline">\(5\cdot\frac15=1\)</span>.</p><h2 id="példa-művelet-a-2infty-halmazon">Példa: </h2><p>Legyen <span class="math inline">\(M=(2,+\infty)\)</span> és <span class="math display">\[x*y=xy-2x-2y+6.\]</span> Vizsgáljuk meg a
+tulajdonságokat!</p><p><strong>a) Asszociativitás.</strong> A két oldal kifejtése: <span class="math display">\[\begin{aligned}
+(x*y)*z&amp;=xyz-2xz-2yz+6z-2xy+4x+4y-2z-6,\\
+x*(y*z)&amp;=xyz-2xy-2xz+6x+4y+4z-2x-2yz-6.
+\end{aligned}\]</span> A kifejezések azonos tagokat tartalmaznak, ezért
+a művelet asszociatív.</p><p><strong>b) Kommutativitás.</strong> Mivel <span class="math display">\[xy-2x-2y+6=yx-2y-2x+6,\]</span> a művelet
+kommutatív.</p><p><strong>c) Semleges elem.</strong> Keressük az <span class="math inline">\(e\)</span> elemet úgy, hogy <span class="math inline">\(x*e=x\)</span>: <span class="math display">\[xe-2x-2e+6=x.\]</span> Innen <span class="math display">\[e(x-2)=3x-6=3(x-2),\]</span> ezért <span class="math inline">\(e=3\)</span>. Mivel <span class="math inline">\(3\in(2,+\infty)\)</span>, a semleges elem 3.</p><p><strong>d) Az <span class="math inline">\(x\)</span> elem
+szimmetrikusa.</strong> Az <span class="math inline">\(x*x'=3\)</span> egyenletből: <span class="math display">\[xx'-2x-2x'+6=3,\]</span> tehát <span class="math display">\[x'(x-2)=2x-3
+\quad\Longrightarrow\quad
+x'=\frac{2x-3}{x-2}.\]</span> Ha <span class="math inline">\(x&gt;2\)</span>, akkor <span class="math display">\[\frac{2x-3}{x-2}&gt;2,\]</span> ezért <span class="math inline">\(x'\in M\)</span>. Például az 5 szimmetrikusa:
+<span class="math display">\[x'=\frac{2\cdot5-3}{5-2}=\frac73.\]</span></p><p><strong>e) Jól definiáltság.</strong> Átalakítva: <span class="math display">\[x*y=xy-2x-2y+6=(x-2)(y-2)+2.\]</span> Mivel <span class="math inline">\(x&gt;2\)</span> és <span class="math inline">\(y&gt;2\)</span>, ezért <span class="math inline">\((x-2)(y-2)&gt;0\)</span>, tehát <span class="math inline">\(x*y&gt;2\)</span> és <span class="math inline">\(x*y\in M\)</span>.</p><h2 id="második-példa">Példa</h2><p>Legyen <span class="math inline">\(M=[3,+\infty)\)</span>, és
+definiáljuk: <span class="math display">\[x*y=xy-3x-3y+12.\]</span>
+<ol>
+<li><p>Igazoljuk, hogy <span class="math inline">\(x*y=(x-3)(y-3)+3.\)</span>.</li></p>
+<li><p>Oldjuk meg az <span class="math inline">\(x*4=5\)</span>
+egyenletet.<br> Mivel <span class="math inline">\(x*4=(x-3)(4-3)+3=x\)</span>, ezért <span class="math inline">\(x=5\)</span>.</p></li>
+<li><p>Oldjuk meg az <span class="math inline">\(x*3=3\)</span>
+egyenletet.<br><span class="math inline">\(x*3=(x-3)(3-3)+3=3\)</span>, tehát az
+egyenlet <span class="math inline">\(x*3=3\)</span> minden <span class="math inline">\(x\in M\)</span> esetén teljesül.</p></li>
+<li><p>Számítsátok ki: <span class="math inline">\(3*4*5*\cdots*100=\)</span><br>
+A fenti kifejezésben a semleges elem tulajdonságát használva használva az eredmény 3. </p></li>
+<li><p>Oldjátok meg az <span class="math inline">\(x*x*x=11\)</span> egyenletet.<br>Mivel <span class="math inline">\(x*x*x=(x-3)^3+3,\)</span> és figyelembe véve, hogy <span class="math inline">\(x*x*x=11,\)</span> ezért <span class="math inline">\((x-3)^3=8\)</span>, tehát <span class="math inline">\(x=5\)</span>.</p></li>
+<li><p>Oldjátok meg az <span class="math inline">\(x*x*x*x=11\)</span> egyenletet.<br>
+Az <span class="math inline">\(x*x*x*x=19\)</span> egyenlet <span class="math inline">\((x-3)^4=16\)</span> alakba írható, ezért <span class="math inline">\(x-3=\pm2\)</span>, vagyis <span class="math inline">\(x=5\)</span> vagy <span class="math inline">\(x=1\)</span>. A megadott <span class="math inline">\(M=(3,+\infty)\)</span> halmaznak csak <span class="math inline">\(x=5\)</span> eleme.</p></li>
+</ol><h2 class="unnumbered" id="gyakorlófeladat-1">Gyakorlófeladat</h2><p>Legyen <span class="math inline">\(M=[4,+\infty)\)</span>, és <span class="math inline">\(x*y=xy-4x-4y+20.\)</span></p><ol>
+<li><p>Igazoljuk, hogy <span class="math inline">\(x*y=(x-4)(y-4)+4.\)</span></p></li>
+<li><p>Oldjuk meg <span class="math inline">\(x*6=10\)</span>.</p></li>
+<li><p>Oldjuk meg <span class="math inline">\(x*4=4\)</span>.</p></li>
+<li><p>Számítsuk ki az <span class="math inline">\(4*5*6*\cdots*2018\)</span> kifejezé értékét.</p></li>
+<li><p>Oldjuk meg az <span class="math inline">\(x*x*x=12\)</span> egyenletet.</p></li>
+<li><p>Oldjuk meg az <span class="math inline">\(x*x*x=x\)</span> egyenletet.</p></li>
+<li><p>Oldjuk meg az <span class="math inline">\(x*x*x*x=20\)</span> egyenletet.</p></li>
+<li><p>Mutassuk ki, hogy <span class="math inline">\((M,*)\)</span>
+kommutatív csoportot alkot.<br>Igazolni kell, hogy: a művelet jól definiált, asszociatív,
+kommutatív, létezik semleges elem, és minden elemnek van
+szimmetrikusa.</p></li>
+<li><p>Oldjuk meg <span class="math inline">\(x*x*2018=2018\)</span>.</p></li>
+<li><p>Határozzunk meg természetes <span class="math inline">\(a&lt;b&lt;c\)</span> számokat úgy, hogy <span class="math inline">\(a*b*c=44\)</span>.</p></li>
+</ol></section><div aria-label="Lapozás" class="floating-nav"><button aria-label="Előző lap" class="nav-orb" id="prev-page" title="Előző lap" type="button">←</button><button aria-label="Vissza a főoldalra" class="nav-orb home-orb" id="home-page" title="Vissza a főoldalra" type="button">⌂</button><button aria-label="Következő lap" class="nav-orb" id="next-page" title="Következő lap" type="button">→</button></div><div aria-live="polite" class="page-status" id="page-status"></div><script>
+document.addEventListener('DOMContentLoaded',()=>{
+const current=25, total=44, paths=["01-másodfokú-egyenlet.html", "02-viète-összefüggések.html", "03-másodfokú-egyenlőtlenség.html", "04-a-másodfokú-függvény-grafikonja.html", "05-gyökös-egyenletek.html", "06-logaritmusok.html", "07-exponenciális-egyenletek.html", "08-kombinációk.html", "09-variációk.html", "10-permutációk.html", "11-valószínűségszámítás.html", "12-számtani-sorozatok.html", "13-mértani-sorozatok.html", "14-függvények.html", "15-százalékszámítás.html", "16-a-komplex-számok-halmaza.html", "17-analitikus-geometria.html", "18-vektorok.html", "19-trigonometria.html", "20-geometria.html", "21-mátrixok.html", "22-determinánsok.html", "23-inverz-mátrix.html", "24-lineáris-egyenletrendszerek.html", "25-kompozíciós-műveletek.html", "26-polinomok.html", "27-viète-összefüggések-polinomokra.html", "28-a-maradékosztályok-mathbb-z_n-halmaza.html", "29-határértékek.html", "30-folytonos-függvények.html", "31-aszimptoták.html", "32-deriválás.html", "33-monotonitás-és-görbület.html", "34-primitív-függvények.html", "35-integrálás-parciális-integrálással.html", "36-integrálás-helyettesítéssel.html", "37-határozott-integrálok.html", "38-kezdeti-ismétlés-egész-számok-műveletei.html", "39-racionális-számok-műveletei.html", "40-elsőfokú-egyenletek.html", "41-elsőfokú-egyenlőtlenségek.html", "42-valós-számok-intervallumai.html", "43-abszolútérték.html", "44-kétismeretlenes-két-egyenletből-álló-lineáris-rendszerek.html"];
+const target=n=>n===0?(current===0?'index.html':'../index.html'):(current===0?'temakorok/':'')+paths[n-1];
+const prev=document.getElementById('prev-page'),next=document.getElementById('next-page'),home=document.getElementById('home-page'),status=document.getElementById('page-status');
+if(prev){prev.disabled=current===0;prev.addEventListener('click',()=>{if(current>0)location.href=target(current-1)});}
+if(next){next.disabled=current===total;next.addEventListener('click',()=>{if(current<total)location.href=target(current+1)});}
+if(home)home.addEventListener('click',()=>location.href=target(0));
+if(status)status.textContent=current===0?'Tartalomjegyzék':`${current} / ${total}`;
+document.addEventListener('keydown',e=>{
+ if(e.altKey||e.ctrlKey||e.metaKey||['INPUT','TEXTAREA'].includes(document.activeElement.tagName))return;
+ if(e.key==='ArrowLeft'&&current>0)location.href=target(current-1);
+ if(e.key==='ArrowRight'&&current<total)location.href=target(current+1);
+ if(e.key==='Home')location.href=target(0);
+});
+const browse=document.querySelector('.hero-cta');
+if(browse)browse.addEventListener('click',e=>{e.preventDefault();document.getElementById('temakorok')?.scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('details.practice-toggle').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.MathJax?.typesetPromise)window.MathJax.typesetPromise([d]).catch(()=>{});}));
+});
+</script></body>
+</html>

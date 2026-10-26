@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="hu" xml:lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="pandoc" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Matematika érettségi – Túlélőkalauz</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] },
+  startup: { typeset: true }
+};
+</script><script async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="../style.css" rel="stylesheet"/></head>
+<body><section class="page topic-page active" data-index="36" id="integrálás-helyettesítéssel"><img alt="LT képletek védjegy" class="brand-logo" src="../lt-kepletek-vedjegy.svg"/><h1 id="integrálás-helyettesítéssel">Integrálás helyettesítéssel</h1><p>Ha az integrandus <span class="math inline">\(f(g(x))g'(x)\)</span> alakú, akkor a <span class="math display">\[t=g(x),\qquad dt=g'(x)\,dx\]</span>
+helyettesítéssel <span class="math display">\[\int
+f(g(x))g'(x)\,dx=\int f(t)\,dt.\]</span></p><p><strong class="example-label">Példa.</strong> Számítsuk ki <span class="math inline">\(\displaystyle\int x^2\cos(x^3+1)\,dx\)</span>
+értékét! Legyen <span class="math inline">\(t=x^3+1\)</span>, ekkor
+<span class="math inline">\(dt=3x^2\,dx\)</span>, vagyis <span class="math inline">\(x^2\,dx=\frac13\,dt\)</span>. Így <span class="math display">\[\begin{aligned}
+\int x^2\cos(x^3+1)\,dx
+&amp;=\frac13\int\cos t\,dt\\
+&amp;=\frac13\sin t+C\\
+&amp;=\frac13\sin(x^3+1)+C.
+\end{aligned}\]</span></p><p><strong class="example-label">Példa.</strong> Számítsuk ki <span class="math inline">\(\displaystyle\int\frac{x-3}{x^2-6x+1}\,dx\)</span>
+értékét! A nevező deriváltja <span class="math inline">\(2x-6=2(x-3)\)</span>. Legyen <span class="math inline">\(t=x^2-6x+1\)</span>, ekkor <span class="math inline">\(dt=2(x-3)\,dx\)</span>, tehát <span class="math display">\[\int\frac{x-3}{x^2-6x+1}\,dx
+=\frac12\int\frac{dt}{t}
+=\frac12\ln|t|+C.\]</span> Visszahelyettesítve: <span class="math display">\[\boxed{\int\frac{x-3}{x^2-6x+1}\,dx
+=\frac12\ln|x^2-6x+1|+C.}\]</span></p></section><div aria-label="Lapozás" class="floating-nav"><button aria-label="Előző lap" class="nav-orb" id="prev-page" title="Előző lap" type="button">←</button><button aria-label="Vissza a főoldalra" class="nav-orb home-orb" id="home-page" title="Vissza a főoldalra" type="button">⌂</button><button aria-label="Következő lap" class="nav-orb" id="next-page" title="Következő lap" type="button">→</button></div><div aria-live="polite" class="page-status" id="page-status"></div><script>
+document.addEventListener('DOMContentLoaded',()=>{
+const current=36, total=44, paths=["01-másodfokú-egyenlet.html", "02-viète-összefüggések.html", "03-másodfokú-egyenlőtlenség.html", "04-a-másodfokú-függvény-grafikonja.html", "05-gyökös-egyenletek.html", "06-logaritmusok.html", "07-exponenciális-egyenletek.html", "08-kombinációk.html", "09-variációk.html", "10-permutációk.html", "11-valószínűségszámítás.html", "12-számtani-sorozatok.html", "13-mértani-sorozatok.html", "14-függvények.html", "15-százalékszámítás.html", "16-a-komplex-számok-halmaza.html", "17-analitikus-geometria.html", "18-vektorok.html", "19-trigonometria.html", "20-geometria.html", "21-mátrixok.html", "22-determinánsok.html", "23-inverz-mátrix.html", "24-lineáris-egyenletrendszerek.html", "25-kompozíciós-műveletek.html", "26-polinomok.html", "27-viète-összefüggések-polinomokra.html", "28-a-maradékosztályok-mathbb-z_n-halmaza.html", "29-határértékek.html", "30-folytonos-függvények.html", "31-aszimptoták.html", "32-deriválás.html", "33-monotonitás-és-görbület.html", "34-primitív-függvények.html", "35-integrálás-parciális-integrálással.html", "36-integrálás-helyettesítéssel.html", "37-határozott-integrálok.html", "38-kezdeti-ismétlés-egész-számok-műveletei.html", "39-racionális-számok-műveletei.html", "40-elsőfokú-egyenletek.html", "41-elsőfokú-egyenlőtlenségek.html", "42-valós-számok-intervallumai.html", "43-abszolútérték.html", "44-kétismeretlenes-két-egyenletből-álló-lineáris-rendszerek.html"];
+const target=n=>n===0?(current===0?'index.html':'../index.html'):(current===0?'temakorok/':'')+paths[n-1];
+const prev=document.getElementById('prev-page'),next=document.getElementById('next-page'),home=document.getElementById('home-page'),status=document.getElementById('page-status');
+if(prev){prev.disabled=current===0;prev.addEventListener('click',()=>{if(current>0)location.href=target(current-1)});}
+if(next){next.disabled=current===total;next.addEventListener('click',()=>{if(current<total)location.href=target(current+1)});}
+if(home)home.addEventListener('click',()=>location.href=target(0));
+if(status)status.textContent=current===0?'Tartalomjegyzék':`${current} / ${total}`;
+document.addEventListener('keydown',e=>{
+ if(e.altKey||e.ctrlKey||e.metaKey||['INPUT','TEXTAREA'].includes(document.activeElement.tagName))return;
+ if(e.key==='ArrowLeft'&&current>0)location.href=target(current-1);
+ if(e.key==='ArrowRight'&&current<total)location.href=target(current+1);
+ if(e.key==='Home')location.href=target(0);
+});
+const browse=document.querySelector('.hero-cta');
+if(browse)browse.addEventListener('click',e=>{e.preventDefault();document.getElementById('temakorok')?.scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('details.practice-toggle').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.MathJax?.typesetPromise)window.MathJax.typesetPromise([d]).catch(()=>{});}));
+});
+</script></body>
+</html>

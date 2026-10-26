@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="hu" xml:lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="pandoc" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Matematika érettségi – Túlélőkalauz</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] },
+  startup: { typeset: true }
+};
+</script><script async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="../style.css" rel="stylesheet"/></head>
+<body><section class="page topic-page active" data-index="30" id="folytonos-függvények"><img alt="LT képletek védjegy" class="brand-logo" src="../lt-kepletek-vedjegy.svg"/><h1 id="folytonos-függvények">Folytonos függvények</h1><p>Az <span class="math inline">\(f\)</span> függvény folytonos az <span class="math inline">\(a\)</span> pontban, ha a bal oldali és a jobb
+oldali határérték egyenlő a függvény pontbeli értékével: <span class="math display">\[\lim_{x\to a^-}f(x)=\lim_{x\to
+a^+}f(x)=f(a).\]</span> 
+
+
+ <h2>Folytonosság különböző típusú intervallumokon</h2>
+
+    <section class="item">
+      <h2>Nyílt intervallumon</h2>
+      <p>Ha \(I=(a,b)\), akkor a függvénynek minden \(x_0\in(a,b)\) pontban folytonosnak kell lennie.</p>
+      <div class="formula">
+        \[\forall x_0\in(a,b),\qquad \lim_{x\to x_0}f(x)=f(x_0).\]
+      </div>
+    </section>
+
+    <section class="item">
+      <h2>Zárt intervallumon</h2>
+      <p>Ha \(I=[a,b]\), akkor a függvénynek a belső pontokban folytonosnak kell lennie, és a végpontokban teljesülnie kell az egyoldali folytonosságnak:</p>
+      <div class="formula">
+        \[\lim_{x\to a^+}f(x)=f(a),\qquad \lim_{x\to b^-}f(x)=f(b).\]
+      </div>
+    </section>
+
+    <section class="item">
+      <h2>Félig zárt intervallumon: \(I=[a,b)\)</h2>
+      <p>A bal oldali végpontban jobbról folytonosság szükséges. A belső pontokban a függvénynek szintén folytonosnak kell lennie.</p>
+      <div class="formula">
+        \[\lim_{x\to a^+}f(x)=f(a).\]
+      </div>
+    </section>
+
+    <section class="item">
+      <h2>Félig zárt intervallumon: \(I=(a,b]\)</h2>
+      <p>A jobb oldali végpontban balról folytonosság szükséges.</p>
+      <div class="formula">
+        \[\lim_{x\to b^-}f(x)=f(b).\]
+      </div>
+    </section>
+
+    <p class="note"><strong>Megjegyzés:</strong> A végpontokban csak az intervallum felőli egyoldali határértéknek kell léteznie, és annak meg kell egyeznie a függvény végpontbeli értékével.</p>
+</p><p><strong class="example-label">Példa.</strong> Legyen <span class="math display">\[f(x)=
+\begin{cases}
+2x+3,&amp;x\geq 3,\\
+5x-6,&amp;x&lt;3.
+\end{cases}\]</span> Vizsgáljuk meg a folytonosságot <span class="math inline">\(x=3\)</span>-ban!</p><p>Balról: <span class="math display">\[\lim_{x\to3^-}f(x)=5\cdot3-6=9.\]</span> Jobbról:
+<span class="math display">\[\lim_{x\to3^+}f(x)=2\cdot3+3=9.\]</span> A
+függvényérték: <span class="math display">\[f(3)=2\cdot3+3=9.\]</span>
+Mindhárom érték azonos, tehát a függvény folytonos 3-ban.</p><p><strong class="example-label">Példa.</strong> Legyen <span class="math display">\[f(x)=
+\begin{cases}
+2x+3,&amp;x\geq 4,\\
+5x-a,&amp;x&lt;4.
+\end{cases}\]</span> Határozzuk meg <span class="math inline">\(a\)</span>-t úgy, hogy <span class="math inline">\(f\)</span> folytonos legyen 4-ben!</p><p>A bal oldali határérték <span class="math inline">\(20-a\)</span>, a
+jobb oldali határérték és a függvényérték pedig <span class="math inline">\(2\cdot4+3=11\)</span>. Ezért <span class="math display">\[20-a=11\Longrightarrow a=9.\]</span>
+</p><h2 class="unnumbered" id="gyakorlófeladat-2">Gyakorlófeladat</h2><p>Legyen <span class="math display">\[f(x)=
+\begin{cases}
+3x-4,&amp;x\geq3,\\
+2x+a,&amp;x&lt;3.
+\end{cases}\]</span> Határozzuk meg <span class="math inline">\(a\)</span>-t úgy, hogy a függvény folytonos legyen
+3-ban.</p></section><div aria-label="Lapozás" class="floating-nav"><button aria-label="Előző lap" class="nav-orb" id="prev-page" title="Előző lap" type="button">←</button><button aria-label="Vissza a főoldalra" class="nav-orb home-orb" id="home-page" title="Vissza a főoldalra" type="button">⌂</button><button aria-label="Következő lap" class="nav-orb" id="next-page" title="Következő lap" type="button">→</button></div><div aria-live="polite" class="page-status" id="page-status"></div><script>
+document.addEventListener('DOMContentLoaded',()=>{
+const current=30, total=44, paths=["01-másodfokú-egyenlet.html", "02-viète-összefüggések.html", "03-másodfokú-egyenlőtlenség.html", "04-a-másodfokú-függvény-grafikonja.html", "05-gyökös-egyenletek.html", "06-logaritmusok.html", "07-exponenciális-egyenletek.html", "08-kombinációk.html", "09-variációk.html", "10-permutációk.html", "11-valószínűségszámítás.html", "12-számtani-sorozatok.html", "13-mértani-sorozatok.html", "14-függvények.html", "15-százalékszámítás.html", "16-a-komplex-számok-halmaza.html", "17-analitikus-geometria.html", "18-vektorok.html", "19-trigonometria.html", "20-geometria.html", "21-mátrixok.html", "22-determinánsok.html", "23-inverz-mátrix.html", "24-lineáris-egyenletrendszerek.html", "25-kompozíciós-műveletek.html", "26-polinomok.html", "27-viète-összefüggések-polinomokra.html", "28-a-maradékosztályok-mathbb-z_n-halmaza.html", "29-határértékek.html", "30-folytonos-függvények.html", "31-aszimptoták.html", "32-deriválás.html", "33-monotonitás-és-görbület.html", "34-primitív-függvények.html", "35-integrálás-parciális-integrálással.html", "36-integrálás-helyettesítéssel.html", "37-határozott-integrálok.html", "38-kezdeti-ismétlés-egész-számok-műveletei.html", "39-racionális-számok-műveletei.html", "40-elsőfokú-egyenletek.html", "41-elsőfokú-egyenlőtlenségek.html", "42-valós-számok-intervallumai.html", "43-abszolútérték.html", "44-kétismeretlenes-két-egyenletből-álló-lineáris-rendszerek.html"];
+const target=n=>n===0?(current===0?'index.html':'../index.html'):(current===0?'temakorok/':'')+paths[n-1];
+const prev=document.getElementById('prev-page'),next=document.getElementById('next-page'),home=document.getElementById('home-page'),status=document.getElementById('page-status');
+if(prev){prev.disabled=current===0;prev.addEventListener('click',()=>{if(current>0)location.href=target(current-1)});}
+if(next){next.disabled=current===total;next.addEventListener('click',()=>{if(current<total)location.href=target(current+1)});}
+if(home)home.addEventListener('click',()=>location.href=target(0));
+if(status)status.textContent=current===0?'Tartalomjegyzék':`${current} / ${total}`;
+document.addEventListener('keydown',e=>{
+ if(e.altKey||e.ctrlKey||e.metaKey||['INPUT','TEXTAREA'].includes(document.activeElement.tagName))return;
+ if(e.key==='ArrowLeft'&&current>0)location.href=target(current-1);
+ if(e.key==='ArrowRight'&&current<total)location.href=target(current+1);
+ if(e.key==='Home')location.href=target(0);
+});
+const browse=document.querySelector('.hero-cta');
+if(browse)browse.addEventListener('click',e=>{e.preventDefault();document.getElementById('temakorok')?.scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('details.practice-toggle').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.MathJax?.typesetPromise)window.MathJax.typesetPromise([d]).catch(()=>{});}));
+});
+</script></body>
+</html>

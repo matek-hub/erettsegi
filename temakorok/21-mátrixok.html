@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="hu" xml:lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="pandoc" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Matematika érettségi – Túlélőkalauz</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] },
+  startup: { typeset: true }
+};
+</script><script async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="../style.css" rel="stylesheet"/></head>
+<body><section class="page topic-page active" data-index="21" id="mátrixok"><img alt="LT képletek védjegy" class="brand-logo" src="../lt-kepletek-vedjegy.svg"/><h1 id="mátrixok">Mátrixok</h1><h2 id="mátrixok-összeadása-és-skalárral-való-szorzása">Mátrixok
+összeadása és skalárral való szorzása</h2><p>Mátrix skalárral való szorzásakor a mátrix minden elemét megszorozzuk
+a skalárral. Két azonos méretű mátrix összeadásakor az azonos helyen
+álló elemeket adjuk össze.</p><p><strong class="example-label">Példa.</strong> Legyen <span class="math display">\[A=\begin{pmatrix}
+2&amp;3&amp;0\\
+1&amp;2&amp;-1\\
+1&amp;2&amp;3
+\end{pmatrix},\qquad
+B=\begin{pmatrix}
+3&amp;2&amp;2\\
+-1&amp;2&amp;1\\
+1&amp;2&amp;2
+\end{pmatrix}.\]</span> Számítsuk ki <span class="math inline">\(4A+3B\)</span>-t!</p><p><span class="math display">\[4A=\begin{pmatrix}
+8&amp;12&amp;0\\
+4&amp;8&amp;-4\\
+4&amp;8&amp;12
+\end{pmatrix},\qquad
+3B=\begin{pmatrix}
+9&amp;6&amp;6\\
+-3&amp;6&amp;3\\
+3&amp;6&amp;6
+\end{pmatrix}.\]</span> Ezért <span class="math display">\[4A+3B=
+\begin{pmatrix}
+17&amp;18&amp;6\\
+1&amp;14&amp;-1\\
+7&amp;14&amp;18
+\end{pmatrix}.\]</span></p><h2 id="mátrixok-szorzása">Mátrixok szorzása</h2><p>A szorzás akkor értelmezett, ha az első mátrix oszlopainak száma
+megegyezik a második mátrix sorainak számával. Ha <span class="math inline">\(A\)</span> mérete <span class="math inline">\(m\times n\)</span>, <span class="math inline">\(B\)</span> mérete <span class="math inline">\(n\times p\)</span>, akkor <span class="math inline">\(AB\)</span> mérete <span class="math inline">\(m\times p\)</span>.</p><p>A szorzat egy elemét úgy kapjuk meg, hogy az <span class="math inline">\(A\)</span> megfelelő sorának elemeit páronként
+megszorozzuk a <span class="math inline">\(B\)</span> megfelelő
+oszlopának elemeivel, majd összeadjuk a szorzatokat.</p><p><strong class="example-label">Példa.</strong> Legyen <span class="math display">\[A=\begin{pmatrix}2&amp;0\\3&amp;1\\1&amp;2\end{pmatrix},\qquad
+B=\begin{pmatrix}1&amp;2&amp;1\\2&amp;1&amp;0\end{pmatrix}.\]</span>
+Számítsuk ki <span class="math inline">\(AB\)</span>-t!</p><p><span class="math display">\[AB=
+\begin{pmatrix}
+2\cdot1+0\cdot2&amp;2\cdot2+0\cdot1&amp;2\cdot1+0\cdot0\\
+3\cdot1+1\cdot2&amp;3\cdot2+1\cdot1&amp;3\cdot1+1\cdot0\\
+1\cdot1+2\cdot2&amp;1\cdot2+2\cdot1&amp;1\cdot1+2\cdot0
+\end{pmatrix}
+=\begin{pmatrix}2&amp;4&amp;2\\5&amp;7&amp;3\\5&amp;4&amp;1\end{pmatrix}.\]</span></p><p><strong class="example-label">Példa.</strong> Legyen <span class="math display">\[A=\begin{pmatrix}1&amp;2\\2&amp;3\end{pmatrix},\qquad
+B=\begin{pmatrix}2&amp;1&amp;2&amp;1\\3&amp;2&amp;3&amp;1\end{pmatrix}.\]</span>
+Számítsuk ki <span class="math inline">\(AB\)</span>-t!</p><p><span class="math display">\[AB=\begin{pmatrix}
+1\cdot2+2\cdot3&amp;1\cdot1+2\cdot2&amp;1\cdot2+2\cdot3&amp;1\cdot1+2\cdot1\\
+2\cdot2+3\cdot3&amp;2\cdot1+3\cdot2&amp;2\cdot2+3\cdot3&amp;2\cdot1+3\cdot1
+\end{pmatrix}
+=\begin{pmatrix}8&amp;5&amp;8&amp;3\\13&amp;8&amp;13&amp;5\end{pmatrix}.\]</span></p><h2 id="transzponált-mátrix">Transzponált mátrix</h2><p>Az <span class="math inline">\(A\)</span> transzponáltja, jele <span class="math inline">\(A^T\)</span>, úgy keletkezik, hogy a sorokból
+oszlopok, az oszlopokból pedig sorok lesznek. Például: <span class="math display">\[A=\begin{pmatrix}a&amp;b&amp;c\\1&amp;2&amp;3\\x&amp;y&amp;z\end{pmatrix}
+\quad\Longrightarrow\quad
+A^T=\begin{pmatrix}a&amp;1&amp;x\\b&amp;2&amp;y\\c&amp;3&amp;z\end{pmatrix}.\]</span></p><details class="practice-toggle" id="gyakorlófeladatok-18"><summary class="practice-title">Gyakorlófeladatok</summary><ol>
+<li><p>Legyen <span class="math display">\[A=\begin{pmatrix}3&amp;2&amp;2\\1&amp;2&amp;1\\-1&amp;2&amp;2\end{pmatrix},\qquad
+B=\begin{pmatrix}2&amp;3&amp;0\\1&amp;2&amp;1\\-1&amp;2&amp;3\end{pmatrix}.\]</span>
+Számítsuk ki: a) <span class="math inline">\(A-B\)</span>; b) <span class="math inline">\(5A+2B\)</span>; c) <span class="math inline">\(AB\)</span>; d) <span class="math inline">\(BA\)</span>.</p></li>
+<li><p>Legyen <span class="math inline">\(A=\begin{pmatrix}1&amp;2&amp;3\end{pmatrix}\)</span>,
+<span class="math inline">\(B=\begin{pmatrix}3\\2\\1\end{pmatrix}\)</span> és
+<span class="math inline">\(C=\begin{pmatrix}1&amp;2\end{pmatrix}\)</span>.
+Számítsuk ki <span class="math inline">\(AB\)</span>, <span class="math inline">\(BA\)</span> és <span class="math inline">\(BC\)</span> értékét.</p></li>
+</ol></details></section><div aria-label="Lapozás" class="floating-nav"><button aria-label="Előző lap" class="nav-orb" id="prev-page" title="Előző lap" type="button">←</button><button aria-label="Vissza a főoldalra" class="nav-orb home-orb" id="home-page" title="Vissza a főoldalra" type="button">⌂</button><button aria-label="Következő lap" class="nav-orb" id="next-page" title="Következő lap" type="button">→</button></div><div aria-live="polite" class="page-status" id="page-status"></div><script>
+document.addEventListener('DOMContentLoaded',()=>{
+const current=21, total=44, paths=["01-másodfokú-egyenlet.html", "02-viète-összefüggések.html", "03-másodfokú-egyenlőtlenség.html", "04-a-másodfokú-függvény-grafikonja.html", "05-gyökös-egyenletek.html", "06-logaritmusok.html", "07-exponenciális-egyenletek.html", "08-kombinációk.html", "09-variációk.html", "10-permutációk.html", "11-valószínűségszámítás.html", "12-számtani-sorozatok.html", "13-mértani-sorozatok.html", "14-függvények.html", "15-százalékszámítás.html", "16-a-komplex-számok-halmaza.html", "17-analitikus-geometria.html", "18-vektorok.html", "19-trigonometria.html", "20-geometria.html", "21-mátrixok.html", "22-determinánsok.html", "23-inverz-mátrix.html", "24-lineáris-egyenletrendszerek.html", "25-kompozíciós-műveletek.html", "26-polinomok.html", "27-viète-összefüggések-polinomokra.html", "28-a-maradékosztályok-mathbb-z_n-halmaza.html", "29-határértékek.html", "30-folytonos-függvények.html", "31-aszimptoták.html", "32-deriválás.html", "33-monotonitás-és-görbület.html", "34-primitív-függvények.html", "35-integrálás-parciális-integrálással.html", "36-integrálás-helyettesítéssel.html", "37-határozott-integrálok.html", "38-kezdeti-ismétlés-egész-számok-műveletei.html", "39-racionális-számok-műveletei.html", "40-elsőfokú-egyenletek.html", "41-elsőfokú-egyenlőtlenségek.html", "42-valós-számok-intervallumai.html", "43-abszolútérték.html", "44-kétismeretlenes-két-egyenletből-álló-lineáris-rendszerek.html"];
+const target=n=>n===0?(current===0?'index.html':'../index.html'):(current===0?'temakorok/':'')+paths[n-1];
+const prev=document.getElementById('prev-page'),next=document.getElementById('next-page'),home=document.getElementById('home-page'),status=document.getElementById('page-status');
+if(prev){prev.disabled=current===0;prev.addEventListener('click',()=>{if(current>0)location.href=target(current-1)});}
+if(next){next.disabled=current===total;next.addEventListener('click',()=>{if(current<total)location.href=target(current+1)});}
+if(home)home.addEventListener('click',()=>location.href=target(0));
+if(status)status.textContent=current===0?'Tartalomjegyzék':`${current} / ${total}`;
+document.addEventListener('keydown',e=>{
+ if(e.altKey||e.ctrlKey||e.metaKey||['INPUT','TEXTAREA'].includes(document.activeElement.tagName))return;
+ if(e.key==='ArrowLeft'&&current>0)location.href=target(current-1);
+ if(e.key==='ArrowRight'&&current<total)location.href=target(current+1);
+ if(e.key==='Home')location.href=target(0);
+});
+const browse=document.querySelector('.hero-cta');
+if(browse)browse.addEventListener('click',e=>{e.preventDefault();document.getElementById('temakorok')?.scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('details.practice-toggle').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.MathJax?.typesetPromise)window.MathJax.typesetPromise([d]).catch(()=>{});}));
+});
+</script></body>
+</html>

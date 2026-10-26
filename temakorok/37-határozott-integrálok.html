@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="hu" xml:lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="pandoc" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Matematika érettségi – Túlélőkalauz</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] },
+  startup: { typeset: true }
+};
+</script><script async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="../style.css" rel="stylesheet"/></head>
+<body><section class="page topic-page active" data-index="37" id="határozott-integrálok"><img alt="LT képletek védjegy" class="brand-logo" src="../lt-kepletek-vedjegy.svg"/><h1 id="határozott-integrálok">Határozott integrálok</h1><p>Ha <span class="math inline">\(F\)</span> az <span class="math inline">\(f\)</span> függvény egy primitív függvénye, akkor
+<span class="math display">\[\int_a^b
+f(x)\,dx=F(x)\Big|_a^b=F(b)-F(a).\]</span> Először meghatározzuk a
+primitív függvényt, majd behelyettesítjük a felső és alsó határt, végül
+kivonjuk az értékeket.</p><p><strong class="example-label">Példa.</strong> Számítsuk ki: <span class="math display">\[\int_0^1(6x^2+4x-3)\,dx.\]</span> <span class="math display">\[\begin{aligned}
+\int_0^1(6x^2+4x-3)\,dx
+&amp;=\left[2x^3+2x^2-3x\right]_0^1\\
+&amp;=(2+2-3)-0=1.
+\end{aligned}\]</span></p><p><strong class="example-label">Példa.</strong> Számítsuk ki: <span class="math display">\[\int_1^e x^2\ln x\,dx.\]</span> Parciális
+integrálással: <span class="math display">\[\int x^2\ln
+x\,dx=\frac{x^3}{3}\ln x-\frac{x^3}{9}+C.\]</span> Ezért <span class="math display">\[\begin{aligned}
+\int_1^e x^2\ln x\,dx
+&amp;=\left[\frac{x^3}{3}\ln x-\frac{x^3}{9}\right]_1^e\\
+&amp;=\left(\frac{e^3}{3}-\frac{e^3}{9}\right)
+-\left(0-\frac19\right)\\
+&amp;=\frac{2e^3}{9}+\frac19.
+\end{aligned}\]</span></p><h2 id="az-integrálokkal-kapcsolatos-lehetséges-feladatok">Az
+integrálokkal kapcsolatos lehetséges feladatok</h2><ol>
+<li><p>Ha <span class="math inline">\(F\)</span> primitív függvénye
+<span class="math inline">\(f\)</span>-nek, akkor <span class="math display">\[\int f'(x)\,dx=f(x)+C.\]</span></p></li>
+<li><p>Igazoljuk, hogy <span class="math inline">\(f\)</span> minden
+primitív függvénye növekvő, ha <span class="math inline">\(f(x)&gt;0\)</span> minden <span class="math inline">\(x\in\mathbb R\)</span> esetén. Ha <span class="math inline">\(F'=f&gt;0\)</span>, akkor <span class="math inline">\(F\)</span> növekvő.</p></li>
+<li><p>Az <span class="math inline">\(y=f(x)\)</span> grafikonja, az
+<span class="math inline">\(x=a\)</span>, <span class="math inline">\(x=b\)</span> egyenesek és az <span class="math inline">\(x\)</span> tengely által határolt terület – ha
+<span class="math inline">\(f\)</span> nemnegatív az intervallumon –:
+<span class="math display">\[T=\int_a^b f(x)\,dx.\]</span></p></li>
+<li><p>Az <span class="math inline">\(y=f(x)\)</span> görbe <span class="math inline">\(x\)</span> tengely körüli forgatásával kapott
+forgástest térfogata: <span class="math display">\[V=\pi\int_a^b[f(x)]^2\,dx.\]</span></p></li>
+<li><p>Ha <span class="math inline">\(G\)</span> az <span class="math inline">\(f\)</span> primitív függvénye, akkor
+helyettesítéssel: <span class="math display">\[\int f(x)G(x)\,dx=\int
+G(x)G'(x)\,dx
+=\frac{[G(x)]^2}{2}+C.\]</span></p></li>
+</ol><details class="practice-toggle" id="gyakorlófeladatok-27"><summary class="practice-title">Gyakorlófeladatok</summary><ol>
+<li><p>Ellenőrizzük, hogy <span class="math inline">\(F(x)\)</span> az
+<span class="math inline">\(f(x)\)</span> primitív függvénye-e:</p>
+<ol>
+<li><p><span class="math inline">\(F(x)=x^5+3x^4+7x+1\)</span>, <span class="math inline">\(f(x)=x^4+3x^3+7\)</span>;</p></li>
+<li><p><span class="math inline">\(F(x)=(x^2-1)e^x\)</span>, <span class="math inline">\(f(x)=(x^2+2x-1)e^x\)</span>.</p></li>
+</ol></li>
+<li><p>Számítsuk ki az integrálokat:</p>
+<ol>
+<li><p><span class="math inline">\(\displaystyle\int(x^4+4x^3-5x^2+7x+2+4e^x+3)\,dx\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int\sqrt[3]{x}\,dx\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int
+x^4\,dx\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int\frac{x^4+x^3+x^2+x+1}{x^2}\,dx\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int
+xe^x\,dx\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int x\ln
+x\,dx\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int x^2\ln
+x\,dx\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int(x-3)e^x\,dx\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int x\sin
+x\,dx\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int\frac{dx}{x-4}\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int\frac{dx}{x^2+9}\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int\frac{dx}{x^2-4}\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int\frac{dx}{x^2+4}\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int\frac{dx}{4-x^2}\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int\frac{dx}{1+x^2}\)</span>.</p></li>
+</ol></li>
+<li><p>Legyen <span class="math display">\[f(x)=
+\begin{cases}
+x^2-3x+1,&amp;x\geq3,\\
+3x-a,&amp;x&lt;3.
+\end{cases}\]</span></p>
+<ol>
+<li><p>Határozzuk meg <span class="math inline">\(a\)</span>-t úgy, hogy
+<span class="math inline">\(f\)</span>-nek legyen primitív függvénye
+<span class="math inline">\(\mathbb R\)</span>-en.</p></li>
+<li><p><span class="math inline">\(a=8\)</span> esetén határozzuk meg
+<span class="math inline">\(f\)</span> primitív függvényeit.</p></li>
+<li><p><span class="math inline">\(a=8\)</span> esetén számítsuk ki az
+<span class="math inline">\(f\)</span> grafikonja, az <span class="math inline">\(x\)</span> tengely, valamint az <span class="math inline">\(x=0\)</span> és <span class="math inline">\(x=1\)</span> egyenesek által határolt előjeles
+területet.</p></li>
+<li><p><span class="math inline">\(a=8\)</span> esetén számítsuk ki a
+<span class="math inline">\(g:[0,1]\to\mathbb R\)</span>, <span class="math inline">\(g(x)=[f(x)]^4\)</span> függvény grafikonjának
+<span class="math inline">\(x\)</span> tengely körüli forgatásával
+kapott test térfogatát.</p></li>
+<li><p><span class="math inline">\(a=8\)</span> esetén számítsuk ki
+<span class="math inline">\(\displaystyle\int_2^4 f(x)\,dx\)</span>
+értékét.</p></li>
+</ol></li>
+<li><p>Határozzuk meg az <span class="math inline">\(f(x)=3x^2+4x+2\)</span> függvény azt az <span class="math inline">\(F\)</span> primitív függvényét, amelyre <span class="math inline">\(F(1)=2016\)</span>.</p></li>
+<li><p>Számítsuk ki a primitív függvényeket:</p>
+<ol>
+<li><p><span class="math inline">\(\displaystyle\int(x-3)e^x\,dx\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int(2x-3)e^x\,dx\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int(x-3)e^{2x}\,dx\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int x^3\ln
+x\,dx\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int x^2\ln
+x\,dx\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int\frac{\ln
+x}{x}\,dx\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int\ln
+x\,dx\)</span>.</p></li>
+</ol></li>
+<li><p>Számítsuk ki:</p>
+<ol>
+<li><p><span class="math inline">\(\displaystyle\int\cos(2x+3)\,dx\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int\frac{dx}{4x+2}\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int
+xe^x\,dx\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int
+x^2\cos(x^3+1)\,dx\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int x\ln
+x\,dx\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int\frac{\ln
+x}{x}\,dx\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int\frac{dx}{x+2}\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int\frac{2x+1}{x^2+x+1}\,dx\)</span>.</p></li>
+</ol></li>
+<li><p>Számítsuk ki a határozott integrálokat:</p>
+<ol>
+<li><p><span class="math inline">\(\displaystyle\int_0^1(x^2+x+2)\,dx\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int_1^2(x-1)e^x\,dx\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int_1^e x^2\ln
+x\,dx\)</span>;</p></li>
+<li><p><span class="math inline">\(\displaystyle\int_1^e\frac{\ln^2x}{x}\,dx\)</span>.</p></li>
+</ol></li>
+<li><p>Legyen <span class="math inline">\(f(x)=(x-1)e^x\)</span>.</p>
+<ol>
+<li><p>Igazoljuk, hogy <span class="math inline">\(f\)</span> minden
+primitív függvénye növekvő az <span class="math inline">\((1,+\infty)\)</span> intervallumon.</p></li>
+<li><p>Igazoljuk, hogy <span class="math inline">\(f\)</span> minden
+primitív függvénye konvex a <span class="math inline">\((0,+\infty)\)</span> intervallumon.</p></li>
+</ol></li>
+</ol></details></section><div aria-label="Lapozás" class="floating-nav"><button aria-label="Előző lap" class="nav-orb" id="prev-page" title="Előző lap" type="button">←</button><button aria-label="Vissza a főoldalra" class="nav-orb home-orb" id="home-page" title="Vissza a főoldalra" type="button">⌂</button><button aria-label="Következő lap" class="nav-orb" id="next-page" title="Következő lap" type="button">→</button></div><div aria-live="polite" class="page-status" id="page-status"></div><script>
+document.addEventListener('DOMContentLoaded',()=>{
+const current=37, total=44, paths=["01-másodfokú-egyenlet.html", "02-viète-összefüggések.html", "03-másodfokú-egyenlőtlenség.html", "04-a-másodfokú-függvény-grafikonja.html", "05-gyökös-egyenletek.html", "06-logaritmusok.html", "07-exponenciális-egyenletek.html", "08-kombinációk.html", "09-variációk.html", "10-permutációk.html", "11-valószínűségszámítás.html", "12-számtani-sorozatok.html", "13-mértani-sorozatok.html", "14-függvények.html", "15-százalékszámítás.html", "16-a-komplex-számok-halmaza.html", "17-analitikus-geometria.html", "18-vektorok.html", "19-trigonometria.html", "20-geometria.html", "21-mátrixok.html", "22-determinánsok.html", "23-inverz-mátrix.html", "24-lineáris-egyenletrendszerek.html", "25-kompozíciós-műveletek.html", "26-polinomok.html", "27-viète-összefüggések-polinomokra.html", "28-a-maradékosztályok-mathbb-z_n-halmaza.html", "29-határértékek.html", "30-folytonos-függvények.html", "31-aszimptoták.html", "32-deriválás.html", "33-monotonitás-és-görbület.html", "34-primitív-függvények.html", "35-integrálás-parciális-integrálással.html", "36-integrálás-helyettesítéssel.html", "37-határozott-integrálok.html", "38-kezdeti-ismétlés-egész-számok-műveletei.html", "39-racionális-számok-műveletei.html", "40-elsőfokú-egyenletek.html", "41-elsőfokú-egyenlőtlenségek.html", "42-valós-számok-intervallumai.html", "43-abszolútérték.html", "44-kétismeretlenes-két-egyenletből-álló-lineáris-rendszerek.html"];
+const target=n=>n===0?(current===0?'index.html':'../index.html'):(current===0?'temakorok/':'')+paths[n-1];
+const prev=document.getElementById('prev-page'),next=document.getElementById('next-page'),home=document.getElementById('home-page'),status=document.getElementById('page-status');
+if(prev){prev.disabled=current===0;prev.addEventListener('click',()=>{if(current>0)location.href=target(current-1)});}
+if(next){next.disabled=current===total;next.addEventListener('click',()=>{if(current<total)location.href=target(current+1)});}
+if(home)home.addEventListener('click',()=>location.href=target(0));
+if(status)status.textContent=current===0?'Tartalomjegyzék':`${current} / ${total}`;
+document.addEventListener('keydown',e=>{
+ if(e.altKey||e.ctrlKey||e.metaKey||['INPUT','TEXTAREA'].includes(document.activeElement.tagName))return;
+ if(e.key==='ArrowLeft'&&current>0)location.href=target(current-1);
+ if(e.key==='ArrowRight'&&current<total)location.href=target(current+1);
+ if(e.key==='Home')location.href=target(0);
+});
+const browse=document.querySelector('.hero-cta');
+if(browse)browse.addEventListener('click',e=>{e.preventDefault();document.getElementById('temakorok')?.scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('details.practice-toggle').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.MathJax?.typesetPromise)window.MathJax.typesetPromise([d]).catch(()=>{});}));
+});
+</script></body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="hu" xml:lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="pandoc" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Matematika érettségi – Túlélőkalauz</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] },
+  startup: { typeset: true }
+};
+</script><script async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="../style.css" rel="stylesheet"/></head>
+<body><section class="page topic-page active" data-index="20" id="geometria"><img alt="LT képletek védjegy" class="brand-logo" src="../lt-kepletek-vedjegy.svg"/><h1 id="geometria">Geometria</h1><h2 id="a-koszinusztétel">A koszinusztétel</h2><p>Egy <span class="math inline">\(ABC\)</span> háromszögben jelöljük az
+oldalakat a szokásos módon: <span class="math inline">\(a=BC\)</span>,
+<span class="math inline">\(b=AC\)</span>, <span class="math inline">\(c=AB\)</span>. A koszinusztétel: <span class="math display">\[a^2=b^2+c^2-2bc\cos A.\]</span> Más alakokban:
+<span class="math display">\[BC^2=AB^2+AC^2-2\cdot AB\cdot AC\cos
+A.\]</span></p><p><strong class="example-label">Példa.</strong> Legyen <span class="math inline">\(AB=3\)</span>, <span class="math inline">\(AC=4\)</span>, <span class="math inline">\(BC=5\)</span>. Határozzuk meg <span class="math inline">\(\cos B\)</span> értékét!</p><p>A <span class="math inline">\(B\)</span> szöggel szemközti oldal az
+<span class="math inline">\(AC\)</span>, ezért <span class="math display">\[AC^2=AB^2+BC^2-2\cdot AB\cdot BC\cos B.\]</span>
+Behelyettesítve: <span class="math display">\[16=9+25-30\cos B
+\Longrightarrow 30\cos B=18,\]</span> tehát <span class="math inline">\(\cos B=\frac35\)</span>. Másik megoldásként
+felismerhető, hogy <span class="math inline">\(3^2+4^2=5^2\)</span>,
+ezért a háromszög derékszögű az <span class="math inline">\(A\)</span>
+csúcsnál, és <span class="math inline">\(\cos
+B=\frac{AB}{BC}=\frac35\)</span>.</p><p><strong class="example-label">Példa.</strong> Legyen <span class="math inline">\(AB=3\)</span>, <span class="math inline">\(AC=4\)</span> és <span class="math inline">\(\angle A=60^\circ\)</span>. Határozzuk meg a
+háromszög kerületét!</p><p>A koszinusztétel szerint <span class="math display">\[\begin{aligned}
+BC^2&amp;=3^2+4^2-2\cdot3\cdot4\cos60^\circ\\
+&amp;=9+16-24\cdot\frac12=13.
+\end{aligned}\]</span> Így <span class="math inline">\(BC=\sqrt{13}\)</span>, a kerület pedig <span class="math display">\[K=3+4+\sqrt{13}=7+\sqrt{13}.\]</span></p><h2 id="háromszög-területe">Háromszög területe</h2><p><strong>1. Heron-képlet.</strong> Ha a három oldal hossza <span class="math inline">\(a,b,c\)</span>, akkor a félkerület <span class="math display">\[p=\frac{a+b+c}{2},\]</span> és a háromszög
+területe: <span class="math display">\[T=\sqrt{p(p-a)(p-b)(p-c)}.\]</span></p><p><strong class="example-label">Példa.</strong> Egy háromszög oldalai 3, 4 és 5. Határozzuk
+meg a területét!</p><p><span class="math display">\[p=\frac{3+4+5}{2}=6.\]</span> Ezért
+<span class="math display">\[T=\sqrt{6(6-3)(6-4)(6-5)}
+=\sqrt{6\cdot3\cdot2\cdot1}=6.\]</span></p><p><strong>2. Két oldal és a közbezárt szög ismeretében:</strong> <span class="math display">\[T=\frac{AB\cdot AC\cdot\sin A}{2}.\]</span></p><p><strong class="example-label">Példa.</strong> Ha <span class="math inline">\(AB=3\)</span>,
+<span class="math inline">\(AC=4\)</span> és <span class="math inline">\(A=30^\circ\)</span>, határozzuk meg a
+területet!</p><p><span class="math display">\[T=\frac{3\cdot4\cdot\sin30^\circ}{2}
+=\frac{12\cdot\frac12}{2}=3.\]</span></p><p><strong class="example-label">Példa.</strong> Ha <span class="math inline">\(AB=4\)</span>,
+<span class="math inline">\(AC=6\)</span> és <span class="math inline">\(T=6\sqrt 2\)</span>, határozzuk meg az <span class="math inline">\(A\)</span> szöget, feltételezve, hogy
+hegyesszög!</p><p><span class="math display">\[6\sqrt2=\frac{4\cdot6\sin A}{2}
+\Longrightarrow \sin A=\frac{\sqrt2}{2}.\]</span> Ezért <span class="math inline">\(A=45^\circ\)</span>.</p><h2 id="szabályos-háromszög">egyenlő oldalú háromszög</h2><p>Ha az oldalhossz <span class="math inline">\(l\)</span>, akkor a
+terület: <span class="math display">\[T=\frac{l^2\sqrt3}{4},\]</span> a
+magasság pedig: <span class="math display">\[h=\frac{l\sqrt3}{2}.\]</span></p><p><strong class="example-label">Példa.</strong> Határozzuk meg a 18 kerületű egyenlő oldalú háromszög területét!</p><p>Az oldalhossz <span class="math inline">\(l=18/3=6\)</span>, ezért
+<span class="math display">\[T=\frac{6^2\sqrt3}{4}=9\sqrt3.\]</span></p><p><strong class="example-label">Példa.</strong> Egy egyenlő oldalú háromszög magassága <span class="math inline">\(5\sqrt 3\)</span>. Határozzuk meg az oldalát és a
+területét!</p><p><span class="math display">\[5\sqrt3=\frac{l\sqrt3}{2}\Longrightarrow
+l=10.\]</span> Így <span class="math display">\[T=\frac{10^2\sqrt3}{4}=25\sqrt3.\]</span></p><h2 id="derékszögű-háromszög">Derékszögű háromszög</h2><p>Ha az <span class="math inline">\(ABC\)</span> háromszög az <span class="math inline">\(A\)</span> csúcsnál derékszögű, akkor <span class="math display">\[AB^2+AC^2=BC^2.\]</span> A terület a befogók
+szorzatának fele: <span class="math display">\[T=\frac{AB\cdot
+AC}{2}.\]</span> A derékszög csúcsából az átfogóra bocsátott magasság:
+<span class="math display">\[h=\frac{AB\cdot AC}{BC}.\]</span> A
+derékszögű háromszögben az átfogóhoz tartozó oldalfelező az átfogó
+fele.</p><p><strong class="example-label">Példa.</strong> Legyen <span class="math inline">\(AB=6\)</span>, <span class="math inline">\(AC=8\)</span>, <span class="math inline">\(BC=10\)</span>, és <span class="math inline">\(M\)</span> a <span class="math inline">\(BC\)</span> felezőpontja. Határozzuk meg <span class="math inline">\(AM\)</span>-et!</p><p>Mivel <span class="math inline">\(6^2+8^2=10^2\)</span>, a háromszög
+derékszögű. Az átfogóhoz tartozó oldalfelező az átfogó fele, tehát <span class="math display">\[AM=\frac{BC}{2}=5.\]</span></p><h2 id="a-30-fokos-szög-tétele">A 30 fokos szög tétele</h2><p>Derékszögű háromszögben a <span class="math inline">\(30^\circ\)</span>-os szöggel szemközti befogó az
+átfogó fele.</p><p><strong class="example-label">Példa.</strong> Az <span class="math inline">\(ABC\)</span>
+háromszög az <span class="math inline">\(A\)</span> csúcsnál derékszögű,
+<span class="math inline">\(AB=5\)</span> és <span class="math inline">\(\angle C=30^\circ\)</span>. Határozzuk meg az
+oldalakat!</p><p>Az <span class="math inline">\(AB\)</span> befogó a <span class="math inline">\(30^\circ\)</span>-os szöggel szemközti oldal,
+tehát <span class="math display">\[BC=2AB=10.\]</span> Pitagorasz tétele
+alapján: <span class="math display">\[AC=\sqrt{BC^2-AB^2}
+=\sqrt{100-25}=5\sqrt3.\]</span></p><details class="practice-toggle" id="gyakorlófeladatok-17"><summary class="practice-title">Gyakorlófeladatok</summary><ol>
+<li><p>Az <span class="math inline">\(ABC\)</span> háromszögben <span class="math inline">\(AB=1\)</span>, <span class="math inline">\(AC=2\)</span>, <span class="math inline">\(BC=\sqrt5\)</span>. Határozzuk meg <span class="math inline">\(\cos B\)</span> értékét.</p></li>
+<li><p>Az <span class="math inline">\(ABC\)</span> háromszögben <span class="math inline">\(AB=2\)</span>, <span class="math inline">\(BC=2\)</span> és <span class="math inline">\(\angle B=60^\circ\)</span>. Határozzuk meg a
+kerületet.</p></li>
+<li><p>Az <span class="math inline">\(ABC\)</span> háromszögben <span class="math inline">\(AB=6\)</span>, <span class="math inline">\(AC=2\)</span> és <span class="math inline">\(\angle A=45^\circ\)</span>. Határozzuk meg a
+területet.</p></li>
+<li><p>Az <span class="math inline">\(ABC\)</span> háromszögben <span class="math inline">\(AB=6\)</span>, <span class="math inline">\(BC=8\)</span> és <span class="math inline">\(\angle B=120^\circ\)</span>. Határozzuk meg a
+területet.</p></li>
+<li><p>Az <span class="math inline">\(ABC\)</span> háromszögben <span class="math inline">\(AB=6\)</span>, <span class="math inline">\(AC=10\)</span>, a területe pedig <span class="math inline">\(15\)</span>. Határozzuk meg
+<span class="math inline">\(\sin A\)</span> és <span class="math inline">\(\cos A\)</span> értékét.</p></li>
+<li><p>Az <span class="math inline">\(ABC\)</span> háromszög oldalai
+<span class="math inline">\(AB=9\)</span>, <span class="math inline">\(AC=12\)</span>, <span class="math inline">\(BC=15\)</span>. Határozzuk meg a területet és az
+<span class="math inline">\(A\)</span> csúcsból induló
+magasságot.</p></li>
+<li><p>Az <span class="math inline">\(ABC\)</span> háromszög <span class="math inline">\(A\)</span>-ban derékszögű, <span class="math inline">\(AM=5\)</span> a <span class="math inline">\(BC\)</span> átfogóra állított oldalfelező, és <span class="math inline">\(AC=6\)</span>. Határozzuk meg a területet és az
+<span class="math inline">\(A\)</span> csúcsból induló
+magasságot.</p></li>
+<li><p>Egy egyenlő oldalú háromszög két csúcsa <span class="math inline">\(A(1,1)\)</span> és <span class="math inline">\(B(4,5)\)</span>. Határozzuk meg a területet és a
+magasságot.</p></li>
+<li><p>Egy egyenlő oldalú háromszög területe <span class="math inline">\(9\sqrt3\)</span>. Határozzuk meg a kerületét és a
+magasságát.</p></li>
+<li><p>Az <span class="math inline">\(ABC\)</span> háromszög <span class="math inline">\(A\)</span>-ban derékszögű, <span class="math inline">\(\angle B=30^\circ\)</span> és <span class="math inline">\(AC=5\)</span>. Határozzuk meg <span class="math inline">\(AB\)</span>-t.</p></li>
+<li><p>Az <span class="math inline">\(ABC\)</span> háromszögben <span class="math inline">\(AB=AC=8\)</span> és <span class="math inline">\(BC=10\)</span>. Határozzuk meg a
+területet.</p></li>
+<li><p>Az <span class="math inline">\(ABC\)</span> háromszögben <span class="math inline">\(AB=3\)</span>, <span class="math inline">\(AC=4\)</span>, <span class="math inline">\(BC=6\)</span>. Határozzuk meg az <span class="math inline">\(A\)</span> csúcsból induló magasságot.</p></li>
+<li><p>Ha <span class="math inline">\(\angle A=60^\circ\)</span> és
+<span class="math inline">\(BC=4\)</span>, határozzuk meg a háromszög
+köré írt kör sugarát.</p></li>
+<li><p>Ha <span class="math inline">\(\angle B=120^\circ\)</span> és
+<span class="math inline">\(AC=4\)</span>, határozzuk meg a háromszög
+köré írt kör sugarát.</p></li>
+<li><p>Az <span class="math inline">\(ABC\)</span> háromszögben <span class="math inline">\(AB=3\)</span>, <span class="math inline">\(AC=4\)</span>, <span class="math inline">\(BC=5\)</span>. Határozzuk meg a háromszögbe írt
+kör sugarát.</p></li>
+</ol></details></section><div aria-label="Lapozás" class="floating-nav"><button aria-label="Előző lap" class="nav-orb" id="prev-page" title="Előző lap" type="button">←</button><button aria-label="Vissza a főoldalra" class="nav-orb home-orb" id="home-page" title="Vissza a főoldalra" type="button">⌂</button><button aria-label="Következő lap" class="nav-orb" id="next-page" title="Következő lap" type="button">→</button></div><div aria-live="polite" class="page-status" id="page-status"></div><script>
+document.addEventListener('DOMContentLoaded',()=>{
+const current=20, total=44, paths=["01-másodfokú-egyenlet.html", "02-viète-összefüggések.html", "03-másodfokú-egyenlőtlenség.html", "04-a-másodfokú-függvény-grafikonja.html", "05-gyökös-egyenletek.html", "06-logaritmusok.html", "07-exponenciális-egyenletek.html", "08-kombinációk.html", "09-variációk.html", "10-permutációk.html", "11-valószínűségszámítás.html", "12-számtani-sorozatok.html", "13-mértani-sorozatok.html", "14-függvények.html", "15-százalékszámítás.html", "16-a-komplex-számok-halmaza.html", "17-analitikus-geometria.html", "18-vektorok.html", "19-trigonometria.html", "20-geometria.html", "21-mátrixok.html", "22-determinánsok.html", "23-inverz-mátrix.html", "24-lineáris-egyenletrendszerek.html", "25-kompozíciós-műveletek.html", "26-polinomok.html", "27-viète-összefüggések-polinomokra.html", "28-a-maradékosztályok-mathbb-z_n-halmaza.html", "29-határértékek.html", "30-folytonos-függvények.html", "31-aszimptoták.html", "32-deriválás.html", "33-monotonitás-és-görbület.html", "34-primitív-függvények.html", "35-integrálás-parciális-integrálással.html", "36-integrálás-helyettesítéssel.html", "37-határozott-integrálok.html", "38-kezdeti-ismétlés-egész-számok-műveletei.html", "39-racionális-számok-műveletei.html", "40-elsőfokú-egyenletek.html", "41-elsőfokú-egyenlőtlenségek.html", "42-valós-számok-intervallumai.html", "43-abszolútérték.html", "44-kétismeretlenes-két-egyenletből-álló-lineáris-rendszerek.html"];
+const target=n=>n===0?(current===0?'index.html':'../index.html'):(current===0?'temakorok/':'')+paths[n-1];
+const prev=document.getElementById('prev-page'),next=document.getElementById('next-page'),home=document.getElementById('home-page'),status=document.getElementById('page-status');
+if(prev){prev.disabled=current===0;prev.addEventListener('click',()=>{if(current>0)location.href=target(current-1)});}
+if(next){next.disabled=current===total;next.addEventListener('click',()=>{if(current<total)location.href=target(current+1)});}
+if(home)home.addEventListener('click',()=>location.href=target(0));
+if(status)status.textContent=current===0?'Tartalomjegyzék':`${current} / ${total}`;
+document.addEventListener('keydown',e=>{
+ if(e.altKey||e.ctrlKey||e.metaKey||['INPUT','TEXTAREA'].includes(document.activeElement.tagName))return;
+ if(e.key==='ArrowLeft'&&current>0)location.href=target(current-1);
+ if(e.key==='ArrowRight'&&current<total)location.href=target(current+1);
+ if(e.key==='Home')location.href=target(0);
+});
+const browse=document.querySelector('.hero-cta');
+if(browse)browse.addEventListener('click',e=>{e.preventDefault();document.getElementById('temakorok')?.scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('details.practice-toggle').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.MathJax?.typesetPromise)window.MathJax.typesetPromise([d]).catch(()=>{});}));
+});
+</script></body>
+</html>

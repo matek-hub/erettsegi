@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="hu" xml:lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="pandoc" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Matematika érettségi – Túlélőkalauz</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] },
+  startup: { typeset: true }
+};
+</script><script async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="../style.css" rel="stylesheet"/></head>
+<body><section class="page topic-page active" data-index="17" id="analitikus-geometria"><img alt="LT képletek védjegy" class="brand-logo" src="../lt-kepletek-vedjegy.svg"/><h1 id="analitikus-geometria">Analitikus geometria</h1><h2 id="derékszögű-koordináta-rendszer">Derékszögű
+koordináta-rendszer</h2><p>A derékszögű koordináta-rendszert két egymásra merőleges tengely, az
+<span class="math inline">\(OX\)</span> és az <span class="math inline">\(OY\)</span> alkotja. Mindkét tengelyen azonos
+mértékegységet és pozitív irányt választunk. Egy <span class="math inline">\(M\)</span> pontot két koordináta határoz meg:
+<span class="math display">\[M(x,y),\]</span> ahol <span class="math inline">\(x\)</span> az abszcissza, <span class="math inline">\(y\)</span> pedig az ordináta. Az <span class="math inline">\(OX\)</span> tengely az abszcisszák, az <span class="math inline">\(OY\)</span> tengely az ordináták tengelye.</p><p><strong>Pont ábrázolása.</strong> Az <span class="math inline">\(M(x,y)\)</span> pont felvételéhez az <span class="math inline">\(OX\)</span> tengelyen kijelöljük az <span class="math inline">\(x\)</span> koordinátát, az <span class="math inline">\(OY\)</span> tengelyen a <span class="math inline">\(y\)</span> koordinátát, majd az ezeken átmenő,
+tengelyekkel párhuzamos egyenesek metszéspontját vesszük.</p><h2 id="szakasz-hossza">Szakasz hossza</h2><p>Az <span class="math inline">\(A(x_A,y_A)\)</span> és <span class="math inline">\(B(x_B,y_B)\)</span> pontok távolsága: <span class="math display">\[AB=\sqrt{(x_A-x_B)^2+(y_A-y_B)^2}.\]</span> A
+képlet a Pitagorasz-tételből következik. Ha a pontok egyik koordinátája
+azonos, akkor a távolság az eltérő koordináták különbségének abszolút
+értéke.</p><p><strong class="example-label">Példa.</strong> Legyen <span class="math inline">\(A(6,8)\)</span> és <span class="math inline">\(B(3,4)\)</span>.</p><p><span class="math display">\[AB=\sqrt{(6-3)^2+(8-4)^2}
+=\sqrt{9+16}=5.\]</span></p><h2 id="szakasz-felezőpontja">Szakasz felezőpontja</h2><p>Ha <span class="math inline">\(M\)</span> az <span class="math inline">\(AB\)</span> szakasz felezőpontja, akkor: <span class="math display">\[M\left(\frac{x_A+x_B}{2},\frac{y_A+y_B}{2}\right).\]</span></p><h2 id="egyenes-egyenlete-és-iránytényezője">Egyenes egyenlete és
+iránytényezője</h2><p>Az egyenes általános egyenlete: <span class="math display">\[ax+by+c=0.\]</span> Ha az egyenes nem függőleges,
+akkor <span class="math inline">\(y=mx+n\)</span> alakban is felírható,
+ahol <span class="math inline">\(m\)</span> az iránytényező.</p><p>Az <span class="math inline">\(A(x_A,y_A)\)</span> és <span class="math inline">\(B(x_B,y_B)\)</span> pontokon átmenő egyenes
+iránytényezője: <span class="math display">\[m_{AB}=\frac{y_B-y_A}{x_B-x_A},\qquad x_A\ne
+x_B.\]</span> Az egyenes pont-meredekség alakú egyenlete: <span class="math display">\[y-y_A=m_{AB}(x-x_A).\]</span></p><p><strong class="example-label">Példa.</strong> Írjuk fel az <span class="math inline">\(A(2,2)\)</span> és <span class="math inline">\(B(3,4)\)</span> pontokon átmenő egyenes
+egyenletét!</p><p><span class="math display">\[m_{AB}=\frac{4-2}{3-2}=2.\]</span> Ezért
+<span class="math display">\[y-2=2(x-2)\Longrightarrow
+2x-y-2=0.\]</span> <em>Megjegyzés: az eredeti oldalon a pontok és az iránytényező egyik koordinátájában elírás látható; a fenti egyenlet az
+<span class="math inline">\(A(2,2)\)</span> és <span class="math inline">\(B(3,4)\)</span> pontokból következik.</em></p><p>Az egyenes és az <span class="math inline">\(OX\)</span> tengely
+által bezárt <span class="math inline">\(\alpha\)</span> szögre, amikor
+az iránytényező értelmezett: <span class="math display">\[m=\tan\alpha.\]</span></p><h2 id="pontok-illeszkedése-és-kollinearitás">Pontok illeszkedése és
+kollinearitás</h2><p>Egy pont akkor illeszkedik egy egyenesre, ha koordinátái kielégítik
+az egyenes egyenletét.</p><p><strong class="example-label">Példa.</strong> Ellenőrizzük, hogy a <span class="math inline">\(C(5,6)\)</span> pont rajta van-e a <span class="math inline">\(3x-2y-5=0\)</span> egyenesen!</p><p><span class="math display">\[3\cdot5-2\cdot6-5=15-12-5=-2\ne0.\]</span> Tehát
+<span class="math inline">\(C(5,6)\)</span> nem illeszkedik az
+egyenesre.</p><p><strong class="example-label">Példa.</strong> Határozzuk meg <span class="math inline">\(a\)</span>-t úgy, hogy a <span class="math inline">\(D(a,3)\)</span> pont illeszkedjen a <span class="math inline">\(3x-2y-5=0\)</span> egyenesre!</p><p><span class="math display">\[3a-2\cdot3-5=0\Longrightarrow 3a=11
+\Longrightarrow a=\frac{11}{3}.\]</span></p><p>Három pont akkor kollineáris, ha ugyanazon az egyenesen helyezkedik
+el. Ennek ellenőrzéséhez felírhatjuk az első két pont által
+meghatározott egyenes egyenletét, majd ellenőrizhetjük a harmadik
+pontot.</p><p><strong class="example-label">Példa.</strong> Ellenőrizzük az <span class="math inline">\(A(1,2)\)</span>, <span class="math inline">\(B(6,4)\)</span> és <span class="math inline">\(C(11,6)\)</span> pontok kollinearitását!</p>
+<p class="solution-title">Megoldás: felírjuk az \(AB\) egyenes egyenletét, majd ellenőrizzük, hogy a \(C\) pont rajta van-e az \(AB\) egyenesen.</p>
+
+<section class="step">
+  <p>Az \(AB\) egyenes iránytényezője:</p>
+  <div class="math">\[
+  m_{AB}=\frac{y_B-y_A}{x_B-x_A}=\frac{4-2}{6-1}=\frac{2}{5}.
+  \]</div>
+</section>
+
+<section class="step">
+  <p>Az \(AB\) egyenes egyenlete:</p>
+  <div class="math">\[
+  y-y_A=m_{AB}\cdot(x-x_A)
+  \]</div>
+  <div class="math">\[
+  y-2=\frac{2}{5}(x-1).
+  \]</div>
+  <p class="math">Az egyenletet 5-tel szorozzuk, így kapjuk:</p>
+  <div class="math">\[
+  5y-10=2x-2,
+  \qquad\text{azaz}\qquad
+  2x-5y+8=0.
+  \]</div>
+</section>
+
+<section class="step">
+  <p>Ellenőrizzük, hogy a \(C(11,6)\) pont az \(AB\) egyenesen van-e:</p>
+  <div class="math">\[
+  2\cdot11-5\cdot6+8=0?
+  \]</div>
+  <p class="final" style="background:transparent">Igen, mert \(22-30+8=0\). Tehát a \(C\) pont az \(AB\) egyenesen van, vagyis az \(A\), \(B\) és \(C\) pontok kollineárisak.</p>
+<p><strong>Megjegyzések:</strong></p><ul>
+<li><p>Ha <span class="math inline">\(y=mx+n\)</span> egy egyenes egyenlete, <span class="math inline">\(m\)</span> az iránytényezőt jelöli.</p></li>
+<li><p>Ha az iránytényező 0, az egyenes vízszintes, egyenlete <span class="math inline">\(y-y_A=0\)</span>.</p></li>
+<li><p>A függőleges egyenes egyenlete <span class="math inline">\(x-x_A=0\)</span>.</p></li>
+</ul><h2 id="fontos-egyenesek-a-háromszögben">A háromszög nevezetes vonalai</h2><p>Két párhuzamos egyenes iránytényezője egyenlő, <span class="math inline">\(m_1=m_2\)</span>. Ha az egyenesek merőlegesek egymásra,
+akkor: <span class="math inline">\(m_1m_2=-1.\)</span></p><ul>
+<li><p><strong>Súlyvonal:</strong> a háromszög egyik csúcsát az
+ellenkező oldal felezőpontjával összekötő szakasz.</p></li>
+<li><p><strong>Magasságvonal:</strong> a csúcsból az ellenkező oldal
+egyenesére bocsátott merőleges.</p></li>
+<li><p><strong>Oldalfelező merőleges:</strong> egy oldal felezőpontján
+átmenő, az oldalra merőleges egyenes.</p></li>
+</ul><p><strong class="example-label">Példa.</strong> Legyen <span class="math inline">\(A(1,2)\)</span>, <span class="math inline">\(B(6,4)\)</span> és <span class="math inline">\(C(2,8)\)</span>. Írjuk fel az <span class="math inline">\(AM\)</span> súlyvonal egyenletét, ahol <span class="math inline">\(M\)</span> a <span class="math inline">\(BC\)</span> felezőpontja!</p><p>A felezőpont: <span class="math display">\[M\left(\frac{6+2}{2},\frac{4+8}{2}\right)=(4,6).\]</span>
+Az <span class="math inline">\(AM\)</span> iránytényezője: <span class="math display">\[m_{AM}=\frac{6-2}{4-1}=\frac43.\]</span> Így
+<span class="math display">\[y-2=\frac43(x-1)
+\Longrightarrow 4x-3y+2=0.\]</span></p><p><strong>b) Az <span class="math inline">\(AD\)</span> magasság
+egyenlete.</strong> Mivel <span class="math inline">\(AD\perp
+BC\)</span>: <span class="math display">\[m_{BC}=\frac{4-8}{6-2}=-1,\qquad
+m_{AD}=1.\]</span> Ezért <span class="math display">\[y-2=x-1\Longrightarrow x-y+1=0.\]</span></p><p><strong>c) A <span class="math inline">\(BC\)</span> oldalfelező
+merőlegesének egyenlete.</strong> Az egyenes iránytényezője 1, és áthalad
+<span class="math inline">\(M(4,6)\)</span> ponton: <span class="math display">\[y-6=x-4\Longrightarrow x-y+2=0.\]</span></p><h2 class="unnumbered" id="fontos-képletek-összefoglalása">Fontos
+képletek összefoglalása</h2><ol>
+<li><p>A szakasz hossza: <span class="math display">\[AB=\sqrt{(x_A-x_B)^2+(y_A-y_B)^2}.\]</span></p></li>
+<li><p>A felezőpont: <span class="math display">\[M=\left(\frac{x_A+x_B}{2},\frac{y_A+y_B}{2}\right).\]</span></p></li>
+<li><p>Az egyenes iránytényezője: <span class="math display">\[m_{AB}=\frac{y_A-y_B}{x_A-x_B}\quad(x_A\ne
+x_B).\]</span></p></li>
+<li><p>Az egyenes egyenlete: <span class="math display">\[y-y_A=m_{AB}(x-x_A).\]</span></p></li>
+<li><p>Az egyenes determinánssal megadott alakja: <span class="math display">\[\begin{vmatrix}
+x&amp;y&amp;1\\
+x_A&amp;y_A&amp;1\\
+x_B&amp;y_B&amp;1
+\end{vmatrix}=0.\]</span></p></li>
+<li><p>Három pont akkor kollineáris, ha a fenti determináns 0.</p></li>
+<li><p>A háromszög területe: <span class="math display">\[T=\frac12\
+\begin{vmatrix}
+x_A&amp;y_A&amp;1\\
+x_B&amp;y_B&amp;1\\
+x_C&amp;y_C&amp;1
+\end{vmatrix}\]</span></p></li>
+<li><p>A <span class="math inline">\(BC\)</span> felezőpontja <span class="math inline">\(M\)</span> esetén az <span class="math inline">\(AM\)</span> súlyvonal az <span class="math inline">\(A\)</span> és <span class="math inline">\(M\)</span> pontokon átmenő egyenes.</p></li>
+<li><p>Az <span class="math inline">\(A\)</span> pont <span class="math inline">\(B\)</span> pontra vonatkozó tükörképe legyen <span class="math inline">\(S\)</span>. Ekkor <span class="math inline">\(B\)</span> az <span class="math inline">\(AS\)</span> felezőpontja, vagyis <span class="math inline">\(2B=A+S\)</span> koordinátánként.</p></li>
+</ol><p><strong class="example-label">Példa.</strong> Legyen <span class="math inline">\(d_1:2x+3y-5=0\)</span> és <span class="math inline">\(d_2:ax+2y-4=0\)</span>. Határozzuk meg <span class="math inline">\(a\)</span>-t úgy, hogy az egyenesek a)
+párhuzamosak; b) merőlegesek legyenek!</p><p>Az első egyenes iránytényezője <span class="math inline">\(m_1=-\frac23\)</span>, a másodiké <span class="math inline">\(m_2=-\frac a2\)</span>.</p><ol>
+<li><p>Párhuzamosságnál <span class="math inline">\(m_1=m_2\)</span>,
+tehát <span class="math inline">\(-\frac23=-\frac a2\)</span>, innen
+<span class="math inline">\(a=\frac43\)</span>.</p></li>
+<li><p>Merőlegességnél <span class="math inline">\(m_1m_2=-1\)</span>,
+tehát <span class="math inline">\(\left(-\frac23\right)\left(-\frac
+a2\right)=-1\)</span>, innen <span class="math inline">\(a=-3\)</span>.</p></li>
+</ol><p><strong class="example-label">Példa.</strong> Írjuk fel az <span class="math inline">\(A(1,2)\)</span> ponton átmenő, a <span class="math inline">\(d:2x-y+3=0\)</span> egyenessel párhuzamos egyenes
+egyenletét!</p><p>A megadott egyenes iránytényezője 2, ezért <span class="math display">\[y-2=2(x-1)\Longrightarrow 2x-y=0.\]</span></p><p><strong class="example-label">Példa.</strong> Legyen <span class="math inline">\(A(2,3)\)</span> és <span class="math inline">\(B(1,5)\)</span>. Határozzuk meg az <span class="math inline">\(AB\)</span> oldalú szabályos háromszög
+területét!</p><p><span class="math display">\[AB=\sqrt{(2-1)^2+(3-5)^2}=\sqrt5.\]</span> A
+szabályos háromszög területe: <span class="math display">\[T=\frac{l^2\sqrt3}{4}=\frac{5\sqrt3}{4}.\]</span></p><details class="practice-toggle" id="gyakorlófeladatok-14"><summary class="practice-title">Gyakorlófeladatok</summary><ol>
+<li><p>Adott <span class="math inline">\(A(1,5)\)</span>, <span class="math inline">\(B(1,1)\)</span>, <span class="math inline">\(C(7,1)\)</span> és <span class="math inline">\(D(x,3)\)</span>.</p>
+<ol>
+<li><p>Ábrázoljuk a pontokat koordináta-rendszerben.</p></li>
+<li><p>Számítsuk ki <span class="math inline">\(AB\)</span>, <span class="math inline">\(AC\)</span> és <span class="math inline">\(BC\)</span> hosszát.</p></li>
+<li><p>Határozzuk meg az <span class="math inline">\(AC\)</span> szakasz
+felezőpontjának koordinátáit.</p></li>
+<li><p>Írjuk fel az <span class="math inline">\(AC\)</span> egyenes
+egyenletét.</p></li>
+<li><p>Legyen <span class="math inline">\(D(a,4)\)</span>. Határozzuk
+meg <span class="math inline">\(a\)</span>-t úgy, hogy <span class="math inline">\(A,C,D\)</span> kollineárisak legyenek.</p></li>
+<li><p>Írjuk fel az <span class="math inline">\(AM\)</span> súlyvonal
+egyenletét.</p></li>
+<li><p>Számítsuk ki a <span class="math inline">\(BN\)</span> súlyvonal
+hosszát.</p></li>
+<li><p>Ellenőrizzük a Pitagorasz-tétellel, hogy az <span class="math inline">\(ABC\)</span> háromszög derékszögű-e.</p></li>
+<li><p>Számítsuk ki az <span class="math inline">\(ABC\)</span>
+háromszög területét.</p></li>
+<li><p>Határozzuk meg a súlypont <span class="math inline">\(G\)</span>
+koordinátáit.</p></li>
+<li><p>Határozzuk meg az <span class="math inline">\(A\)</span> pont
+<span class="math inline">\(C\)</span> pontra vonatkozó
+tükörképét.</p></li>
+</ol></li>
+<li><p>Adott a <span class="math inline">\(d:2x-3y+5=0\)</span> egyenes
+és az <span class="math inline">\(A(3,-2)\)</span> pont. Írjuk fel az
+<span class="math inline">\(A\)</span>-n áthaladó, <span class="math inline">\(d\)</span>-vel párhuzamos, illetve arra merőleges
+egyenes egyenletét.</p></li>
+<li><p>Az <span class="math inline">\(A(2,1)\)</span> pont rajta van a
+<span class="math inline">\(d:mx+3y-1=0\)</span> egyenesen. Határozzuk
+meg <span class="math inline">\(m\)</span>-et.</p></li>
+</ol></details></section><div aria-label="Lapozás" class="floating-nav"><button aria-label="Előző lap" class="nav-orb" id="prev-page" title="Előző lap" type="button">←</button><button aria-label="Vissza a főoldalra" class="nav-orb home-orb" id="home-page" title="Vissza a főoldalra" type="button">⌂</button><button aria-label="Következő lap" class="nav-orb" id="next-page" title="Következő lap" type="button">→</button></div><div aria-live="polite" class="page-status" id="page-status"></div><script>
+document.addEventListener('DOMContentLoaded',()=>{
+const current=17, total=44, paths=["01-másodfokú-egyenlet.html", "02-viète-összefüggések.html", "03-másodfokú-egyenlőtlenség.html", "04-a-másodfokú-függvény-grafikonja.html", "05-gyökös-egyenletek.html", "06-logaritmusok.html", "07-exponenciális-egyenletek.html", "08-kombinációk.html", "09-variációk.html", "10-permutációk.html", "11-valószínűségszámítás.html", "12-számtani-sorozatok.html", "13-mértani-sorozatok.html", "14-függvények.html", "15-százalékszámítás.html", "16-a-komplex-számok-halmaza.html", "17-analitikus-geometria.html", "18-vektorok.html", "19-trigonometria.html", "20-geometria.html", "21-mátrixok.html", "22-determinánsok.html", "23-inverz-mátrix.html", "24-lineáris-egyenletrendszerek.html", "25-kompozíciós-műveletek.html", "26-polinomok.html", "27-viète-összefüggések-polinomokra.html", "28-a-maradékosztályok-mathbb-z_n-halmaza.html", "29-határértékek.html", "30-folytonos-függvények.html", "31-aszimptoták.html", "32-deriválás.html", "33-monotonitás-és-görbület.html", "34-primitív-függvények.html", "35-integrálás-parciális-integrálással.html", "36-integrálás-helyettesítéssel.html", "37-határozott-integrálok.html", "38-kezdeti-ismétlés-egész-számok-műveletei.html", "39-racionális-számok-műveletei.html", "40-elsőfokú-egyenletek.html", "41-elsőfokú-egyenlőtlenségek.html", "42-valós-számok-intervallumai.html", "43-abszolútérték.html", "44-kétismeretlenes-két-egyenletből-álló-lineáris-rendszerek.html"];
+const target=n=>n===0?(current===0?'index.html':'../index.html'):(current===0?'temakorok/':'')+paths[n-1];
+const prev=document.getElementById('prev-page'),next=document.getElementById('next-page'),home=document.getElementById('home-page'),status=document.getElementById('page-status');
+if(prev){prev.disabled=current===0;prev.addEventListener('click',()=>{if(current>0)location.href=target(current-1)});}
+if(next){next.disabled=current===total;next.addEventListener('click',()=>{if(current<total)location.href=target(current+1)});}
+if(home)home.addEventListener('click',()=>location.href=target(0));
+if(status)status.textContent=current===0?'Tartalomjegyzék':`${current} / ${total}`;
+document.addEventListener('keydown',e=>{
+ if(e.altKey||e.ctrlKey||e.metaKey||['INPUT','TEXTAREA'].includes(document.activeElement.tagName))return;
+ if(e.key==='ArrowLeft'&&current>0)location.href=target(current-1);
+ if(e.key==='ArrowRight'&&current<total)location.href=target(current+1);
+ if(e.key==='Home')location.href=target(0);
+});
+const browse=document.querySelector('.hero-cta');
+if(browse)browse.addEventListener('click',e=>{e.preventDefault();document.getElementById('temakorok')?.scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('details.practice-toggle').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.MathJax?.typesetPromise)window.MathJax.typesetPromise([d]).catch(()=>{});}));
+});
+</script></body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="hu" xml:lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="pandoc" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Matematika érettségi – Túlélőkalauz</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] },
+  startup: { typeset: true }
+};
+</script><script async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="../style.css" rel="stylesheet"/></head>
+<body><section class="page topic-page active" data-index="33" id="monotonitás-és-görbület"><img alt="LT képletek védjegy" class="brand-logo" src="../lt-kepletek-vedjegy.svg"/><h1 id="monotonitás-és-görbület">Monotonitás</h1><h2 id="monotonitás-vizsgálata">Monotonitás vizsgálata</h2><p>A monotonitás vizsgálatának lépései:</p><ol>
+<li><p>Kiszámítjuk az <span class="math inline">\(f'(x)\)</span>
+deriváltat.</p></li>
+<li><p>Megoldjuk az <span class="math inline">\(f'(x)=0\)</span>
+egyenletet.</p></li>
+<li><p>Előjeltáblázatot készítünk a deriváltra.</p></li>
+<li><p>Ahol <span class="math inline">\(f'(x)&gt;0\)</span>, a
+függvény növekvő; ahol <span class="math inline">\(f'(x)&lt;0\)</span>, a függvény
+csökkenő.</p></li>
+</ol><p><strong class="example-label">Példa.</strong> Legyen <span class="math inline">\(f(x)=x^3-3x+1\)</span>.</p><p><span class="math display">\[f'(x)=3x^2-3=3(x-1)(x+1).\]</span> A
+kritikus pontok <span class="math inline">\(x=-1\)</span> és <span class="math inline">\(x=1\)</span>. A derivált előjele: <span class="math display">\[\begin{array}{c|ccc}
+x&amp;(-\infty,-1)&amp;(-1,1)&amp;(1,+\infty)\\ \hline
+f'(x)&amp;+&amp;-&amp;+
+\end{array}\]</span> Ezért a függvény növekvő a <span class="math inline">\((-\infty,-1)\)</span> és <span class="math inline">\((1,+\infty)\)</span> intervallumokon, csökkenő a
+<span class="math inline">\((-1,1)\)</span> intervallumon. A
+szélsőértékek: <span class="math display">\[f(-1)=3\quad\text{(lokális
+maximum)},\qquad
+f(1)=-1\quad\text{(lokális minimum)}.\]</span></p><p>Ezek szerint: <span class="math inline">\(f(x)\geq-1\)</span> minden <span class="math inline">\(x&gt;-1\)</span> esetén. Ez a fenti monotonitásból
+valóban következik, mert <span class="math inline">\(x=1\)</span>-nél a
+minimum <span class="math inline">\(-1\)</span>.</p><p>Ha a függvény növekvő egy intervallumon és <span class="math inline">\(a&gt;b\)</span> az adott intervallumban, akkor
+<span class="math inline">\(f(a)&gt;f(b)\)</span>. Csökkenő függvénynél
+az egyenlőtlenség iránya megfordul.</p><h2 id="konvexitás-és-konkávitás">Konvexitás és konkávitás</h2><p>A görbület vizsgálatához második deriváltat számítunk:</p><ol>
+<li><p>Meghatározzuk <span class="math inline">\(f''(x)\)</span>-et.</p></li>
+<li><p>Megoldjuk az <span class="math inline">\(f''(x)=0\)</span> egyenletet, és
+megvizsgáljuk a második derivált előjelét.</p></li>
+<li><p>Ha <span class="math inline">\(f''(x)&lt;0\)</span>, a
+függvény konkáv; ha <span class="math inline">\(f''(x)&gt;0\)</span>, a függvény
+konvex.</p></li>
+</ol><p><strong class="example-label">Példa.</strong> Vizsgáljuk meg <span class="math inline">\(f(x)=x^3-3x+1\)</span> görbületét!</p><p><span class="math display">\[f'(x)=3x^2-3,\qquad
+f''(x)=6x.\]</span> Az <span class="math inline">\(f''(x)=0\)</span> egyenlet megoldása <span class="math inline">\(x=0\)</span>. Így a függvény konkáv a <span class="math inline">\((-\infty,0)\)</span> intervallumon, konvex a <span class="math inline">\((0,+\infty)\)</span> intervallumon. A
+görbületváltás pontja <span class="math inline">\((0,1)\)</span>.</p><h2 id="példa-exponenciális-függvénnyel">Példa exponenciális
+függvénnyel</h2><p>Legyen <span class="math display">\[f(x)=(x-2)e^x.\]</span>
+<strong>a) Határérték:</strong> <span class="math display">\[\lim_{x\to0}\frac{f(x)-f(0)}x=f'(0).\]</span>
+A szorzatszabály szerint <span class="math display">\[f'(x)=e^x+(x-2)e^x=(x-1)e^x,\]</span> ezért
+<span class="math inline">\(f'(0)=-1\)</span>.</p><p><strong>b) Érintő az <span class="math inline">\(x_0=1\)</span>
+helyen.</strong> <span class="math display">\[f(1)=-e,\qquad
+f'(1)=0.\]</span> Az érintő egyenlete: <span class="math display">\[y-f(1)=f'(1)(x-1)\Longrightarrow
+y=-e.\]</span></p><p><strong>c) Monotonitás.</strong> Mivel <span class="math inline">\(e^x&gt;0\)</span> minden valós <span class="math inline">\(x\)</span> esetén, az <span class="math inline">\(f'(x)=(x-1)e^x\)</span> előjelét az <span class="math inline">\(x-1\)</span> tényező határozza meg. A függvény
+csökkenő <span class="math inline">\((-\infty,1)\)</span>-en és növekvő
+<span class="math inline">\((1,+\infty)\)</span>-en. Minimuma <span class="math inline">\(f(1)=-e\)</span>.</p><p><strong>d) Görbület.</strong> <span class="math display">\[f''(x)=xe^x.\]</span> Mivel <span class="math inline">\(e^x&gt;0\)</span>, a második derivált <span class="math inline">\(x&lt;0\)</span> esetén negatív, <span class="math inline">\(x&gt;0\)</span> esetén pozitív. A függvény konkáv
+<span class="math inline">\((-\infty,0)\)</span>-n, konvex <span class="math inline">\((0,+\infty)\)</span>-n, inflexiós pontja <span class="math inline">\((0,-2)\)</span>.</p><h2 id="példa-a-fracln-xx-függvénnyel">Példa a <span class="math inline">\(\frac{\ln x}{x}\)</span> függvénnyel</h2><p>Legyen <span class="math inline">\(f:(0,+\infty)\to\mathbb
+R\)</span>, <span class="math display">\[f(x)=\frac{\ln x}{x}.\]</span>
+A derivált: <span class="math display">\[f'(x)=\frac{1-\ln
+x}{x^2}.\]</span></p><p><strong>a) Határérték:</strong> <span class="math display">\[\lim_{x\to1}\frac{f(x)-f(1)}{x-1}=f'(1)=1.\]</span></p><p><strong>b) Érintő az <span class="math inline">\(x_0=e\)</span>
+helyen.</strong> <span class="math display">\[f(e)=\frac1e,\qquad
+f'(e)=0,\]</span> így az érintő egyenlete: <span class="math display">\[y=\frac1e.\]</span></p><p><strong>c) Monotonitás és szélsőérték.</strong> Az <span class="math inline">\(f'(x)=0\)</span> egyenlet: <span class="math display">\[1-\ln x=0\Longrightarrow x=e.\]</span> A függvény
+növekvő <span class="math inline">\((0,e)\)</span>-n, csökkenő <span class="math inline">\((e,+\infty)\)</span>-n. Maximális értéke <span class="math inline">\(f(e)=\frac1e\)</span>.</p><p><strong>d) Második derivált.</strong> A függvényre helyesen: <span class="math display">\[f''(x)=\frac{2\ln x-3}{x^3}.\]</span>
+Ezért a görbületváltás helye: <span class="math display">\[2\ln
+x-3=0\Longrightarrow x=e^{3/2}.\]</span> A függvény konkáv <span class="math inline">\((0,e^{3/2})\)</span>-on és konvex <span class="math inline">\((e^{3/2},+\infty)\)</span>-n.</p><details class="practice-toggle" id="gyakorlófeladatok-26"><summary class="practice-title">Gyakorlófeladatok</summary><ol>
+<li><p>Legyen <span class="math inline">\(f(x)=(x-2)e^x\)</span>.</p>
+<ol>
+<li><p>Számítsuk ki <span class="math inline">\(\displaystyle\lim_{x\to0}\frac{f(x)-f(0)}x\)</span>
+értékét.</p></li>
+<li><p>Írjuk fel az érintő egyenletét az <span class="math inline">\(x_0=1\)</span> pontban.</p></li>
+<li><p>Vizsgáljuk meg a monotonitását.</p></li>
+<li><p>Igazoljuk, hogy <span class="math inline">\(f(x)\geq-e\)</span>
+minden <span class="math inline">\(x\in\mathbb R\)</span>
+esetén.</p></li>
+<li><p>Vizsgáljuk meg a görbületét.</p></li>
+<li><p>Hasonlítsuk össze <span class="math inline">\(f(\sqrt[3]{2018})\)</span> és <span class="math inline">\(f(\sqrt[3]{2017})\)</span> értékét.</p></li>
+</ol></li>
+<li><p>Legyen <span class="math inline">\(\displaystyle
+f(x)=\frac{x^2-3x+1}{2x-4}\)</span>.</p>
+<ol>
+<li><p>Számítsuk ki <span class="math inline">\(\displaystyle\lim_{x\to1}\frac{f(x)-f(1)}{x-1}\)</span>
+értékét.</p></li>
+<li><p>Írjuk fel az érintő egyenletét <span class="math inline">\(x_0=1\)</span> helyen.</p></li>
+<li><p>Vizsgáljuk meg a monotonitását.</p></li>
+</ol></li>
+<li><p>Legyen <span class="math inline">\(f(x)=x^3-6x^2+2\)</span>.</p>
+<ol>
+<li><p>Hasonlítsuk össze <span class="math inline">\(f(\sqrt[3]{2})\)</span> és <span class="math inline">\(f(\sqrt[3]{3})\)</span> értékét.</p></li>
+<li><p>Igazoljuk, hogy <span class="math inline">\(f(2018)+f(2016)\geq
+f(2017)+f(2015)\)</span>.</p></li>
+</ol></li>
+</ol></details></section><div aria-label="Lapozás" class="floating-nav"><button aria-label="Előző lap" class="nav-orb" id="prev-page" title="Előző lap" type="button">←</button><button aria-label="Vissza a főoldalra" class="nav-orb home-orb" id="home-page" title="Vissza a főoldalra" type="button">⌂</button><button aria-label="Következő lap" class="nav-orb" id="next-page" title="Következő lap" type="button">→</button></div><div aria-live="polite" class="page-status" id="page-status"></div><script>
+document.addEventListener('DOMContentLoaded',()=>{
+const current=33, total=44, paths=["01-másodfokú-egyenlet.html", "02-viète-összefüggések.html", "03-másodfokú-egyenlőtlenség.html", "04-a-másodfokú-függvény-grafikonja.html", "05-gyökös-egyenletek.html", "06-logaritmusok.html", "07-exponenciális-egyenletek.html", "08-kombinációk.html", "09-variációk.html", "10-permutációk.html", "11-valószínűségszámítás.html", "12-számtani-sorozatok.html", "13-mértani-sorozatok.html", "14-függvények.html", "15-százalékszámítás.html", "16-a-komplex-számok-halmaza.html", "17-analitikus-geometria.html", "18-vektorok.html", "19-trigonometria.html", "20-geometria.html", "21-mátrixok.html", "22-determinánsok.html", "23-inverz-mátrix.html", "24-lineáris-egyenletrendszerek.html", "25-kompozíciós-műveletek.html", "26-polinomok.html", "27-viète-összefüggések-polinomokra.html", "28-a-maradékosztályok-mathbb-z_n-halmaza.html", "29-határértékek.html", "30-folytonos-függvények.html", "31-aszimptoták.html", "32-deriválás.html", "33-monotonitás-és-görbület.html", "34-primitív-függvények.html", "35-integrálás-parciális-integrálással.html", "36-integrálás-helyettesítéssel.html", "37-határozott-integrálok.html", "38-kezdeti-ismétlés-egész-számok-műveletei.html", "39-racionális-számok-műveletei.html", "40-elsőfokú-egyenletek.html", "41-elsőfokú-egyenlőtlenségek.html", "42-valós-számok-intervallumai.html", "43-abszolútérték.html", "44-kétismeretlenes-két-egyenletből-álló-lineáris-rendszerek.html"];
+const target=n=>n===0?(current===0?'index.html':'../index.html'):(current===0?'temakorok/':'')+paths[n-1];
+const prev=document.getElementById('prev-page'),next=document.getElementById('next-page'),home=document.getElementById('home-page'),status=document.getElementById('page-status');
+if(prev){prev.disabled=current===0;prev.addEventListener('click',()=>{if(current>0)location.href=target(current-1)});}
+if(next){next.disabled=current===total;next.addEventListener('click',()=>{if(current<total)location.href=target(current+1)});}
+if(home)home.addEventListener('click',()=>location.href=target(0));
+if(status)status.textContent=current===0?'Tartalomjegyzék':`${current} / ${total}`;
+document.addEventListener('keydown',e=>{
+ if(e.altKey||e.ctrlKey||e.metaKey||['INPUT','TEXTAREA'].includes(document.activeElement.tagName))return;
+ if(e.key==='ArrowLeft'&&current>0)location.href=target(current-1);
+ if(e.key==='ArrowRight'&&current<total)location.href=target(current+1);
+ if(e.key==='Home')location.href=target(0);
+});
+const browse=document.querySelector('.hero-cta');
+if(browse)browse.addEventListener('click',e=>{e.preventDefault();document.getElementById('temakorok')?.scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('details.practice-toggle').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.MathJax?.typesetPromise)window.MathJax.typesetPromise([d]).catch(()=>{});}));
+});
+</script></body>
+</html>

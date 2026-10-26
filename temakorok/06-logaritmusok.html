@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="hu" xml:lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="pandoc" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Matematika érettségi – Túlélőkalauz</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] },
+  startup: { typeset: true }
+};
+</script><script async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="../style.css" rel="stylesheet"/></head>
+<body><section class="page topic-page active" data-index="6" id="logaritmusok"><img alt="LT képletek védjegy" class="brand-logo" src="../lt-kepletek-vedjegy.svg"/><h1 id="logaritmusok">Logaritmusok</h1><p>A <span class="math inline">\(\log_a x=b\)</span> jelölés jelentése:
+az <span class="math inline">\(x\)</span> szám <span class="math inline">\(a\)</span> alapú logaritmusa <span class="math inline">\(b\)</span>. <br>Definíció szerint <span class="math display">\[\log_a x=b\iff a^b=x.\]</span> A logaritmus
+értelmezési feltételei: <span class="math display">\[a&gt;0,\qquad
+a\ne1,\qquad x&gt;0.\]</span> A tízes alapú logaritmust gyakran <span class="math inline">\(\lg x=\log_{10}x\)</span> alakban jelöljük.</p><h2 class="unnumbered" id="a-logaritmus-azonosságai">A logaritmus
+azonosságai</h2><span class="math inline">(\(a&gt;0,\quad
+a\ne1,\quad x&gt;0\,\quad y&gt;0\))</span><p><span class="math display">\[\log_a a=1,\qquad \log_a1=0,\]</span>
+<span class="math display">\[\log_a(x^n)=n\log_a x,\]</span> <span class="math display">\[\log_a x+\log_a y=\log_a(xy),\]</span> <span class="math display">\[\log_a x-\log_a
+y=\log_a\left(\frac{x}{y}\right),\]</span> <span class="math display">\[\log_a x=\frac{1}{\log_x a}
+\quad\text{(ahol a kifejezések értelmezettek),}\]</span> <span class="math display">\[\log_a x=\frac{\log_b x}{\log_b a}
+\quad\text{(ahol a kifejezések értelmezettek).}\]</span></p><p><strong class="example-label">Példa.</strong> Számítsuk ki: <span class="math inline">\(\log_5 10+\log_5 3-\log_5 6\)</span>.</p><p><span class="math display">\[\log_5\left(\frac{10\cdot3}{6}\right)=\log_5
+5=1.\]</span></p><p><strong class="example-label">Példa.</strong> Oldjuk meg a <span class="math inline">\(\log_3(6x-18)=\log_3(4x-8)\)</span>
+egyenletet!</p><p>Értelmezési feltételek: <span class="math inline">\(6x-18&gt;0\)</span> és <span class="math inline">\(4x-8&gt;0\)</span>, tehát <span class="math inline">\(x&gt;3\)</span>. Azonos alapú logaritmusok
+egyenlősége esetén az argumentumok egyenlők: <span class="math display">\[6x-18=4x-8\quad\Longrightarrow\quad x=5.\]</span>
+Mivel <span class="math inline">\(5&gt;3\)</span>, a megoldás <span class="math inline">\(x=5\)</span>.</p><p><strong class="example-label">Példa.</strong> Oldjuk meg a <span class="math inline">\(\log_4(x+3)=2\)</span> egyenletet!</p><p>Az értelmezési feltétel <span class="math inline">\(x&gt;-3\)</span>.
+A definíció alapján <span class="math display">\[x+3=4^2=16\quad\Longrightarrow\quad
+x=13.\]</span></p><p><strong class="example-label">Példa.</strong> Oldjuk meg a <span class="math inline">\(\log_x(2x-4)=1\)</span> egyenletet!</p><p>Feltételek: <span class="math inline">\(x&gt;0\)</span>, <span class="math inline">\(x\ne1\)</span> és <span class="math inline">\(2x-4&gt;0\)</span>, tehát <span class="math inline">\(x&gt;2\)</span>. A definíció alapján <span class="math inline">\(2x-4=x\)</span>, így <span class="math inline">\(x=4\)</span>, amely megfelel a feltételeknek.</p><p><strong class="example-label">Példa.</strong> Oldjuk meg a <span class="math inline">\(\log_2(x+2)+\log_2x=3\)</span> egyenletet!</p><p>Feltétel: <span class="math inline">\(x&gt;0\)</span>. A logaritmusok
+összevonásával: <span class="math display">\[\log_2\bigl(x(x+2)\bigr)=3
+\quad\Longrightarrow\quad x^2+2x=8.\]</span> Így <span class="math inline">\((x+4)(x-2)=0\)</span>, tehát <span class="math inline">\(x=-4\)</span> vagy <span class="math inline">\(x=2\)</span>. A feltétel miatt csak <span class="math inline">\(x=2\)</span> megoldás.</p><details class="practice-toggle" id="gyakorlófeladatok-5"><summary class="practice-title">Gyakorlófeladatok</summary><ol>
+<li><p>Számítsuk ki: <span class="math inline">\(\log_2 32\)</span>;
+<span class="math inline">\(\log_3 81\)</span>; <span class="math inline">\(\log_4\frac1{64}\)</span>; <span class="math inline">\(\log_{1/5}\frac1{25}\)</span>; <span class="math inline">\(\log_9 3\)</span>; <span class="math inline">\(\log_3 1\)</span>.</p></li>
+<li><p>Határozzuk meg az értelmezési tartományt: <span class="math display">\[\log_{x-1}(2x+4),\qquad
+\log_{x+1}(x^2+5x+6).\]</span></p></li>
+<li><p>Oldjuk meg:</p>
+<ol>
+<li><p><span class="math inline">\(\log_5(x+4)=\log_5(8-x)\)</span>;</p></li>
+<li><p><span class="math inline">\(\log_2(2x+5)=3\)</span>;</p></li>
+<li><p><span class="math inline">\(\log_3(x-1)+\log_3(x+1)=2\)</span>;</p></li>
+<li><p><span class="math inline">\(\log_3(x+6)-\log_3(x-2)=2\)</span>;</p></li>
+<li><p><span class="math inline">\(\log_2(2x-5)=0\)</span>;</p></li>
+<li><p><span class="math inline">\(\log_{x+1}(2x+5)=2\)</span>.</p></li>
+</ol></li>
+<li><p>Számítsuk ki: a) <span class="math inline">\(\lg5+\lg40-\lg2\)</span>; b) <span class="math inline">\(\log_3 6+\log_3 12-\log_3 8\)</span>.</p></li>
+</ol></details></section><div aria-label="Lapozás" class="floating-nav"><button aria-label="Előző lap" class="nav-orb" id="prev-page" title="Előző lap" type="button">←</button><button aria-label="Vissza a főoldalra" class="nav-orb home-orb" id="home-page" title="Vissza a főoldalra" type="button">⌂</button><button aria-label="Következő lap" class="nav-orb" id="next-page" title="Következő lap" type="button">→</button></div><div aria-live="polite" class="page-status" id="page-status"></div><script>
+document.addEventListener('DOMContentLoaded',()=>{
+const current=6, total=44, paths=["01-másodfokú-egyenlet.html", "02-viète-összefüggések.html", "03-másodfokú-egyenlőtlenség.html", "04-a-másodfokú-függvény-grafikonja.html", "05-gyökös-egyenletek.html", "06-logaritmusok.html", "07-exponenciális-egyenletek.html", "08-kombinációk.html", "09-variációk.html", "10-permutációk.html", "11-valószínűségszámítás.html", "12-számtani-sorozatok.html", "13-mértani-sorozatok.html", "14-függvények.html", "15-százalékszámítás.html", "16-a-komplex-számok-halmaza.html", "17-analitikus-geometria.html", "18-vektorok.html", "19-trigonometria.html", "20-geometria.html", "21-mátrixok.html", "22-determinánsok.html", "23-inverz-mátrix.html", "24-lineáris-egyenletrendszerek.html", "25-kompozíciós-műveletek.html", "26-polinomok.html", "27-viète-összefüggések-polinomokra.html", "28-a-maradékosztályok-mathbb-z_n-halmaza.html", "29-határértékek.html", "30-folytonos-függvények.html", "31-aszimptoták.html", "32-deriválás.html", "33-monotonitás-és-görbület.html", "34-primitív-függvények.html", "35-integrálás-parciális-integrálással.html", "36-integrálás-helyettesítéssel.html", "37-határozott-integrálok.html", "38-kezdeti-ismétlés-egész-számok-műveletei.html", "39-racionális-számok-műveletei.html", "40-elsőfokú-egyenletek.html", "41-elsőfokú-egyenlőtlenségek.html", "42-valós-számok-intervallumai.html", "43-abszolútérték.html", "44-kétismeretlenes-két-egyenletből-álló-lineáris-rendszerek.html"];
+const target=n=>n===0?(current===0?'index.html':'../index.html'):(current===0?'temakorok/':'')+paths[n-1];
+const prev=document.getElementById('prev-page'),next=document.getElementById('next-page'),home=document.getElementById('home-page'),status=document.getElementById('page-status');
+if(prev){prev.disabled=current===0;prev.addEventListener('click',()=>{if(current>0)location.href=target(current-1)});}
+if(next){next.disabled=current===total;next.addEventListener('click',()=>{if(current<total)location.href=target(current+1)});}
+if(home)home.addEventListener('click',()=>location.href=target(0));
+if(status)status.textContent=current===0?'Tartalomjegyzék':`${current} / ${total}`;
+document.addEventListener('keydown',e=>{
+ if(e.altKey||e.ctrlKey||e.metaKey||['INPUT','TEXTAREA'].includes(document.activeElement.tagName))return;
+ if(e.key==='ArrowLeft'&&current>0)location.href=target(current-1);
+ if(e.key==='ArrowRight'&&current<total)location.href=target(current+1);
+ if(e.key==='Home')location.href=target(0);
+});
+const browse=document.querySelector('.hero-cta');
+if(browse)browse.addEventListener('click',e=>{e.preventDefault();document.getElementById('temakorok')?.scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('details.practice-toggle').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.MathJax?.typesetPromise)window.MathJax.typesetPromise([d]).catch(()=>{});}));
+});
+</script></body>
+</html>

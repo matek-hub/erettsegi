@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="hu" xml:lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="pandoc" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Matematika érettségi – Túlélőkalauz</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] },
+  startup: { typeset: true }
+};
+</script><script async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="../style.css" rel="stylesheet"/></head>
+<body><section class="page topic-page active" data-index="19" id="trigonometria"><img alt="LT képletek védjegy" class="brand-logo" src="../lt-kepletek-vedjegy.svg"/><h1 id="trigonometria">Trigonometria</h1><h2 id="alapazonosságok">Alapazonosságok</h2><p><span class="math display">\[\sin^2x+\cos^2x=1.\]</span> <span class="math display">\[\sin(90^\circ-x)=\cos x,\qquad
+\sin(90^\circ+x)=\cos x,\]</span> <span class="math display">\[\cos(90^\circ-x)=\sin x,\qquad
+\cos(90^\circ+x)=-\sin x.\]</span> </p><p><strong class="example-label">Példa.</strong> Hozd egyszerűbb alakra a <span class="math inline">\(\sin^2 100^\circ+\cos^2 80^\circ\)</span>
+kifejezést!</p><p>Mivel <span class="math inline">\(\sin100^\circ=\sin80^\circ\)</span>, ezért <span class="math display">\[\sin^2 100^\circ+\cos^2 80^\circ
+=\sin^2 80^\circ+\cos^2 80^\circ=1.\]</span></p><p><strong class="example-label">Példa.</strong> Számítsuk ki <span class="math inline">\(\sin
+60^\circ-\cos 30^\circ\)</span> értékét!</p><p>Mivel <span class="math inline">\(\sin60^\circ=\cos30^\circ\)</span>,
+az eredmény 0.</p><p><strong class="example-label">Példa.</strong> Számítsuk ki a <span class="math inline">\(\sin(-10^\circ)\cdot\sin(-9^\circ)\cdots\sin
+9^\circ\cdot\sin 10^\circ\)</span> szorzatot!</p><p>A szorzat egyik tényezője <span class="math inline">\(\sin0^\circ=0\)</span>, ezért a szorzat értéke
+0.</p><p><strong class="example-label">Példa.</strong> Számítsuk ki <span class="math inline">\(\cos
+10^\circ+\cos 20^\circ+\cos 160^\circ+\cos 170^\circ\)</span>
+értékét!</p><p>Felhasználva, hogy <span class="math inline">\(\cos(180^\circ-\alpha)=-\cos\alpha\)</span>:
+<span class="math display">\[\begin{aligned}
+&amp;\cos10^\circ+\cos 20^\circ+\cos 160^\circ+\cos 170^\circ=\\
+&amp;=\cos10^\circ+\cos20^\circ-\cos20^\circ-\cos10^\circ=0\\.
+\end{aligned}\]</span></p><p><strong class="example-label">Példa.</strong> Ha <span class="math inline">\(\sin x=\frac
+12\)</span> és <span class="math inline">\(x\in(90^\circ,180^\circ)\)</span>, határozzuk meg
+<span class="math inline">\(\cos x\)</span>-et!</p><p>Az alapazonosságból: <span class="math display">\[\cos^2x=1-\sin^2x=1-\frac14=\frac34.\]</span>
+Ezért <span class="math inline">\(\cos x=\pm\frac{\sqrt3}{2}\)</span>.
+Mivel a második negyedben a koszinusz negatív, <span class="math display">\[\boxed{\cos x=-\frac{\sqrt3}{2}}.\]</span></p><h2 id="nevezetes-szögek">Nevezetes szögek</h2><p><span class="math display">\[\begin{array}{c|ccccc}
+x&amp;0^\circ&amp;30^\circ&amp;45^\circ&amp;60^\circ&amp;90^\circ\\
+\hline
+\sin
+x&amp;0&amp;\frac12&amp;\frac{\sqrt2}{2}&amp;\frac{\sqrt3}{2}&amp;1\\
+\cos
+x&amp;1&amp;\frac{\sqrt3}{2}&amp;\frac{\sqrt2}{2}&amp;\frac12&amp;0\\
+\tan x&amp;0&amp;\frac{\sqrt3}{3}&amp;1&amp;\sqrt3&amp;\text{nem
+értelmezett}\\
+\cot x&amp;\text{nem
+értelmezett}&amp;\sqrt3&amp;1&amp;\frac{\sqrt3}{3}&amp;0
+\end{array}\]</span> Továbbá: <span class="math display">\[\tan
+x=\frac{\sin x}{\cos x},\qquad
+\cot x=\frac{\cos x}{\sin x}.\]</span></p><h2 id="összeg--és-különbségképletek">Összeg- és különbségképletek</h2><p><span class="math display">\[\sin(a+b)=\sin a\cos b+\cos a\sin
+b,\]</span> <span class="math display">\[\sin(a-b)=\sin a\cos b-\cos
+a\sin b,\]</span> <span class="math display">\[\cos(a+b)=\cos a\cos
+b-\sin a\sin b,\]</span> <span class="math display">\[\cos(a-b)=\cos
+a\cos b+\sin a\sin b.\]</span> Kétszeres szögek képletei: <span class="math display">\[\sin2x=2\sin x\cos x,\qquad
+\cos2x=\cos^2x-\sin^2x.\]</span></p><p><strong class="example-label">Példa.</strong> Számítsuk ki <span class="math inline">\(\sin
+105^\circ\)</span> értékét!</p><p><span class="math display">\[\begin{aligned}
+\sin105^\circ
+&amp;=\sin(60^\circ+45^\circ)\\
+&amp;=\sin60^\circ\cos45^\circ+\cos60^\circ\sin45^\circ\\
+&amp;=\frac{\sqrt3}{2}\cdot\frac{\sqrt2}{2}
++\frac12\cdot\frac{\sqrt2}{2}\\
+&amp;=\frac{\sqrt6+\sqrt2}{4}.
+\end{aligned}\]</span></p><details class="practice-toggle" id="gyakorlófeladatok-16"><summary class="practice-title">Gyakorlófeladatok</summary><ol>
+<li><p>Számítsuk ki <span class="math inline">\(\sin135^\circ\)</span>
+értékét.</p></li>
+<li><p>Számítsuk ki <span class="math inline">\(\sin\frac{5\pi}{2}\)</span> értékét.</p></li>
+<li><p>Számítsuk ki <span class="math inline">\(\cos\frac{3\pi}{4}\)</span> értékét.</p></li>
+<li><p>Számítsuk ki <span class="math inline">\(\cos40^\circ+\cos140^\circ\)</span>
+értékét.</p></li>
+<li><p>Számítsuk ki <span class="math inline">\(\sin^2 10^\circ+\sin^2
+80^\circ\)</span> értékét.</p></li>
+<li><p>Számítsuk ki <span class="math inline">\(\cos^2 80^\circ+\sin^2
+100^\circ\)</span> értékét.</p></li>
+<li><p>Ha <span class="math inline">\(\sin x=\frac35\)</span> és <span class="math inline">\(x\in(0,\frac\pi2)\)</span>, számítsuk ki <span class="math inline">\(\cos x\)</span>-et.</p></li>
+<li><p>Ha <span class="math inline">\(\cos x=-\frac45\)</span> és <span class="math inline">\(x\in(\frac\pi2,\pi)\)</span>, számítsuk ki <span class="math inline">\(\sin x\)</span>-et.</p></li>
+<li><p>Számítsuk ki <span class="math inline">\(\tan30^\circ+\cot30^\circ\)</span>
+értékét.</p></li>
+<li><p>Számítsuk ki <span class="math inline">\(\tan^2 45^\circ+\cot^2
+45^\circ\)</span> értékét.</p></li>
+<li><p>Számítsuk ki <span class="math inline">\(\tan^2 30^\circ+\tan^2
+60^\circ\)</span> értékét.</p></li>
+<li><p>Határozzuk meg azokat az <span class="math inline">\(x\)</span>
+szögeket, amelyekre <span class="math inline">\(\displaystyle\frac{\sin
+x-\cos x}{\sin x+\cos x}=1\)</span>.</p></li>
+</ol></details></section><div aria-label="Lapozás" class="floating-nav"><button aria-label="Előző lap" class="nav-orb" id="prev-page" title="Előző lap" type="button">←</button><button aria-label="Vissza a főoldalra" class="nav-orb home-orb" id="home-page" title="Vissza a főoldalra" type="button">⌂</button><button aria-label="Következő lap" class="nav-orb" id="next-page" title="Következő lap" type="button">→</button></div><div aria-live="polite" class="page-status" id="page-status"></div><script>
+document.addEventListener('DOMContentLoaded',()=>{
+const current=19, total=44, paths=["01-másodfokú-egyenlet.html", "02-viète-összefüggések.html", "03-másodfokú-egyenlőtlenség.html", "04-a-másodfokú-függvény-grafikonja.html", "05-gyökös-egyenletek.html", "06-logaritmusok.html", "07-exponenciális-egyenletek.html", "08-kombinációk.html", "09-variációk.html", "10-permutációk.html", "11-valószínűségszámítás.html", "12-számtani-sorozatok.html", "13-mértani-sorozatok.html", "14-függvények.html", "15-százalékszámítás.html", "16-a-komplex-számok-halmaza.html", "17-analitikus-geometria.html", "18-vektorok.html", "19-trigonometria.html", "20-geometria.html", "21-mátrixok.html", "22-determinánsok.html", "23-inverz-mátrix.html", "24-lineáris-egyenletrendszerek.html", "25-kompozíciós-műveletek.html", "26-polinomok.html", "27-viète-összefüggések-polinomokra.html", "28-a-maradékosztályok-mathbb-z_n-halmaza.html", "29-határértékek.html", "30-folytonos-függvények.html", "31-aszimptoták.html", "32-deriválás.html", "33-monotonitás-és-görbület.html", "34-primitív-függvények.html", "35-integrálás-parciális-integrálással.html", "36-integrálás-helyettesítéssel.html", "37-határozott-integrálok.html", "38-kezdeti-ismétlés-egész-számok-műveletei.html", "39-racionális-számok-műveletei.html", "40-elsőfokú-egyenletek.html", "41-elsőfokú-egyenlőtlenségek.html", "42-valós-számok-intervallumai.html", "43-abszolútérték.html", "44-kétismeretlenes-két-egyenletből-álló-lineáris-rendszerek.html"];
+const target=n=>n===0?(current===0?'index.html':'../index.html'):(current===0?'temakorok/':'')+paths[n-1];
+const prev=document.getElementById('prev-page'),next=document.getElementById('next-page'),home=document.getElementById('home-page'),status=document.getElementById('page-status');
+if(prev){prev.disabled=current===0;prev.addEventListener('click',()=>{if(current>0)location.href=target(current-1)});}
+if(next){next.disabled=current===total;next.addEventListener('click',()=>{if(current<total)location.href=target(current+1)});}
+if(home)home.addEventListener('click',()=>location.href=target(0));
+if(status)status.textContent=current===0?'Tartalomjegyzék':`${current} / ${total}`;
+document.addEventListener('keydown',e=>{
+ if(e.altKey||e.ctrlKey||e.metaKey||['INPUT','TEXTAREA'].includes(document.activeElement.tagName))return;
+ if(e.key==='ArrowLeft'&&current>0)location.href=target(current-1);
+ if(e.key==='ArrowRight'&&current<total)location.href=target(current+1);
+ if(e.key==='Home')location.href=target(0);
+});
+const browse=document.querySelector('.hero-cta');
+if(browse)browse.addEventListener('click',e=>{e.preventDefault();document.getElementById('temakorok')?.scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('details.practice-toggle').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.MathJax?.typesetPromise)window.MathJax.typesetPromise([d]).catch(()=>{});}));
+});
+</script></body>
+</html>

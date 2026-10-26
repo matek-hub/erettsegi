@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="hu" xml:lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="pandoc" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Matematika érettségi – Túlélőkalauz</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] },
+  startup: { typeset: true }
+};
+</script><script async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="../style.css" rel="stylesheet"/></head>
+<body><section class="page topic-page active" data-index="34" id="primitív-függvények"><img alt="LT képletek védjegy" class="brand-logo" src="../lt-kepletek-vedjegy.svg"/><h1 id="primitív-függvények">Primitív függvények</h1><h2 id="a-primitív-függvény-fogalma">A primitív függvény fogalma</h2><p>Az <span class="math inline">\(F\)</span> deriválható függvény az
+<span class="math inline">\(f\)</span> primitív függvénye, ha <span class="math display">\[F'(x)=f(x)\]</span> az adott intervallum
+minden pontjában.</p><p><strong class="example-label">Példa.</strong> Legyen <span class="math inline">\(f(x)=x^2(3\ln x+1)\)</span> és <span class="math inline">\(F(x)=x^3\ln x\)</span>. Igazoljuk, hogy <span class="math inline">\(F\)</span> primitív függvénye <span class="math inline">\(f\)</span>-nek!</p><p><span class="math display">\[\begin{aligned}
+F'(x)&amp;=3x^2\ln x+x^3\cdot\frac1x\\
+&amp;=3x^2\ln x+x^2=x^2(3\ln x+1)=f(x).
+\end{aligned}\]</span></p><p><strong class="example-label">Példa.</strong> Legyen <span class="math inline">\(\displaystyle f(x)=-\frac 4{(x-1)^2}\)</span> és
+<span class="math inline">\(\displaystyle
+F(x)=\frac{3x+1}{x-1}\)</span>. Igazoljuk, hogy <span class="math inline">\(F'=f\)</span>!</p><p><span class="math display">\[\begin{aligned}
+F'(x)&amp;=\frac{3(x-1)-(3x+1)}{(x-1)^2}\\
+&amp;=-\frac4{(x-1)^2}=f(x).
+\end{aligned}\]</span></p><p>Tulajdonság: ha egy függvény folytonos, akkor van
+primitív függvénye. A primitívek családját így jelöljük: <span class="math display">\[\int f(x)\,dx=F(x)+C,\]</span> ahol <span class="math inline">\(C\)</span> tetszőleges valós állandó.</p><p><strong class="example-label">Példa.</strong> Határozzuk meg az <span class="math inline">\(f(x)=2x+1\)</span> függvény primitív függvényét
+úgy, hogy <span class="math inline">\(F(1)=2015\)</span> legyen!</p><p><span class="math display">\[F(x)=\int(2x+1)\,dx=x^2+x+C.\]</span> A
+feltételből: <span class="math display">\[F(1)=1+1+C=2015\Longrightarrow
+C=2013.\]</span> Tehát <span class="math display">\[F(x)=x^2+x+2013.\]</span></p><h2 id="alapvető-integrálképletek">Alapvető integrálképletek</h2><p>Az alábbi táblázatban <span class="math inline">\(C\)</span>
+tetszőleges valós konstans. A képletek olyan tartományokon értendők,
+ahol az integrandus értelmezett; a hatványfüggvény képletében <span class="math inline">\(n\ne-1\)</span>.</p><p><span class="math display">\[\int
+x^n\,dx=\frac{x^{n+1}}{n+1}+C,\qquad n\ne-1.\]</span> Általánosabban:
+<span class="math display">\[\int
+x^\alpha\,dx=\frac{x^{\alpha+1}}{\alpha+1}+C,\qquad
+\alpha\ne-1.\]</span> <span class="math display">\[\int
+a^x\,dx=\frac{a^x}{\ln a}+C\quad(a&gt;0,\ a\ne1),\]</span> <span class="math display">\[\int e^x\,dx=e^x+C,\qquad
+\int\frac1x\,dx=\ln|x|+C.\]</span> <span class="math display">\[\int\frac{dx}{\sin^2x}=-\cot x+C,\qquad
+\int\frac{dx}{\cos^2x}=\tan x+C.\]</span> <span class="math display">\[\int\sin x\,dx=-\cos x+C,\qquad
+\int\cos x\,dx=\sin x+C.\]</span> <span class="math display">\[\int\frac{dx}{\sqrt{a^2-x^2}}
+=\arcsin\left(\frac xa\right)+C\qquad(a&gt;0).\]</span> <span class="math display">\[\int\frac{dx}{x^2+a^2}
+=\frac1a\arctan\left(\frac xa\right)+C\qquad(a&gt;0).\]</span> <span class="math display">\[\int\frac{dx}{\sqrt{x^2+a^2}}
+=\ln\left|x+\sqrt{x^2+a^2}\right|+C.\]</span> <span class="math display">\[\int\frac{dx}{\sqrt{x^2-a^2}}
+=\ln\left|x+\sqrt{x^2-a^2}\right|+C\]</span> az integrandus valós
+értelmezési tartományán. <span class="math display">\[\int\frac{dx}{x^2-a^2}
+=\frac1{2a}\ln\left|\frac{x-a}{x+a}\right|+C
+\qquad(a\ne0).\]</span></p><h2 id="táblázatos-példák">Táblázatos példák</h2><p><span class="math display">\[\int x^2\,dx=\frac{x^3}{3}+C,\qquad
+\int x^5\,dx=\frac{x^6}{6}+C,\]</span> <span class="math display">\[\int
+5\,dx=5x+C,\qquad
+\int 5^x\,dx=\frac{5^x}{\ln5}+C,\]</span> <span class="math display">\[\int 3^x\,dx=\frac{3^x}{\ln3}+C,\qquad
+\int\frac1x\,dx=\ln|x|+C.\]</span> További példák: <span class="math display">\[\int\frac{dx}{\sqrt{16-x^2}}=\arcsin\left(\frac
+x4\right)+C,\]</span> <span class="math display">\[\int\frac{dx}{x^2+16}=\frac14\arctan\left(\frac
+x4\right)+C,\]</span> <span class="math display">\[\int\frac{dx}{\sqrt{x^2+17}}
+=\ln\left|x+\sqrt{x^2+17}\right|+C,\]</span> <span class="math display">\[\int\frac{dx}{\sqrt{x^2-17}}
+=\ln\left|x+\sqrt{x^2-17}\right|+C,\]</span> <span class="math display">\[\int\frac{dx}{x^2-16}
+=\frac18\ln\left|\frac{x-4}{x+4}\right|+C.\]</span></p></section><div aria-label="Lapozás" class="floating-nav"><button aria-label="Előző lap" class="nav-orb" id="prev-page" title="Előző lap" type="button">←</button><button aria-label="Vissza a főoldalra" class="nav-orb home-orb" id="home-page" title="Vissza a főoldalra" type="button">⌂</button><button aria-label="Következő lap" class="nav-orb" id="next-page" title="Következő lap" type="button">→</button></div><div aria-live="polite" class="page-status" id="page-status"></div><script>
+document.addEventListener('DOMContentLoaded',()=>{
+const current=34, total=44, paths=["01-másodfokú-egyenlet.html", "02-viète-összefüggések.html", "03-másodfokú-egyenlőtlenség.html", "04-a-másodfokú-függvény-grafikonja.html", "05-gyökös-egyenletek.html", "06-logaritmusok.html", "07-exponenciális-egyenletek.html", "08-kombinációk.html", "09-variációk.html", "10-permutációk.html", "11-valószínűségszámítás.html", "12-számtani-sorozatok.html", "13-mértani-sorozatok.html", "14-függvények.html", "15-százalékszámítás.html", "16-a-komplex-számok-halmaza.html", "17-analitikus-geometria.html", "18-vektorok.html", "19-trigonometria.html", "20-geometria.html", "21-mátrixok.html", "22-determinánsok.html", "23-inverz-mátrix.html", "24-lineáris-egyenletrendszerek.html", "25-kompozíciós-műveletek.html", "26-polinomok.html", "27-viète-összefüggések-polinomokra.html", "28-a-maradékosztályok-mathbb-z_n-halmaza.html", "29-határértékek.html", "30-folytonos-függvények.html", "31-aszimptoták.html", "32-deriválás.html", "33-monotonitás-és-görbület.html", "34-primitív-függvények.html", "35-integrálás-parciális-integrálással.html", "36-integrálás-helyettesítéssel.html", "37-határozott-integrálok.html", "38-kezdeti-ismétlés-egész-számok-műveletei.html", "39-racionális-számok-műveletei.html", "40-elsőfokú-egyenletek.html", "41-elsőfokú-egyenlőtlenségek.html", "42-valós-számok-intervallumai.html", "43-abszolútérték.html", "44-kétismeretlenes-két-egyenletből-álló-lineáris-rendszerek.html"];
+const target=n=>n===0?(current===0?'index.html':'../index.html'):(current===0?'temakorok/':'')+paths[n-1];
+const prev=document.getElementById('prev-page'),next=document.getElementById('next-page'),home=document.getElementById('home-page'),status=document.getElementById('page-status');
+if(prev){prev.disabled=current===0;prev.addEventListener('click',()=>{if(current>0)location.href=target(current-1)});}
+if(next){next.disabled=current===total;next.addEventListener('click',()=>{if(current<total)location.href=target(current+1)});}
+if(home)home.addEventListener('click',()=>location.href=target(0));
+if(status)status.textContent=current===0?'Tartalomjegyzék':`${current} / ${total}`;
+document.addEventListener('keydown',e=>{
+ if(e.altKey||e.ctrlKey||e.metaKey||['INPUT','TEXTAREA'].includes(document.activeElement.tagName))return;
+ if(e.key==='ArrowLeft'&&current>0)location.href=target(current-1);
+ if(e.key==='ArrowRight'&&current<total)location.href=target(current+1);
+ if(e.key==='Home')location.href=target(0);
+});
+const browse=document.querySelector('.hero-cta');
+if(browse)browse.addEventListener('click',e=>{e.preventDefault();document.getElementById('temakorok')?.scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('details.practice-toggle').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.MathJax?.typesetPromise)window.MathJax.typesetPromise([d]).catch(()=>{});}));
+});
+</script></body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="hu" xml:lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="pandoc" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Matematika érettségi – Túlélőkalauz</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] },
+  startup: { typeset: true }
+};
+</script><script async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="../style.css" rel="stylesheet"/></head>
+<body><section class="page topic-page active" data-index="24" id="lineáris-egyenletrendszerek"><img alt="LT képletek védjegy" class="brand-logo" src="../lt-kepletek-vedjegy.svg"/><h1 id="lineáris-egyenletrendszerek">Lineáris egyenletrendszerek</h1><p>Tekintsük a következő rendszert: <span class="math display">\[\begin{cases}
+2x+y+3z=1,\\
+x+2y+z=0,\\
+2x+3y+az=-1.
+\end{cases}\]</span></p><ol>
+<li><p>Ellenőrizzük, hogy <span class="math inline">\((0,2,-1)\)</span>
+megoldás-e.</p></li>
+<li><p>Határozzuk meg <span class="math inline">\(a\)</span>-t úgy, hogy
+a rendszernek egyetlen megoldása legyen.</p></li>
+<li><p>Ha <span class="math inline">\(a=1\)</span>, oldjuk meg a
+rendszert.</p></li>
+</ol><p>a) Behelyettesítve az első egyenletbe: <span class="math display">\[2\cdot0+2+3(-1)=-1\ne1.\]</span> Ezért <span class="math inline">\((0,2,-1)\)</span> nem megoldás.</p><p>b) A rendszernek akkor van egyetlen megoldása, ha az együtthatómátrix
+determinánsa nem nulla: <span class="math display">\[A=\begin{pmatrix}2&amp;1&amp;3\\1&amp;2&amp;1\\2&amp;3&amp;a\end{pmatrix}.\]</span>
+A mátrix determinánsa: <span class="math display">\[\det A=3a-7.\]</span>
+Tehát egyetlen megoldás akkor van, ha <span class="math inline">\(3a-7\ne0\)</span>, azaz <span class="math inline">\(a\ne\frac73\)</span>.</p><p>c) Ha <span class="math inline">\(a=1\)</span>, akkor <span class="math display">\[A=\begin{pmatrix}2&amp;1&amp;3\\1&amp;2&amp;1\\2&amp;3&amp;1\end{pmatrix},
+\qquad
+\mathbf b=\begin{pmatrix}1\\0\\-1\end{pmatrix}.\]</span> A
+Cramer-szabály szerint: <span class="math display">\[x=\frac{\det
+A_x}{\det A},\qquad
+y=\frac{\det A_y}{\det A},\qquad
+z=\frac{\det A_z}{\det A}.\]</span> A megadott determinánsok: <span class="math inline">\(\det A=-4\)</span>, <span class="math inline">\(\det A_x=4\)</span>, <span class="math inline">\(\det A_y=0\)</span>, <span class="math inline">\(\det A_z=-4\)</span>. Így <span class="math display">\[x=-1,\qquad y=0,\qquad z=1.\]</span></p><h2 class="unnumbered" id="gyakorlófeladat">Gyakorlófeladat</h2><p>Adott a rendszer: <span class="math display">\[\begin{cases}
+2x+y-3z=3,\\
+3x+y+2z=5,\\
+x+y+az=1.
+\end{cases}\]</span></p><ol>
+<li><p>Ellenőrizzük, hogy <span class="math inline">\((3,2,1)\)</span>
+megoldás-e.</p></li>
+<li><p>Számítsuk ki az együtthatómátrix determinánsát.</p></li>
+<li><p>Határozzuk meg <span class="math inline">\(a\)</span>-t úgy, hogy
+<span class="math inline">\(\det A=11\)</span>.</p></li>
+<li><p>Határozzuk meg <span class="math inline">\(a\)</span>-t úgy, hogy
+a rendszernek egyetlen megoldása legyen.</p></li>
+<li><p>Oldjuk meg a rendszert <span class="math inline">\(a\ne-8\)</span> esetén.</p></li>
+</ol></section><div aria-label="Lapozás" class="floating-nav"><button aria-label="Előző lap" class="nav-orb" id="prev-page" title="Előző lap" type="button">←</button><button aria-label="Vissza a főoldalra" class="nav-orb home-orb" id="home-page" title="Vissza a főoldalra" type="button">⌂</button><button aria-label="Következő lap" class="nav-orb" id="next-page" title="Következő lap" type="button">→</button></div><div aria-live="polite" class="page-status" id="page-status"></div><script>
+document.addEventListener('DOMContentLoaded',()=>{
+const current=24, total=44, paths=["01-másodfokú-egyenlet.html", "02-viète-összefüggések.html", "03-másodfokú-egyenlőtlenség.html", "04-a-másodfokú-függvény-grafikonja.html", "05-gyökös-egyenletek.html", "06-logaritmusok.html", "07-exponenciális-egyenletek.html", "08-kombinációk.html", "09-variációk.html", "10-permutációk.html", "11-valószínűségszámítás.html", "12-számtani-sorozatok.html", "13-mértani-sorozatok.html", "14-függvények.html", "15-százalékszámítás.html", "16-a-komplex-számok-halmaza.html", "17-analitikus-geometria.html", "18-vektorok.html", "19-trigonometria.html", "20-geometria.html", "21-mátrixok.html", "22-determinánsok.html", "23-inverz-mátrix.html", "24-lineáris-egyenletrendszerek.html", "25-kompozíciós-műveletek.html", "26-polinomok.html", "27-viète-összefüggések-polinomokra.html", "28-a-maradékosztályok-mathbb-z_n-halmaza.html", "29-határértékek.html", "30-folytonos-függvények.html", "31-aszimptoták.html", "32-deriválás.html", "33-monotonitás-és-görbület.html", "34-primitív-függvények.html", "35-integrálás-parciális-integrálással.html", "36-integrálás-helyettesítéssel.html", "37-határozott-integrálok.html", "38-kezdeti-ismétlés-egész-számok-műveletei.html", "39-racionális-számok-műveletei.html", "40-elsőfokú-egyenletek.html", "41-elsőfokú-egyenlőtlenségek.html", "42-valós-számok-intervallumai.html", "43-abszolútérték.html", "44-kétismeretlenes-két-egyenletből-álló-lineáris-rendszerek.html"];
+const target=n=>n===0?(current===0?'index.html':'../index.html'):(current===0?'temakorok/':'')+paths[n-1];
+const prev=document.getElementById('prev-page'),next=document.getElementById('next-page'),home=document.getElementById('home-page'),status=document.getElementById('page-status');
+if(prev){prev.disabled=current===0;prev.addEventListener('click',()=>{if(current>0)location.href=target(current-1)});}
+if(next){next.disabled=current===total;next.addEventListener('click',()=>{if(current<total)location.href=target(current+1)});}
+if(home)home.addEventListener('click',()=>location.href=target(0));
+if(status)status.textContent=current===0?'Tartalomjegyzék':`${current} / ${total}`;
+document.addEventListener('keydown',e=>{
+ if(e.altKey||e.ctrlKey||e.metaKey||['INPUT','TEXTAREA'].includes(document.activeElement.tagName))return;
+ if(e.key==='ArrowLeft'&&current>0)location.href=target(current-1);
+ if(e.key==='ArrowRight'&&current<total)location.href=target(current+1);
+ if(e.key==='Home')location.href=target(0);
+});
+const browse=document.querySelector('.hero-cta');
+if(browse)browse.addEventListener('click',e=>{e.preventDefault();document.getElementById('temakorok')?.scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('details.practice-toggle').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.MathJax?.typesetPromise)window.MathJax.typesetPromise([d]).catch(()=>{});}));
+});
+</script></body>
+</html>

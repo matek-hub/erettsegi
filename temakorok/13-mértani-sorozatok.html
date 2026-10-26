@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="hu" xml:lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="pandoc" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Matematika érettségi – Túlélőkalauz</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] },
+  startup: { typeset: true }
+};
+</script><script async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="../style.css" rel="stylesheet"/></head>
+<body><section class="page topic-page active" data-index="13" id="mértani-sorozatok"><img alt="LT képletek védjegy" class="brand-logo" src="../lt-kepletek-vedjegy.svg"/><h1 id="mértani-sorozatok">Mértani sorozatok</h1><p>Egy sorozat mértani sorozat, ha két egymást követő tag hányadosa
+állandó. Ezt a hányadost kvóciensnek nevezzük, és <span class="math inline">\(q\)</span>-val jelöljük: <span class="math display">\[b_{n+1}=b_nq,\qquad b_n=b_1q^{n-1}.\]</span> Ha
+három szám mértani sorozatot alkot, akkor a középső szám négyzete a két
+szélső szorzata: <span class="math display">\[b^2=ac.\]</span> Pozitív
+számok esetén ebből <span class="math inline">\(b=\sqrt{ac}\)</span>
+következik.</p><p><strong class="example-label">Példa.</strong> Egy mértani sorozatban <span class="math inline">\(b_3=12\)</span> és <span class="math inline">\(b_5=48\)</span>. Határozzuk meg <span class="math inline">\(b_2\)</span>-t, ha a kvóciens pozitív!</p><p><span class="math display">\[b_5=b_3q^2\Longrightarrow48=12q^2\Longrightarrow
+q=2.\]</span> Ezért <span class="math inline">\(b_2=b_3/q=12/2=6\)</span>.</p><p><strong class="example-label">Példa.</strong> Milyen <span class="math inline">\(x\)</span>
+érték esetén alkotja az <span class="math inline">\(x\)</span>, <span class="math inline">\(2\sqrt 3\)</span>, <span class="math inline">\(6\)</span> szám mértani sorozatot?</p><p>A középső tag négyzete a két szélső szorzata: <span class="math display">\[(2\sqrt3)^2=6x\Longrightarrow12=6x\Longrightarrow
+x=2.\]</span></p><h2 class="unnumbered" id="az-első-n-tag-összege">Az első <span class="math inline">\(n\)</span> tag összege</h2><p>Ha <span class="math inline">\(q\ne1\)</span>, akkor <span class="math display">\[S_n=b_1+b_2+\cdots+b_n
+=b_1\frac{q^n-1}{q-1}.\]</span></p><p><strong class="example-label">Példa.</strong> Számítsuk ki <span class="math inline">\(1+2+2^2+\cdots+2^9\)</span> összegét!</p><p><span class="math display">\[S_{10}=\frac{2^{10}-1}{2-1}=1023.\]</span></p><details class="practice-toggle" id="gyakorlófeladatok-10"><summary class="practice-title">Gyakorlófeladatok</summary><ol>
+<li><p>Egy mértani sorozatban <span class="math inline">\(b_4=18\)</span> és <span class="math inline">\(b_5=36\)</span>. Határozzuk meg <span class="math inline">\(b_2\)</span>-t és <span class="math inline">\(b_6\)</span>-ot.</p></li>
+<li><p>Egy mértani sorozatban <span class="math inline">\(b_3=16\)</span> és <span class="math inline">\(b_4=8\)</span>. Határozzuk meg <span class="math inline">\(b_2\)</span>-t és <span class="math inline">\(b_5\)</span>-öt.</p></li>
+<li><p>Számítsuk ki: <span class="math inline">\(1+2^1+\cdots+2^5\)</span>.</p></li>
+<li><p>Számítsuk ki: <span class="math inline">\(1+\frac12+\left(\frac12\right)^2+\cdots+\left(\frac12\right)^5\)</span>.</p></li>
+<li><p>Határozzuk meg <span class="math inline">\(x\)</span>-et, ha a
+<span class="math inline">\(4,x,8\)</span> számok mértani sorozatot
+alkotnak.</p></li>
+<li><p>Határozzuk meg <span class="math inline">\(x\)</span>-et, ha az
+<span class="math inline">\(x,8,32\)</span> számok mértani sorozatot
+alkotnak.</p></li>
+</ol></details></section><div aria-label="Lapozás" class="floating-nav"><button aria-label="Előző lap" class="nav-orb" id="prev-page" title="Előző lap" type="button">←</button><button aria-label="Vissza a főoldalra" class="nav-orb home-orb" id="home-page" title="Vissza a főoldalra" type="button">⌂</button><button aria-label="Következő lap" class="nav-orb" id="next-page" title="Következő lap" type="button">→</button></div><div aria-live="polite" class="page-status" id="page-status"></div><script>
+document.addEventListener('DOMContentLoaded',()=>{
+const current=13, total=44, paths=["01-másodfokú-egyenlet.html", "02-viète-összefüggések.html", "03-másodfokú-egyenlőtlenség.html", "04-a-másodfokú-függvény-grafikonja.html", "05-gyökös-egyenletek.html", "06-logaritmusok.html", "07-exponenciális-egyenletek.html", "08-kombinációk.html", "09-variációk.html", "10-permutációk.html", "11-valószínűségszámítás.html", "12-számtani-sorozatok.html", "13-mértani-sorozatok.html", "14-függvények.html", "15-százalékszámítás.html", "16-a-komplex-számok-halmaza.html", "17-analitikus-geometria.html", "18-vektorok.html", "19-trigonometria.html", "20-geometria.html", "21-mátrixok.html", "22-determinánsok.html", "23-inverz-mátrix.html", "24-lineáris-egyenletrendszerek.html", "25-kompozíciós-műveletek.html", "26-polinomok.html", "27-viète-összefüggések-polinomokra.html", "28-a-maradékosztályok-mathbb-z_n-halmaza.html", "29-határértékek.html", "30-folytonos-függvények.html", "31-aszimptoták.html", "32-deriválás.html", "33-monotonitás-és-görbület.html", "34-primitív-függvények.html", "35-integrálás-parciális-integrálással.html", "36-integrálás-helyettesítéssel.html", "37-határozott-integrálok.html", "38-kezdeti-ismétlés-egész-számok-műveletei.html", "39-racionális-számok-műveletei.html", "40-elsőfokú-egyenletek.html", "41-elsőfokú-egyenlőtlenségek.html", "42-valós-számok-intervallumai.html", "43-abszolútérték.html", "44-kétismeretlenes-két-egyenletből-álló-lineáris-rendszerek.html"];
+const target=n=>n===0?(current===0?'index.html':'../index.html'):(current===0?'temakorok/':'')+paths[n-1];
+const prev=document.getElementById('prev-page'),next=document.getElementById('next-page'),home=document.getElementById('home-page'),status=document.getElementById('page-status');
+if(prev){prev.disabled=current===0;prev.addEventListener('click',()=>{if(current>0)location.href=target(current-1)});}
+if(next){next.disabled=current===total;next.addEventListener('click',()=>{if(current<total)location.href=target(current+1)});}
+if(home)home.addEventListener('click',()=>location.href=target(0));
+if(status)status.textContent=current===0?'Tartalomjegyzék':`${current} / ${total}`;
+document.addEventListener('keydown',e=>{
+ if(e.altKey||e.ctrlKey||e.metaKey||['INPUT','TEXTAREA'].includes(document.activeElement.tagName))return;
+ if(e.key==='ArrowLeft'&&current>0)location.href=target(current-1);
+ if(e.key==='ArrowRight'&&current<total)location.href=target(current+1);
+ if(e.key==='Home')location.href=target(0);
+});
+const browse=document.querySelector('.hero-cta');
+if(browse)browse.addEventListener('click',e=>{e.preventDefault();document.getElementById('temakorok')?.scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('details.practice-toggle').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.MathJax?.typesetPromise)window.MathJax.typesetPromise([d]).catch(()=>{});}));
+});
+</script></body>
+</html>

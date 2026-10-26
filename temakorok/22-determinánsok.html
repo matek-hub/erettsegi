@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="hu" xml:lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="pandoc" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Matematika érettségi – Túlélőkalauz</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] },
+  startup: { typeset: true }
+};
+</script><script async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="../style.css" rel="stylesheet"/></head>
+<body><section class="page topic-page active" data-index="22" id="determinánsok"><img alt="LT képletek védjegy" class="brand-logo" src="../lt-kepletek-vedjegy.svg"/><h1 id="determinánsok">Determinánsok</h1><h2 id="másodrendű-determináns">Másodrendű determináns</h2><p>Ha <span class="math display">\[A=\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix},\]</span>
+akkor <span class="math display">\[\det
+A=\begin{vmatrix}a&amp;b\\c&amp;d\end{vmatrix}=ad-bc.\]</span> Vagyis a
+főátló elemeinek szorzatából kivonjuk a mellékátló elemeinek
+szorzatát.</p><p><strong class="example-label">Példa.</strong> Legyen <span class="math inline">\(A=\begin{pmatrix}2&amp;5\\3&amp;8\end{pmatrix}\)</span>.</p><p><span class="math display">\[\det
+A=2\cdot8-3\cdot5=16-15=1.\]</span></p><h2 id="harmadrendű-determináns">Harmadrendű determináns</h2><p>Harmadrendű determináns kiszámításához használható a Sarrus-szabály:
+a főátló irányú háromszoros szorzatokat összeadjuk, a mellékátló
+irányúakat pedig kivonjuk.</p><p><strong class="example-label">Példa.</strong> Legyen <span class="math display">\[A=\begin{pmatrix}2&amp;3&amp;0\\1&amp;2&amp;-1\\1&amp;2&amp;3\end{pmatrix}.\]</span>
+Számítsuk ki a determinánst!</p><p><span class="math display">\[\begin{aligned}
+\det A={}&amp;2\cdot2\cdot3+1\cdot2\cdot0+1\cdot3\cdot(-1)\\
+&amp;-0\cdot2\cdot1-(-1)\cdot2\cdot2-3\cdot3\cdot1\\
+={}&amp;12+0-3-0+4-9=4.
+\end{aligned}\]</span></p><h2 id="három-pont-kollinearitása-háromszög-területe-és-egyenes-egyenlete">Három
+pont kollinearitása, háromszög területe és egyenes egyenlete</h2><p>Három pont akkor kollineáris, ha ugyanazon az egyenesen helyezkednek
+el. Az <span class="math inline">\(A(x_A,y_A)\)</span>, <span class="math inline">\(B(x_B,y_B)\)</span> és <span class="math inline">\(C(x_C,y_C)\)</span> pontok kollinearitásának
+feltétele: <span class="math display">\[\begin{vmatrix}
+x_A&amp;y_A&amp;1\\
+x_B&amp;y_B&amp;1\\
+x_C&amp;y_C&amp;1
+\end{vmatrix}=0.\]</span> A háromszög területe: <span class="math display">\[T_{ABC}=\frac12\
+\begin{vmatrix}
+x_A&amp;y_A&amp;1\\
+x_B&amp;y_B&amp;1\\
+x_C&amp;y_C&amp;1
+\end{vmatrix}\]</span> Az <span class="math inline">\(AB\)</span> egyenes egyenlete ugyanezzel a
+determinánssal felírható, ha az általános <span class="math inline">\((x,y)\)</span> pontot használjuk az első
+sorban.</p><p><strong class="example-label">Példa.</strong> Legyen <span class="math inline">\(A(3,2)\)</span>, <span class="math inline">\(B(1,3)\)</span> és <span class="math inline">\(C(a,5)\)</span>.</p><ol>
+<li><p>Határozzuk meg <span class="math inline">\(a\)</span>-t úgy, hogy
+a pontok kollineárisak legyenek.</p></li>
+<li><p>Ha <span class="math inline">\(a=5\)</span>, számítsuk ki a
+háromszög területét.</p></li>
+<li><p>Írjuk fel az <span class="math inline">\(AB\)</span> egyenes
+egyenletét.</p></li>
+</ol><p>a) A kollinearitás feltétele: <span class="math display">\[\begin{vmatrix}3&amp;2&amp;1\\1&amp;3&amp;1\\a&amp;5&amp;1\end{vmatrix}=0
+\Longrightarrow -3-a=0,\]</span> ezért <span class="math inline">\(a=-3\)</span>.</p><p>b) Ha <span class="math inline">\(a=5\)</span> a determináns értéke <span class="math inline">\(-8\)</span>, ezért a terület: <span class="math display">\[T=\frac{|-8|}{2}=4.\]</span></p><p>c) Az <span class="math inline">\(AB\)</span> egyenes determinánsos
+egyenlete: <span class="math display">\[\begin{vmatrix}x&amp;y&amp;1\\3&amp;2&amp;1\\1&amp;3&amp;1\end{vmatrix}=0
+\Longrightarrow x+2y-7=0.\]</span></p><details class="practice-toggle" id="gyakorlófeladatok-19"><summary class="practice-title">Gyakorlófeladatok</summary><ol>
+<li><p>Adott <span class="math inline">\(A(1,2)\)</span>, <span class="math inline">\(B(2,1)\)</span> és <span class="math inline">\(C(3,3)\)</span>.</p>
+<ol>
+<li><p>Ellenőrizzük, hogy a három pont kollineáris-e.</p></li>
+<li><p>Számítsuk ki az <span class="math inline">\(ABC\)</span>
+háromszög területét.</p></li>
+</ol></li>
+<li><p>Adott <span class="math inline">\(A(1,a)\)</span>, <span class="math inline">\(B(2,1)\)</span> és <span class="math inline">\(C(3,3)\)</span>. Határozzuk meg <span class="math inline">\(a\)</span>-t úgy, hogy a három pont kollineáris
+legyen.</p></li>
+</ol></details></section><div aria-label="Lapozás" class="floating-nav"><button aria-label="Előző lap" class="nav-orb" id="prev-page" title="Előző lap" type="button">←</button><button aria-label="Vissza a főoldalra" class="nav-orb home-orb" id="home-page" title="Vissza a főoldalra" type="button">⌂</button><button aria-label="Következő lap" class="nav-orb" id="next-page" title="Következő lap" type="button">→</button></div><div aria-live="polite" class="page-status" id="page-status"></div><script>
+document.addEventListener('DOMContentLoaded',()=>{
+const current=22, total=44, paths=["01-másodfokú-egyenlet.html", "02-viète-összefüggések.html", "03-másodfokú-egyenlőtlenség.html", "04-a-másodfokú-függvény-grafikonja.html", "05-gyökös-egyenletek.html", "06-logaritmusok.html", "07-exponenciális-egyenletek.html", "08-kombinációk.html", "09-variációk.html", "10-permutációk.html", "11-valószínűségszámítás.html", "12-számtani-sorozatok.html", "13-mértani-sorozatok.html", "14-függvények.html", "15-százalékszámítás.html", "16-a-komplex-számok-halmaza.html", "17-analitikus-geometria.html", "18-vektorok.html", "19-trigonometria.html", "20-geometria.html", "21-mátrixok.html", "22-determinánsok.html", "23-inverz-mátrix.html", "24-lineáris-egyenletrendszerek.html", "25-kompozíciós-műveletek.html", "26-polinomok.html", "27-viète-összefüggések-polinomokra.html", "28-a-maradékosztályok-mathbb-z_n-halmaza.html", "29-határértékek.html", "30-folytonos-függvények.html", "31-aszimptoták.html", "32-deriválás.html", "33-monotonitás-és-görbület.html", "34-primitív-függvények.html", "35-integrálás-parciális-integrálással.html", "36-integrálás-helyettesítéssel.html", "37-határozott-integrálok.html", "38-kezdeti-ismétlés-egész-számok-műveletei.html", "39-racionális-számok-műveletei.html", "40-elsőfokú-egyenletek.html", "41-elsőfokú-egyenlőtlenségek.html", "42-valós-számok-intervallumai.html", "43-abszolútérték.html", "44-kétismeretlenes-két-egyenletből-álló-lineáris-rendszerek.html"];
+const target=n=>n===0?(current===0?'index.html':'../index.html'):(current===0?'temakorok/':'')+paths[n-1];
+const prev=document.getElementById('prev-page'),next=document.getElementById('next-page'),home=document.getElementById('home-page'),status=document.getElementById('page-status');
+if(prev){prev.disabled=current===0;prev.addEventListener('click',()=>{if(current>0)location.href=target(current-1)});}
+if(next){next.disabled=current===total;next.addEventListener('click',()=>{if(current<total)location.href=target(current+1)});}
+if(home)home.addEventListener('click',()=>location.href=target(0));
+if(status)status.textContent=current===0?'Tartalomjegyzék':`${current} / ${total}`;
+document.addEventListener('keydown',e=>{
+ if(e.altKey||e.ctrlKey||e.metaKey||['INPUT','TEXTAREA'].includes(document.activeElement.tagName))return;
+ if(e.key==='ArrowLeft'&&current>0)location.href=target(current-1);
+ if(e.key==='ArrowRight'&&current<total)location.href=target(current+1);
+ if(e.key==='Home')location.href=target(0);
+});
+const browse=document.querySelector('.hero-cta');
+if(browse)browse.addEventListener('click',e=>{e.preventDefault();document.getElementById('temakorok')?.scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('details.practice-toggle').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.MathJax?.typesetPromise)window.MathJax.typesetPromise([d]).catch(()=>{});}));
+});
+</script></body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="hu" xml:lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="pandoc" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Matematika érettségi – Túlélőkalauz</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] },
+  startup: { typeset: true }
+};
+</script><script async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="../style.css" rel="stylesheet"/></head>
+<body><section class="page topic-page active" data-index="11" id="valószínűségszámítás"><img alt="LT képletek védjegy" class="brand-logo" src="../lt-kepletek-vedjegy.svg"/><h1 id="valószínűségszámítás">Valószínűségszámítás</h1><p>Jelölje <span class="math inline">\(A\)</span> valamely eseményt
+(például kockadobás vagy pénzfeldobás esetén). Az esemény
+bekövetkezésének valószínűségét <span class="math inline">\(P(A)\)</span> jelöli. Ha az elemi kimenetelek
+egyformán valószínűek, akkor <span class="math display">\[P(A)=\frac{\text{kedvező esetek
+száma}}{\text{összes lehetséges eset száma}}.\]</span></p><p><strong class="example-label">Példa.</strong> Egy szabályos dobókockával dobunk. Mennyi
+annak a valószínűsége, hogy páros számot kapunk?</p><p>A páros eredmények: 2, 4, 6, tehát 3 kedvező eset van a 6
+lehetségesből: <span class="math display">\[P(\text{páros})=\frac36=\frac12.\]</span></p><p><strong class="example-label">Példa.</strong> Legyen <span class="math inline">\(A=\{1,2,3,4,5\}\)</span>. Mekkora a valószínűsége,
+hogy az <span class="math inline">\(n\in A\)</span> számra <span class="math inline">\(n!+n&lt;28\)</span> teljesül?</p><p>Ellenőrzés: <span class="math display">\[1!+1=2&lt;28,\quad
+2!+2=4&lt;28,\quad 3!+3=9&lt;28,\]</span> míg <span class="math inline">\(4!+4=28\)</span> és <span class="math inline">\(5!+5&gt;28\)</span>. Három kedvező szám van az öt
+lehetségesből, így <span class="math display">\[P=\frac35.\]</span></p><p><strong class="example-label">Példa.</strong> Az <span class="math inline">\(\{1,2,\ldots,100\}\)</span> halmazból
+véletlenszerűen kiválasztunk egy számot. Mennyi a valószínűsége, hogy
+négyzetszám?</p><p>Az 1 és 100 közötti négyzetszámok <span class="math inline">\(1^2,2^2,\ldots,10^2\)</span>, összesen 10 szám.
+Ezért <span class="math display">\[P=\frac{10}{100}=\frac1{10}.\]</span></p><p><strong class="example-label">Példa.</strong> Az <span class="math inline">\(\{\sqrt[3]{1},\sqrt[3]{2},\ldots,\sqrt[3]{100}\}\)</span>
+halmazból választunk egy elemet. Mekkora a valószínűsége, hogy
+irracionális számot kapunk?</p><p>Az 1 és 100 közötti köbszámok: <span class="math inline">\(1,8,27,64\)</span>, ezek köbgyöke racionális. A
+többi 96 elem irracionális, így <span class="math display">\[P=\frac{96}{100}=\frac{24}{25}.\]</span></p><details class="practice-toggle" id="gyakorlófeladatok-8"><summary class="practice-title">Gyakorlófeladatok</summary><ol>
+<li><p>Két dobókockával egyszerre dobunk. Számítsuk ki annak
+valószínűségét, hogy a) a dobott számok összege 7; b) a két dobás
+azonos.</p></li>
+<li><p>Az <span class="math inline">\(A=\{1,2,3,4,5\}\)</span> halmazból
+választott <span class="math inline">\(n\)</span> számra határozzuk meg
+annak valószínűségét, hogy <span class="math inline">\(n^2+n!&gt;15\)</span>.</p></li>
+<li><p>Az <span class="math inline">\(A=\{1,2,3,4,5\}\)</span> halmazból
+választott <span class="math inline">\(n\)</span> számra határozzuk meg
+annak valószínűségét, hogy <span class="math inline">\(n^2+2n\leq24\)</span>.</p></li>
+<li><p>Határozzuk meg annak valószínűségét, hogy az <span class="math inline">\(\{\sqrt[4]{1},\sqrt[4]{2},\ldots,\sqrt[4]{100}\}\)</span>
+halmazból kiválasztott elem irracionális legyen.</p></li>
+<li><p>Mennyi a valószínűsége, hogy egy kétjegyű természetes szám
+négyzetszám?</p></li>
+<li><p>Mennyi a valószínűsége, hogy egy kétjegyű természetes szám
+számjegyei különböznek?</p></li>
+<li><p>Mennyi a valószínűsége, hogy egy kétjegyű természetes szám
+osztható 20-szal?</p></li>
+<li><p>Mennyi a valószínűsége, hogy egy kétjegyű természetes szám
+mindkét számjegye páros?</p></li>
+<li><p>Mennyi a valószínűsége, hogy egy háromjegyű természetes szám első
+két számjegye páros, a harmadik pedig páratlan?</p></li>
+<li><p>Mennyi a valószínűsége, hogy egy kétjegyű természetes szám 15-nek
+többszöröse, de 10-nek nem többszöröse?</p></li>
+<li><p>Mennyi a valószínűsége, hogy egy kétjegyű, nem nulla
+számjegyekből álló szám számjegyeinek szorzata osztható 10-zel?</p></li>
+<li><p>Mennyi a valószínűsége, hogy egy háromjegyű természetes szám
+számjegyeinek szorzata 8?</p></li>
+</ol></details></section><div aria-label="Lapozás" class="floating-nav"><button aria-label="Előző lap" class="nav-orb" id="prev-page" title="Előző lap" type="button">←</button><button aria-label="Vissza a főoldalra" class="nav-orb home-orb" id="home-page" title="Vissza a főoldalra" type="button">⌂</button><button aria-label="Következő lap" class="nav-orb" id="next-page" title="Következő lap" type="button">→</button></div><div aria-live="polite" class="page-status" id="page-status"></div><script>
+document.addEventListener('DOMContentLoaded',()=>{
+const current=11, total=44, paths=["01-másodfokú-egyenlet.html", "02-viète-összefüggések.html", "03-másodfokú-egyenlőtlenség.html", "04-a-másodfokú-függvény-grafikonja.html", "05-gyökös-egyenletek.html", "06-logaritmusok.html", "07-exponenciális-egyenletek.html", "08-kombinációk.html", "09-variációk.html", "10-permutációk.html", "11-valószínűségszámítás.html", "12-számtani-sorozatok.html", "13-mértani-sorozatok.html", "14-függvények.html", "15-százalékszámítás.html", "16-a-komplex-számok-halmaza.html", "17-analitikus-geometria.html", "18-vektorok.html", "19-trigonometria.html", "20-geometria.html", "21-mátrixok.html", "22-determinánsok.html", "23-inverz-mátrix.html", "24-lineáris-egyenletrendszerek.html", "25-kompozíciós-műveletek.html", "26-polinomok.html", "27-viète-összefüggések-polinomokra.html", "28-a-maradékosztályok-mathbb-z_n-halmaza.html", "29-határértékek.html", "30-folytonos-függvények.html", "31-aszimptoták.html", "32-deriválás.html", "33-monotonitás-és-görbület.html", "34-primitív-függvények.html", "35-integrálás-parciális-integrálással.html", "36-integrálás-helyettesítéssel.html", "37-határozott-integrálok.html", "38-kezdeti-ismétlés-egész-számok-műveletei.html", "39-racionális-számok-műveletei.html", "40-elsőfokú-egyenletek.html", "41-elsőfokú-egyenlőtlenségek.html", "42-valós-számok-intervallumai.html", "43-abszolútérték.html", "44-kétismeretlenes-két-egyenletből-álló-lineáris-rendszerek.html"];
+const target=n=>n===0?(current===0?'index.html':'../index.html'):(current===0?'temakorok/':'')+paths[n-1];
+const prev=document.getElementById('prev-page'),next=document.getElementById('next-page'),home=document.getElementById('home-page'),status=document.getElementById('page-status');
+if(prev){prev.disabled=current===0;prev.addEventListener('click',()=>{if(current>0)location.href=target(current-1)});}
+if(next){next.disabled=current===total;next.addEventListener('click',()=>{if(current<total)location.href=target(current+1)});}
+if(home)home.addEventListener('click',()=>location.href=target(0));
+if(status)status.textContent=current===0?'Tartalomjegyzék':`${current} / ${total}`;
+document.addEventListener('keydown',e=>{
+ if(e.altKey||e.ctrlKey||e.metaKey||['INPUT','TEXTAREA'].includes(document.activeElement.tagName))return;
+ if(e.key==='ArrowLeft'&&current>0)location.href=target(current-1);
+ if(e.key==='ArrowRight'&&current<total)location.href=target(current+1);
+ if(e.key==='Home')location.href=target(0);
+});
+const browse=document.querySelector('.hero-cta');
+if(browse)browse.addEventListener('click',e=>{e.preventDefault();document.getElementById('temakorok')?.scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('details.practice-toggle').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.MathJax?.typesetPromise)window.MathJax.typesetPromise([d]).catch(()=>{});}));
+});
+</script></body>
+</html>

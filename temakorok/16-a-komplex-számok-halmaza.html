@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="hu" xml:lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="pandoc" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Matematika érettségi – Túlélőkalauz</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] },
+  startup: { typeset: true }
+};
+</script><script async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="../style.css" rel="stylesheet"/></head>
+<body><section class="page topic-page active" data-index="16" id="a-komplex-számok-halmaza"><img alt="LT képletek védjegy" class="brand-logo" src="../lt-kepletek-vedjegy.svg"/><h1 id="a-komplex-számok-halmaza">A komplex számok halmaza</h1><p>Bizonyos egyenletek – például azok a másodfokú egyenletek, amelyek
+diszkriminánsa negatív – megoldásához bevezettük a komplex számokat, a
+valós számok halmazának bővítéseként.</p><p>A komplex szám általános alakja: <span class="math display">\[z=a+bi,\qquad a,b\in\mathbb R,\qquad
+i^2=-1.\]</span> Az <span class="math inline">\(a\)</span> szám a <span class="math inline">\(z\)</span> valós része, a <span class="math inline">\(b\)</span> pedig a képzetes része: <span class="math display">\[\operatorname{Re}(z)=a,\qquad
+\operatorname{Im}(z)=b.\]</span> Az <span class="math inline">\(a-bi\)</span> számot a <span class="math inline">\(z=a+bi\)</span> komplex szám konjugáltjának
+nevezzük, és <span class="math inline">\(\overline z\)</span>-vel
+jelöljük.</p><h2 id="műveletek-komplex-számokkal">Műveletek komplex számokkal</h2><p>Legyen <span class="math inline">\(z_1=a+bi\)</span> és <span class="math inline">\(z_2=c+di\)</span>.</p><p><strong>Összeadás:</strong> <span class="math display">\[z_1+z_2=(a+c)+(b+d)i.\]</span> A valós részeket a
+valós részekkel, a képzetes részeket a képzetes részekkel adjuk
+össze.</p><p><strong class="example-label">Példa.</strong> Legyen <span class="math inline">\(z_1=5+4i\)</span> és <span class="math inline">\(z_2=6+2i\)</span>.</p><p><span class="math display">\[z_1+z_2=(5+6)+(4+2)i=11+6i.\]</span></p><p><strong>Kivonás:</strong> <span class="math display">\[z_1-z_2=(a-c)+(b-d)i.\]</span>
+<strong>Példa.</strong> Az előző számokkal:</p><p><span class="math display">\[z_1-z_2=(5-6)+(4-2)i=-1+2i.\]</span></p><p><strong>Szorzás:</strong> a tagonkénti szorzáskor felhasználjuk, hogy
+<span class="math inline">\(i^2=-1\)</span>: <span class="math display">\[\begin{aligned}
+z_1z_2&amp;=(a+bi)(c+di)\\
+&amp;=ac+adi+bci+bd\,i^2\\
+&amp;=(ac-bd)+(ad+bc)i.
+\end{aligned}\]</span> <strong>Példa.</strong> Legyen <span class="math inline">\(z_1=5+4i\)</span> és <span class="math inline">\(z_2=6+2i\)</span>.</p><p><span class="math display">\[\begin{aligned}
+z_1z_2&amp;=30+10i+24i+8i^2\\
+&amp;=30-8+34i=22+34i.
+\end{aligned}\]</span></p><p><strong>Osztás:</strong> a nevezőből eltüntetjük a képzetes részt
+úgy, hogy a számlálót és a nevezőt megszorozzuk a nevező konjugáltjával:
+<span class="math display">\[\begin{aligned}
+\frac{z_1}{z_2}
+&amp;=\frac{a+bi}{c+di}\cdot\frac{c-di}{c-di}\\
+&amp;=\frac{(a+bi)(c-di)}{(c+di)(c-di)}\\
+&amp;=\frac{(ac+bd)+(bc-ad)i}{c^2+d^2},
+\end{aligned}\]</span> ahol <span class="math inline">\(c+di\ne0\)</span>.</p><p><strong class="example-label">Példa.</strong> Számítsuk ki <span class="math inline">\(\displaystyle\frac{3+2i}{2-i}\)</span>
+értékét!</p><p><span class="math display">\[\begin{aligned}
+\frac{3+2i}{2-i}
+&amp;=\frac{(3+2i)(2+i)}{(2-i)(2+i)}\\
+&amp;=\frac{6+3i+4i+2i^2}{4-i^2}\\
+&amp;=\frac{4+7i}{5}=\frac45+\frac75i.
+\end{aligned}\]</span> A hányados valós része <span class="math inline">\(\frac45\)</span>, képzetes része <span class="math inline">\(\frac75\)</span>.</p><h2 id="egy-komplex-szám-modulusa">Egy komplex szám modulusa</h2><p>Ha <span class="math inline">\(z=a+bi\)</span>, akkor a modulusa:
+<span class="math display">\[|z|=\sqrt{a^2+b^2}.\]</span> Hasznos
+tulajdonságok: <span class="math display">\[|z^n|=|z|^n,\qquad
+\left|\frac{z_1}{z_2}\right|=\frac{|z_1|}{|z_2|}\quad(z_2\ne0).\]</span></p><p><strong class="example-label">Példa.</strong> Ha <span class="math inline">\(z=4+3i\)</span>, akkor</p><p><span class="math display">\[|z|=\sqrt{4^2+3^2}=\sqrt{25}=5.\]</span></p><p><strong class="example-label">Példa.</strong> Ha <span class="math inline">\(z=(1+2i)^4\)</span>, akkor</p><p><span class="math display">\[|z|=|1+2i|^4=(\sqrt5)^4=25.\]</span></p><p><strong class="example-label">Példa.</strong> Legyen <span class="math inline">\(\displaystyle z=\frac{3+2i}{5-i}\)</span>.
+Határozzuk meg <span class="math inline">\(|z|\)</span>-t!</p><p><span class="math display">\[|z|=\frac{|3+2i|}{|5-i|}
+=\frac{\sqrt{13}}{\sqrt{26}}=\frac1{\sqrt2}.\]</span> A konjugálttal
+való bővítés után <span class="math inline">\(z=\frac12+\frac12i\)</span>, ezért ugyanez
+közvetlenül is látszik: <span class="math display">\[|z|=\sqrt{\left(\frac12\right)^2+\left(\frac12\right)^2}
+=\frac{\sqrt2}{2}=\frac1{\sqrt2}.\]</span></p><h2 id="az-i-hatványai">Az <span class="math inline">\(i\)</span>
+hatványai</h2><p>Mivel <span class="math inline">\(i^2=-1\)</span>, a hatványok négyes
+ciklusban ismétlődnek: <span class="math display">\[i^0=1,\qquad
+i^1=i,\qquad i^2=-1,\qquad i^3=-i,\qquad i^4=1.\]</span> Általánosan:
+<span class="math display">\[i^{4n}=1,\quad i^{4n+1}=i,\quad
+i^{4n+2}=-1,\quad i^{4n+3}=-i.\]</span> Ezért egy nagy kitevő esetén
+elég a kitevőt 4-gyel osztani, és a maradékot figyelembe venni.</p><p><strong class="example-label">Példa.</strong> Számítsuk ki <span class="math inline">\(i^{253}\)</span>-at!</p><p>Mivel <span class="math inline">\(253=4\cdot63+1\)</span>, ezért
+<span class="math inline">\(i^{253}=i\)</span>.</p><p><strong class="example-label">Példa.</strong> Számítsuk ki <span class="math inline">\(i^{1959}\)</span>-et!</p><p>Mivel <span class="math inline">\(1959=4\cdot489+3\)</span>, ezért
+<span class="math inline">\(i^{1959}=i^3=-i\)</span>.</p><h2 id="másodfokú-egyenlet-negatív-diszkriminánssal">Másodfokú egyenlet
+negatív diszkriminánssal</h2><p>Ha a másodfokú egyenlet diszkriminánsa negatív, akkor nincs valós
+megoldása, de két komplex megoldása van, amelyek egymás konjugáltjai.
+Felhasználjuk, hogy <span class="math display">\[\sqrt{-1}=i,\qquad
+\sqrt{-9}=3i.\]</span></p><p><strong class="example-label">Példa.</strong> Oldjuk meg az <span class="math inline">\(x^2+4x+5=0\)</span> egyenletet a komplex számok
+halmazán!</p><p><span class="math display">\[\Delta=4^2-4\cdot1\cdot5=-4.\]</span>
+Így <span class="math display">\[x_{1,2}=\frac{-4\pm\sqrt{-4}}2
+=\frac{-4\pm2i}{2},\]</span> tehát <span class="math inline">\(x_1=-2+i\)</span> és <span class="math inline">\(x_2=-2-i\)</span>.</p><details class="practice-toggle" id="gyakorlófeladatok-13"><summary class="practice-title">Gyakorlófeladatok</summary><ol>
+<li><p>Legyen <span class="math inline">\(z_1=3+4i\)</span> és <span class="math inline">\(z_2=4-2i\)</span>. Számítsuk ki:</p>
+<ol>
+<li><p><span class="math inline">\(2z_1+3z_2\)</span>;</p></li>
+<li><p><span class="math inline">\(z_1z_2\)</span>;</p></li>
+<li><p><span class="math inline">\(\dfrac{z_1}{z_2}\)</span>;</p></li>
+<li><p><span class="math inline">\((z_1+z_2)^2\)</span>.</p></li>
+</ol></li>
+<li><p>Legyen <span class="math inline">\(z=i^{123}+i^{174}+i^{141}+i^{161}\)</span>.</p>
+<ol>
+<li><p>Írjuk fel egyszerűbb alakban <span class="math inline">\(z\)</span>-t.</p></li>
+<li><p>Határozzuk meg <span class="math inline">\(\operatorname{Re}(z)\)</span>-t és <span class="math inline">\(|z|\)</span>-t.</p></li>
+</ol></li>
+<li><p>Legyen <span class="math inline">\(\displaystyle
+z=\frac{5-i}{3+2i}\)</span>. Határozzuk meg <span class="math inline">\(\operatorname{Re}(z)\)</span>-t és <span class="math inline">\(|z|\)</span>-t.</p></li>
+<li><p>Oldjuk meg az <span class="math inline">\(x^2+6x+13=0\)</span>
+egyenletet.</p></li>
+<li><p>Legyen <span class="math inline">\(\displaystyle
+z=\frac{2-i}{3+i}\)</span>. Határozzuk meg az <span class="math inline">\(a,b\in\mathbb R\)</span> számokat úgy, hogy <span class="math inline">\(z=a+bi\)</span>.</p></li>
+</ol></details></section><div aria-label="Lapozás" class="floating-nav"><button aria-label="Előző lap" class="nav-orb" id="prev-page" title="Előző lap" type="button">←</button><button aria-label="Vissza a főoldalra" class="nav-orb home-orb" id="home-page" title="Vissza a főoldalra" type="button">⌂</button><button aria-label="Következő lap" class="nav-orb" id="next-page" title="Következő lap" type="button">→</button></div><div aria-live="polite" class="page-status" id="page-status"></div><script>
+document.addEventListener('DOMContentLoaded',()=>{
+const current=16, total=44, paths=["01-másodfokú-egyenlet.html", "02-viète-összefüggések.html", "03-másodfokú-egyenlőtlenség.html", "04-a-másodfokú-függvény-grafikonja.html", "05-gyökös-egyenletek.html", "06-logaritmusok.html", "07-exponenciális-egyenletek.html", "08-kombinációk.html", "09-variációk.html", "10-permutációk.html", "11-valószínűségszámítás.html", "12-számtani-sorozatok.html", "13-mértani-sorozatok.html", "14-függvények.html", "15-százalékszámítás.html", "16-a-komplex-számok-halmaza.html", "17-analitikus-geometria.html", "18-vektorok.html", "19-trigonometria.html", "20-geometria.html", "21-mátrixok.html", "22-determinánsok.html", "23-inverz-mátrix.html", "24-lineáris-egyenletrendszerek.html", "25-kompozíciós-műveletek.html", "26-polinomok.html", "27-viète-összefüggések-polinomokra.html", "28-a-maradékosztályok-mathbb-z_n-halmaza.html", "29-határértékek.html", "30-folytonos-függvények.html", "31-aszimptoták.html", "32-deriválás.html", "33-monotonitás-és-görbület.html", "34-primitív-függvények.html", "35-integrálás-parciális-integrálással.html", "36-integrálás-helyettesítéssel.html", "37-határozott-integrálok.html", "38-kezdeti-ismétlés-egész-számok-műveletei.html", "39-racionális-számok-műveletei.html", "40-elsőfokú-egyenletek.html", "41-elsőfokú-egyenlőtlenségek.html", "42-valós-számok-intervallumai.html", "43-abszolútérték.html", "44-kétismeretlenes-két-egyenletből-álló-lineáris-rendszerek.html"];
+const target=n=>n===0?(current===0?'index.html':'../index.html'):(current===0?'temakorok/':'')+paths[n-1];
+const prev=document.getElementById('prev-page'),next=document.getElementById('next-page'),home=document.getElementById('home-page'),status=document.getElementById('page-status');
+if(prev){prev.disabled=current===0;prev.addEventListener('click',()=>{if(current>0)location.href=target(current-1)});}
+if(next){next.disabled=current===total;next.addEventListener('click',()=>{if(current<total)location.href=target(current+1)});}
+if(home)home.addEventListener('click',()=>location.href=target(0));
+if(status)status.textContent=current===0?'Tartalomjegyzék':`${current} / ${total}`;
+document.addEventListener('keydown',e=>{
+ if(e.altKey||e.ctrlKey||e.metaKey||['INPUT','TEXTAREA'].includes(document.activeElement.tagName))return;
+ if(e.key==='ArrowLeft'&&current>0)location.href=target(current-1);
+ if(e.key==='ArrowRight'&&current<total)location.href=target(current+1);
+ if(e.key==='Home')location.href=target(0);
+});
+const browse=document.querySelector('.hero-cta');
+if(browse)browse.addEventListener('click',e=>{e.preventDefault();document.getElementById('temakorok')?.scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('details.practice-toggle').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.MathJax?.typesetPromise)window.MathJax.typesetPromise([d]).catch(()=>{});}));
+});
+</script></body>
+</html>

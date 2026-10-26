@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="hu" xml:lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="pandoc" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Matematika érettségi – Túlélőkalauz</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] },
+  startup: { typeset: true }
+};
+</script><script async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="../style.css" rel="stylesheet"/></head>
+<body><section class="page topic-page active" data-index="28" id="a-maradékosztályok-mathbb-z_n-halmaza"><img alt="LT képletek védjegy" class="brand-logo" src="../lt-kepletek-vedjegy.svg"/><h1 id="a-maradékosztályok-mathbb-z_n-halmaza">A maradékosztályok <span class="math inline">\(\mathbb Z_n\)</span> halmaza</h1><p>A <span class="math inline">\(\mathbb Z_n\)</span> halmaz az <span class="math inline">\(n\)</span>-nel való osztás lehetséges
+maradékosztályait tartalmazza. Például <span class="math display">\[\mathbb
+Z_5=\{\overline0,\overline1,\overline2,\overline3,\overline4\}.\]</span>
+Az <span class="math inline">\(\overline1\)</span> maradékosztály minden
+olyan egész számot tartalmaz, amely 5-tel osztva 1 maradékot ad.</p><p>A műveletek során az eredményt az <span class="math inline">\(n\)</span>-nel való osztás maradékával
+helyettesítjük. Például <span class="math inline">\(\mathbb
+Z_5\)</span>-ben: <span class="math display">\[\overline9=\overline4,\qquad
+\overline3+\overline4=\overline7=\overline2,\]</span> <span class="math display">\[\overline3\cdot\overline4=\overline{12}=\overline2.\]</span>
+Negatív szám esetén megfelelő többszöröst adhatunk hozzá: például <span class="math inline">\(\overline{-23}=\overline2\)</span> a <span class="math inline">\(\mathbb Z_5\)</span> halmazban.</p><h2 id="egyenletek-mathbb-z_n-ben">Egyenletek <span class="math inline">\(\mathbb Z_n\)</span>-ben</h2><p><strong class="example-label">Példa.</strong> Oldjuk meg <span class="math inline">\(\mathbb Z_{10}\)</span>-ben a <span class="math display">\[\overline 2\,x+\overline 1=\overline 3\]</span>
+egyenletet!</p><p><span class="math display">\[\overline2\,x=\overline2.\]</span> A
+<span class="math inline">\(\mathbb Z_{10}\)</span> elemeivel való
+szorzásból azt kapjuk, hogy a megoldások: <span class="math display">\[x\in\{\overline1,\overline6\},\]</span> mert
+<span class="math inline">\(2\cdot1\equiv2\pmod{10}\)</span> és <span class="math inline">\(2\cdot6\equiv2\pmod{10}\)</span>.</p><p>Ha <span class="math inline">\(n\)</span> prímszám, akkor a nem nulla
+együtthatóval felírt lineáris egyenletnek egyetlen megoldása van. Ha
+<span class="math inline">\(n\)</span> összetett szám, akkor több
+megoldás is lehet, de az is előfordulhat, hogy nincs megoldás.</p><h2 id="egyenletrendszerek-mathbb-z_n-ben">Egyenletrendszerek <span class="math inline">\(\mathbb Z_n\)</span>-ben</h2><p><strong class="example-label">Példa.</strong> Oldjuk meg <span class="math inline">\(\mathbb Z_{10}\)</span>-ben a rendszert!</p><p><span class="math display">\[\begin{cases}
+\overline2x+y=\overline4,\\
+x+\overline2y=\overline5.
+\end{cases}\]</span> Az első egyenletet megszorozzuk 2-vel: <span class="math display">\[\begin{cases}
+\overline4x+\overline2y=\overline8,\\
+x+\overline2y=\overline5.
+\end{cases}\]</span> Kivonva a második egyenletet az elsőből: <span class="math display">\[\overline3x=\overline3.\]</span> Ezért <span class="math inline">\(x=\overline1\)</span>. Az első egyenletbe
+visszahelyettesítve <span class="math inline">\(y=\overline2\)</span>,
+és ez a második egyenletet is kielégíti. A rendszer megoldása: <span class="math display">\[(x,y)=(\overline1,\overline2).\]</span></p><details class="practice-toggle" id="gyakorlófeladatok-23"><summary class="practice-title">Gyakorlófeladatok</summary><ol>
+<li><p>Oldjuk meg <span class="math inline">\(\mathbb
+Z_{10}\)</span>-ben a <span class="math inline">\(3x+\overline5=\overline4\)</span>
+egyenletet.</p></li>
+<li><p>Számítsuk ki:</p>
+<ol>
+<li><p><span class="math inline">\(\overline1+\overline2+\overline3+\overline4+\overline5\)</span>
+összegét <span class="math inline">\(\mathbb Z_6\)</span>-ban;</p></li>
+<li><p><span class="math inline">\(\overline1\cdot\overline2\cdot\overline3\cdot\overline4\cdot\overline5\)</span>
+szorzatot <span class="math inline">\(\mathbb Z_7\)</span>-ben;</p></li>
+<li><p>a következő determinánst <span class="math inline">\(\mathbb
+Z_{11}\)</span>-ben: <span class="math display">\[\begin{vmatrix}
+\overline2&amp;\overline1&amp;\overline4\\
+\overline3&amp;\overline2&amp;\overline5\\
+\overline1&amp;\overline3&amp;\overline3
+\end{vmatrix}.\]</span></p></li>
+</ol></li>
+<li><p>Oldjuk meg <span class="math inline">\(\mathbb Z_8\)</span>-ban:
+<span class="math display">\[\begin{cases}
+\overline3x+\overline4y=\overline3,\\
+\overline2x+\overline3y=\overline0.
+\end{cases}\]</span></p></li>
+<li><p>Számítsuk ki <span class="math inline">\(2^{2009}\)</span>
+maradékosztályát <span class="math inline">\(\mathbb
+Z_{11}\)</span>-ben.</p></li>
+</ol></details></section><div aria-label="Lapozás" class="floating-nav"><button aria-label="Előző lap" class="nav-orb" id="prev-page" title="Előző lap" type="button">←</button><button aria-label="Vissza a főoldalra" class="nav-orb home-orb" id="home-page" title="Vissza a főoldalra" type="button">⌂</button><button aria-label="Következő lap" class="nav-orb" id="next-page" title="Következő lap" type="button">→</button></div><div aria-live="polite" class="page-status" id="page-status"></div><script>
+document.addEventListener('DOMContentLoaded',()=>{
+const current=28, total=44, paths=["01-másodfokú-egyenlet.html", "02-viète-összefüggések.html", "03-másodfokú-egyenlőtlenség.html", "04-a-másodfokú-függvény-grafikonja.html", "05-gyökös-egyenletek.html", "06-logaritmusok.html", "07-exponenciális-egyenletek.html", "08-kombinációk.html", "09-variációk.html", "10-permutációk.html", "11-valószínűségszámítás.html", "12-számtani-sorozatok.html", "13-mértani-sorozatok.html", "14-függvények.html", "15-százalékszámítás.html", "16-a-komplex-számok-halmaza.html", "17-analitikus-geometria.html", "18-vektorok.html", "19-trigonometria.html", "20-geometria.html", "21-mátrixok.html", "22-determinánsok.html", "23-inverz-mátrix.html", "24-lineáris-egyenletrendszerek.html", "25-kompozíciós-műveletek.html", "26-polinomok.html", "27-viète-összefüggések-polinomokra.html", "28-a-maradékosztályok-mathbb-z_n-halmaza.html", "29-határértékek.html", "30-folytonos-függvények.html", "31-aszimptoták.html", "32-deriválás.html", "33-monotonitás-és-görbület.html", "34-primitív-függvények.html", "35-integrálás-parciális-integrálással.html", "36-integrálás-helyettesítéssel.html", "37-határozott-integrálok.html", "38-kezdeti-ismétlés-egész-számok-műveletei.html", "39-racionális-számok-műveletei.html", "40-elsőfokú-egyenletek.html", "41-elsőfokú-egyenlőtlenségek.html", "42-valós-számok-intervallumai.html", "43-abszolútérték.html", "44-kétismeretlenes-két-egyenletből-álló-lineáris-rendszerek.html"];
+const target=n=>n===0?(current===0?'index.html':'../index.html'):(current===0?'temakorok/':'')+paths[n-1];
+const prev=document.getElementById('prev-page'),next=document.getElementById('next-page'),home=document.getElementById('home-page'),status=document.getElementById('page-status');
+if(prev){prev.disabled=current===0;prev.addEventListener('click',()=>{if(current>0)location.href=target(current-1)});}
+if(next){next.disabled=current===total;next.addEventListener('click',()=>{if(current<total)location.href=target(current+1)});}
+if(home)home.addEventListener('click',()=>location.href=target(0));
+if(status)status.textContent=current===0?'Tartalomjegyzék':`${current} / ${total}`;
+document.addEventListener('keydown',e=>{
+ if(e.altKey||e.ctrlKey||e.metaKey||['INPUT','TEXTAREA'].includes(document.activeElement.tagName))return;
+ if(e.key==='ArrowLeft'&&current>0)location.href=target(current-1);
+ if(e.key==='ArrowRight'&&current<total)location.href=target(current+1);
+ if(e.key==='Home')location.href=target(0);
+});
+const browse=document.querySelector('.hero-cta');
+if(browse)browse.addEventListener('click',e=>{e.preventDefault();document.getElementById('temakorok')?.scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('details.practice-toggle').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.MathJax?.typesetPromise)window.MathJax.typesetPromise([d]).catch(()=>{});}));
+});
+</script></body>
+</html>

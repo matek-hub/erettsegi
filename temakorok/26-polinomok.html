@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="hu" xml:lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="pandoc" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Matematika érettségi – Túlélőkalauz</title>
+<style>
+:root {
+  --ink: #202938;
+  --muted: #526174;
+  --accent: #234f91;
+  --line: #cbd5e1;
+  --panel: #f6f8fb;
+}
+* { box-sizing: border-box; }
+
+h2 { font-size: 1.15rem; margin: 26px 0 10px; color: var(--accent); }
+p { margin: 10px 0; }
+.formula { overflow-x: auto; margin: 12px 0; padding: 8px; text-align: center; }
+.division {
+  width: 100%; margin: 20px auto; padding: 18px 0;
+  background: #fff; overflow-x: auto;
+}
+.division table {
+  border-collapse: collapse; margin: 0 auto;
+  font-family: "Cambria Math", Cambria, "Times New Roman", serif;
+  font-size: clamp(.92rem, 2.1vw, 1.18rem); line-height: 1.8;
+  white-space: nowrap;
+}
+.division td { padding: 2px 10px; vertical-align: middle; }
+.work { min-width: 420px; border-right: 2px solid #111; }
+.polyrow {
+  display: grid;
+  grid-template-columns: 74px 94px 78px 76px;
+  align-items: baseline;
+  width: 322px; margin-left: auto; margin-right: 0;
+}
+.polyrow span { display: block; text-align: right; min-height: 1.8em; }
+.polyrow.under { border-bottom: 1px solid #111; }
+.right-top {
+  min-width: 240px; text-align: left;
+  border-bottom: 2px solid #111; color: #218342;
+  vertical-align: bottom !important;
+}
+.right-quotient { text-align: center; color: #1769aa; }
+.explanation {
+  min-width: 240px; max-width: 350px; white-space: normal;
+  font: .9rem/1.5 Arial, Helvetica, sans-serif; color: var(--muted);
+}
+.note {
+  padding: 8px 0;
+  margin: 18px 0; background: transparent; color: var(--muted);
+}
+@media(max-width: 560px) {
+  body { padding: 10px 6px; }
+  main { padding: 22px 14px; }
+  .division { padding: 12px 5px; }
+  .division td { padding: 2px 6px; }
+  .work { min-width: 360px; }
+  .polyrow { grid-template-columns: 62px 82px 68px 62px; width: 274px; }
+  .right-top, .explanation { min-width: 210px; }
+}
+</style>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] },
+  startup: { typeset: true }
+};
+</script><script async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="../style.css" rel="stylesheet"/></head>
+<body><section class="page topic-page active" data-index="26" id="polinomok"><img alt="LT képletek védjegy" class="brand-logo" src="../lt-kepletek-vedjegy.svg"/><h1 id="polinomok">Polinomok</h1><h2 id="polinom-gyökei">Polinom gyökei</h2><p>Az <span class="math inline">\(a\)</span> szám az <span class="math inline">\(f\)</span> polinom gyöke, ha <span class="math display">\[f(a)=0.\]</span></p><p><strong class="example-label">Példa.</strong> Legyen <span class="math inline">\(f(x)=x^3+3x^2+ax-4\)</span>. Határozzuk meg <span class="math inline">\(a\)</span>-t úgy, hogy <span class="math inline">\(-1\)</span> a polinom gyöke legyen!</p><p><span class="math display">\[f(-1)=(-1)^3+3(-1)^2-a-4=0.\]</span>
+Ezért <span class="math inline">\(-1+3-a-4=0\)</span>, tehát <span class="math inline">\(a=-2\)</span>.</p><h2 id="a-maradéktétel">A maradéktétel</h2><p>Az <span class="math inline">\(f(x)\)</span> polinom <span class="math inline">\((x-a)\)</span>-val való osztásakor a maradék <span class="math inline">\(f(a)\)</span>: <span class="math display">\[f(x)=(x-a)q(x)+f(a).\]</span></p><p><strong class="example-label">Példa.</strong> Határozzuk meg az <span class="math inline">\(f(x)=x^4+2x^3-5x+7\)</span> polinom <span class="math inline">\(x+1\)</span>-gyel való osztásakor kapott
+maradékot!</p><p>Mivel <span class="math inline">\(x+1=0\)</span> esetén <span class="math inline">\(x=-1\)</span>, a maradék: <span class="math display">\[f(-1)=1-2+5+7=11.\]</span></p><p>Ha <span class="math inline">\(g\)</span> osztója <span class="math inline">\(f\)</span>-nek, akkor az <span class="math inline">\(f\)</span>-nek a <span class="math inline">\(g\)</span>-vel való osztásakor a maradék nulla.
+Ezért <span class="math inline">\(g\)</span> minden gyökének <span class="math inline">\(f\)</span> gyökének is kell lennie.</p><p><strong class="example-label">Példa.</strong> Legyen <span class="math inline">\(f(x)=(x+1)^{10}+(x-1)^{10}\)</span> és <span class="math inline">\(g(x)=x^2-3x+2\)</span>. Igazoljuk, hogy <span class="math inline">\(g\)</span> nem osztója <span class="math inline">\(f\)</span>-nek!</p><p>A <span class="math inline">\(g\)</span> gyökei 1 és 2. Ekkor <span class="math inline">\(f(1)=2^{10}\ne0\)</span>, ezért <span class="math inline">\(g\)</span> nem lehet osztója <span class="math inline">\(f\)</span>-nek.</p><h2 id="maradék-meghatározása-másodfokú-osztóval">Maradék meghatározása
+másodfokú osztóval</h2><p>Ha a másodfokú <span class="math inline">\(g\)</span> polinommal
+osztunk, akkor a maradék legfeljebb elsőfokú: <span class="math display">\[f(x)=g(x)q(x)+ax+b.\]</span></p><p><strong class="example-label">Példa.</strong> Legyen <span class="math inline">\(f(x)=(x+2)^{10}+(x-1)^{10}\)</span> és <span class="math inline">\(g(x)=x^2+x-2=(x+2)(x-1)\)</span>. Határozzuk meg a
+maradékot!</p><p>A maradék legyen <span class="math inline">\(ax+b\)</span>. A <span class="math inline">\(g\)</span> gyökei <span class="math inline">\(-2\)</span> és 1, tehát: <span class="math display">\[f(-2)=-2a+b=3^{10},\qquad
+f(1)=a+b=3^{10}.\]</span> A két egyenlet kivonásával <span class="math inline">\(a=0\)</span>, így <span class="math inline">\(b=3^{10}\)</span>. A maradék tehát <span class="math inline">\(3^{10}\)</span>.</p><h2 id="polinom-felbontása-tényezőkre">Polinom felbontása
+tényezőkre</h2><p>Ha ismerjük egy polinom gyökeit, akkor lineáris tényezők szorzataként
+írható fel. A racionális gyökök kereséséhez gyakran a konstans tag
+osztóit vizsgáljuk.</p><p><strong class="example-label">Példa.</strong>
+
+  Bontsuk fel a polinomot irreducibilis tényezők szorzatára!
+
+  <div class="formula">
+    \[f(x)=x^3+5x^2-4x-20\]
+  </div>
+
+  <p>A gyökök meghatározásához felírjuk a polinomot a gyökei segítségével:</p>
+  <div class="formula">
+    \[f(x)=(x-x_1)(x-x_2)(x-x_3).\]
+  </div>
+
+  <p>Egész gyököket keresünk a szabad tag osztói között:</p>
+  <div class="formula">
+    \[D_{20}=\{\pm1,\pm2,\pm4,\pm5,\pm10,\pm20\}.\]
+  </div>
+
+  <p>Mivel</p>
+  <div class="formula">
+    \[f(-2)=(-2)^3+5(-2)^2-4(-2)-20=0,\]
+  </div>
+  <p>ezért \(x_1=-2\) a polinom egyik gyöke. Így a polinomot az</p>
+  <div class="formula">
+    \[x-x_1=x-(-2)=x+2\]
+  </div>
+  <p>kifejezéssel osztjuk el.</p>
+
+  <h2>A polinom osztása \(x+2\)-vel</h2>
+  <div class="division" aria-label="Polinomosztás, az azonos fokszámú tagok egymás alatt szerepelnek">
+    <table>
+      <tr>
+        <td class="work" style="border-right: 1px solid black; padding: 8px;">
+          <div class="polyrow"><span>\(x^3\)</span><span>\(+5x^2\)</span><span>\(-4x\)</span><span>\(-20\)</span></div>
+        </td>
+        <td class="right-top" style="border-bottom: 1px solid black; padding: 8px;">\(\,x+2\,\)</td>
+      </tr>
+      <tr>
+        <td class="work" style="border-right: 1px solid black; padding: 8px;">
+          <div class="polyrow under"><span>\(-x^3\)</span><span>\(-2x^2\)</span><span></span><span></span></div>
+        </td>
+        <td class="explanation">
+          <strong class="right-quotient">Első hányadostag: \(x^2\)</strong><br>
+          Elosztjuk \(x^3\)-at \(x\)-szel: \(x^3:x=x^2\).<br>
+          Ezután szorzunk: \(x^2(x+2)=x^3+2x^2\). A szorzatot ellentétes előjellel írjuk le, majd összeadjuk a megfelelő tagokkal.
+        </td>
+      </tr>
+      <tr>
+        <td class="work" style="border-right: 1px solid black; padding: 8px;">
+          <div class="polyrow"><span></span><span>\(3x^2\)</span><span>\(-4x\)</span><span>\(-20\)</span></div>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="work" style="border-right: 1px solid black; padding: 8px;">
+          <div class="polyrow under"><span></span><span>\(-3x^2\)</span><span>\(-6x\)</span><span></span></div>
+        </td>
+        <td class="explanation">
+          <strong class="right-quotient">Következő hányadostag: \(+3x\)</strong><br>
+          Elosztjuk \(3x^2\)-et \(x\)-szel: \(3x^2:x=3x\).<br>
+          Szorzunk: \(3x(x+2)=3x^2+6x\), majd ellentétes előjellel leírjuk, és összeadunk.
+        </td>
+      </tr>
+      <tr>
+        <td class="work" style="border-right: 1px solid black; padding: 8px;">
+          <div class="polyrow"><span></span><span></span><span>\(-10x\)</span><span>\(-20\)</span></div>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="work" style="border-right: 1px solid black; padding: 8px;">
+          <div class="polyrow under"><span></span><span></span><span>\(+10x\)</span><span>\(+20\)</span></div>
+        </td>
+        <td class="explanation">
+          <strong class="right-quotient">Utolsó hányadostag: \(-10\)</strong><br>
+          Elosztjuk \(-10x\)-et \(x\)-szel: \(-10x:x=-10\).<br>
+          Szorzunk: \(-10(x+2)=-10x-20\), majd ellentétes előjellel leírjuk. Az összeadás eredménye \(0\), tehát a maradék nulla.
+        </td>
+      </tr>
+      <tr>
+        <td class="work" style="border-right: 1px solid black; padding: 8px;">
+          <div class="polyrow"><span></span><span></span><span></span><span>\(0\)</span></div>
+        </td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+
+  <p class="note">Az azonos fokszámú tagok külön oszlopban, egymás alatt helyezkednek el. Mivel a maradék nulla, az \(x+2\) valóban osztója a polinomnak.</p>
+
+  <h2>A további gyökök meghatározása</h2>
+  <p>Az osztás hányadosa \(x^2+3x-10\). A további gyökök meghatározásához a hányadost nullával tesszük egyenlővé:</p>
+  <div class="formula">
+    \[x^2+3x-10=0.\]
+  </div>
+  <p>Másodfokú kifejezésként tényezőkre bontjuk:</p>
+  <div class="formula">
+    \[x^2+3x-10=(x+5)(x-2).\]
+  </div>
+  <p>Így a további gyökök \(x_2=-5\) és \(x_3=2\).</p>
+
+  <h2>A polinom teljes felbontása</h2>
+  <div class="formula">
+    \[f(x)=(x+2)(x+5)(x-2)\]
+  </div>
+  <p>A polinom gyökei:</p>
+  <div class="formula">
+    \[x_1=-2,\qquad x_2=-5,\qquad x_3=2.\]
+  </div>
+
+
+</p><h2 id="annak-igazolása-hogy-nem-minden-gyök-valós">Igazoljuk, hogy az <span class="math inline">\(f\)</span> polinomnak vannak komplex gyökei is</h2><p>
+
+A harmadfokú polinom gyökeire vonatkozó Viète-összefüggések
+segítségével a gyökök négyzeteinek összege is kifejezhető. 
+ <p>Számítsuk ki:</p>
+    <div class="equation">
+      \[
+      x_1^2+x_2^2+x_3^2
+      =(x_1+x_2+x_3)^2
+      -2(x_1x_2+x_1x_3+x_2x_3)
+      =S^2-2P<0.
+      \]
+    </div>
+Ha egy ilyen összeg negatív, akkor a gyökök nem lehetnek mind valósak, hiszen valós számok négyzeteinek összege nemnegatív.
+
+</p><details class="practice-toggle" id="gyakorlófeladatok-21"><summary class="practice-title">Gyakorlófeladatok</summary><ol>
+<li><p>Határozzuk meg az <span class="math display">\[f(x)=x^4-2x^3+5x^2-4x+5\]</span> polinom <span class="math inline">\(x-2\)</span>-vel való osztásakor kapott
+maradékot.</p></li>
+<li><p>Legyen <span class="math inline">\(f(x)=x^3-2x^2-7x+a\)</span>.</p>
+<ol>
+<li><p>Határozzuk meg <span class="math inline">\(a\)</span>-t úgy, hogy
+3 a polinom gyöke legyen.</p></li>
+<li><p><span class="math inline">\(a=2\)</span> esetén határozzuk meg a
+polinom összes gyökét.</p></li>
+</ol></li>
+<li><p>Bontsuk fel az alábbi polinomokat irreducibilis tényezők
+szorzatára:</p>
+<ol>
+<li><p><span class="math inline">\(x^3-3x+2\)</span>;</p></li>
+<li><p><span class="math inline">\(x^3+2x^2-x-2\)</span>;</p></li>
+<li><p><span class="math inline">\(x^4-4x^3+x^2+4x-2\)</span>;</p></li>
+<li><p><span class="math inline">\(x^4+2x^3-28x^2-8x+96\)</span>.</p></li>
+</ol></li>
+<li><p>Legyen <span class="math inline">\(f(x)=x^4-7x^3+19x^2-23x+10\)</span>, és tudjuk,
+hogy egyik gyöke <span class="math inline">\(x_1=2+i\)</span>.
+Határozzuk meg az összes gyököt. Mivel a polinom valós együtthatós, a
+konjugált <span class="math inline">\(2-i\)</span> is gyök; ezután
+osszunk <span class="math inline">\((x-(2+i))(x-(2-i))\)</span>-vel.</p></li>
+</ol></details></section><div aria-label="Lapozás" class="floating-nav"><button aria-label="Előző lap" class="nav-orb" id="prev-page" title="Előző lap" type="button">←</button><button aria-label="Vissza a főoldalra" class="nav-orb home-orb" id="home-page" title="Vissza a főoldalra" type="button">⌂</button><button aria-label="Következő lap" class="nav-orb" id="next-page" title="Következő lap" type="button">→</button></div><div aria-live="polite" class="page-status" id="page-status"></div><script>
+document.addEventListener('DOMContentLoaded',()=>{
+const current=26, total=44, paths=["01-másodfokú-egyenlet.html", "02-viète-összefüggések.html", "03-másodfokú-egyenlőtlenség.html", "04-a-másodfokú-függvény-grafikonja.html", "05-gyökös-egyenletek.html", "06-logaritmusok.html", "07-exponenciális-egyenletek.html", "08-kombinációk.html", "09-variációk.html", "10-permutációk.html", "11-valószínűségszámítás.html", "12-számtani-sorozatok.html", "13-mértani-sorozatok.html", "14-függvények.html", "15-százalékszámítás.html", "16-a-komplex-számok-halmaza.html", "17-analitikus-geometria.html", "18-vektorok.html", "19-trigonometria.html", "20-geometria.html", "21-mátrixok.html", "22-determinánsok.html", "23-inverz-mátrix.html", "24-lineáris-egyenletrendszerek.html", "25-kompozíciós-műveletek.html", "26-polinomok.html", "27-viète-összefüggések-polinomokra.html", "28-a-maradékosztályok-mathbb-z_n-halmaza.html", "29-határértékek.html", "30-folytonos-függvények.html", "31-aszimptoták.html", "32-deriválás.html", "33-monotonitás-és-görbület.html", "34-primitív-függvények.html", "35-integrálás-parciális-integrálással.html", "36-integrálás-helyettesítéssel.html", "37-határozott-integrálok.html", "38-kezdeti-ismétlés-egész-számok-műveletei.html", "39-racionális-számok-műveletei.html", "40-elsőfokú-egyenletek.html", "41-elsőfokú-egyenlőtlenségek.html", "42-valós-számok-intervallumai.html", "43-abszolútérték.html", "44-kétismeretlenes-két-egyenletből-álló-lineáris-rendszerek.html"];
+const target=n=>n===0?(current===0?'index.html':'../index.html'):(current===0?'temakorok/':'')+paths[n-1];
+const prev=document.getElementById('prev-page'),next=document.getElementById('next-page'),home=document.getElementById('home-page'),status=document.getElementById('page-status');
+if(prev){prev.disabled=current===0;prev.addEventListener('click',()=>{if(current>0)location.href=target(current-1)});}
+if(next){next.disabled=current===total;next.addEventListener('click',()=>{if(current<total)location.href=target(current+1)});}
+if(home)home.addEventListener('click',()=>location.href=target(0));
+if(status)status.textContent=current===0?'Tartalomjegyzék':`${current} / ${total}`;
+document.addEventListener('keydown',e=>{
+ if(e.altKey||e.ctrlKey||e.metaKey||['INPUT','TEXTAREA'].includes(document.activeElement.tagName))return;
+ if(e.key==='ArrowLeft'&&current>0)location.href=target(current-1);
+ if(e.key==='ArrowRight'&&current<total)location.href=target(current+1);
+ if(e.key==='Home')location.href=target(0);
+});
+const browse=document.querySelector('.hero-cta');
+if(browse)browse.addEventListener('click',e=>{e.preventDefault();document.getElementById('temakorok')?.scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('details.practice-toggle').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.MathJax?.typesetPromise)window.MathJax.typesetPromise([d]).catch(()=>{});}));
+});
+</script></body>
+</html>
